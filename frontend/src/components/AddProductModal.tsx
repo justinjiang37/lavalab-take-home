@@ -16,6 +16,13 @@ export function AddMaterialModal({ isOpen, onClose, onMaterialAdded }: AddMateri
     quantity: 0,
     packSize: 24, // packSize now serves as both the pack size and threshold for low stock warning
     imageUrl: ''
+  } as {
+    name: string;
+    color: string;
+    size: string;
+    quantity: number | string;
+    packSize: number | string;
+    imageUrl: string;
   });
   const [selectedTags, setSelectedTags] = useState<string[]>(['blanks']);
   const [availableTags, setAvailableTags] = useState<string[]>([]);
@@ -40,12 +47,22 @@ export function AddMaterialModal({ isOpen, onClose, onMaterialAdded }: AddMateri
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: name === 'quantity' || name === 'packSize' 
-        ? parseInt(value) || 0 
-        : value
-    }));
+    
+    // Special handling for number fields to allow empty values during editing
+    if (name === 'quantity' || name === 'packSize') {
+      // If the value is empty (user deleted everything), keep it as empty string for editing
+      const processedValue = value === '' ? '' : parseInt(value) || 0;
+      setFormData(prev => ({
+        ...prev,
+        [name]: processedValue
+      }));
+    } else {
+      // For non-number fields, process normally
+      setFormData(prev => ({
+        ...prev,
+        [name]: value
+      }));
+    }
   };
 
   const handleTagToggle = (tag: string) => {
@@ -77,12 +94,21 @@ export function AddMaterialModal({ isOpen, onClose, onMaterialAdded }: AddMateri
     setError(null);
 
     try {
+      // Convert any string values back to numbers for submission
+      const quantity = typeof formData.quantity === 'string' 
+        ? parseInt(formData.quantity) || 0 
+        : formData.quantity;
+        
+      const packSize = typeof formData.packSize === 'string' 
+        ? parseInt(formData.packSize) || 1 
+        : formData.packSize;
+      
       await createMaterial({
         name: formData.name.trim(),
         color: formData.color,
         size: formData.size,
-        quantity: formData.quantity,
-        packSize: formData.packSize, // packSize now serves as both the pack size and threshold for low stock
+        quantity: quantity,
+        packSize: packSize, // packSize now serves as both the pack size and threshold for low stock
         tags: selectedTags,
         imageUrl: formData.imageUrl || undefined
       });
@@ -95,6 +121,13 @@ export function AddMaterialModal({ isOpen, onClose, onMaterialAdded }: AddMateri
         quantity: 0,
         packSize: 24,
         imageUrl: ''
+      } as {
+        name: string;
+        color: string;
+        size: string;
+        quantity: number | string;
+        packSize: number | string;
+        imageUrl: string;
       });
       setSelectedTags(['blanks']);
       setNewTag('');

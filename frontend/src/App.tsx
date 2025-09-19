@@ -8,9 +8,10 @@ import { DirectTagFilter } from './components/DirectTagFilter';
 import { ProductsPage } from './pages/ProductsPage';
 import { FulfillmentPage } from './pages/FulfillmentPage';
 import { MaterialRow } from './components/MaterialRow';
+import { MaterialInspectionModal } from './components/MaterialInspectionModal';
 import { ReactComponent as TallyIcon } from './icons/Tally Icon.svg';
-import { ReactComponent as HomeActiveSvg } from './icons/Property 1=Home - Active.svg';
-import { ReactComponent as HomeInactiveSvg } from './icons/Property 1=Home - Inactive.svg';
+import { ReactComponent as ComponentsActiveSvg } from './icons/Property 1=Components - Active.svg';
+import { ReactComponent as ComponentsInactiveSvg } from './icons/Property 1=Components - Inactive.svg';
 import { ReactComponent as ProductsActiveSvg } from './icons/Property 1=Products  - Active.svg';
 import { ReactComponent as ProductsInactiveSvg } from './icons/Property 1=Products  - Inactive.svg';
 import { ReactComponent as OrdersActiveSvg } from './icons/Property 1=Orders - Active.svg';
@@ -39,7 +40,14 @@ function AppLayout() {
   const formatBreadcrumbCategories = (tags: string[], maxLength: number = 30) => {
     if (tags.length === 0) return null;
     
-    const categoryText = tags.join(' + ');
+    // Capitalize each tag before joining
+    const capitalizedTags = tags.map(tag => 
+      tag.split(' ')
+         .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+         .join(' ')
+    );
+    
+    const categoryText = capitalizedTags.join(' + ');
     if (categoryText.length <= maxLength) {
       return categoryText;
     }
@@ -80,7 +88,7 @@ function AppLayout() {
         <nav className="sidebar-nav flex flex-col gap-2 w-full px-2">
           <Link to="/" className={`nav-item ${pathname === '/' ? 'bg-gray-200' : ''} rounded-lg hover:bg-gray-200 transition-colors flex items-center px-2 py-2`}>
             <span className="nav-icon-img flex-shrink-0">
-              {pathname === '/' ? <HomeActiveSvg /> : <HomeInactiveSvg />}
+              {pathname === '/' ? <ComponentsActiveSvg /> : <ComponentsInactiveSvg />}
             </span>
             <motion.span 
               className="ml-3 text-sm font-medium text-gray-700 whitespace-nowrap overflow-hidden"
@@ -393,6 +401,8 @@ function MaterialsList({
   const [materials, setMaterials] = useState<Material[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [inspectedMaterial, setInspectedMaterial] = useState<Material | null>(null);
+  const [isInspectionModalOpen, setIsInspectionModalOpen] = useState(false);
 
   // Fetch materials from API when component mounts
   useEffect(() => {
@@ -445,10 +455,26 @@ function MaterialsList({
           material.id === materialId ? updatedMaterial : material
         )
       );
+      
+      // Also update the inspected material if it's currently being viewed
+      if (inspectedMaterial && inspectedMaterial.id === materialId) {
+        setInspectedMaterial(updatedMaterial);
+      }
     } catch (err) {
       console.error('Error updating quantity:', err);
       // You could show an error message to the user here
     }
+  };
+  
+  // Handle material inspection
+  const handleInspect = (material: Material) => {
+    setInspectedMaterial(material);
+    setIsInspectionModalOpen(true);
+  };
+  
+  // Close inspection modal
+  const handleCloseInspection = () => {
+    setIsInspectionModalOpen(false);
   };
 
   if (loading) {
@@ -475,8 +501,16 @@ function MaterialsList({
           key={material.id}
           product={material} // Still using 'product' prop name for compatibility
           onQuantityUpdate={handleQuantityUpdate}
+          onInspect={handleInspect}
         />
       ))}
+      
+      {/* Material Inspection Modal */}
+      <MaterialInspectionModal
+        isOpen={isInspectionModalOpen}
+        onClose={handleCloseInspection}
+        material={inspectedMaterial}
+      />
     </div>
   );
 }
