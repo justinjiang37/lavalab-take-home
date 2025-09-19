@@ -1,0 +1,17 @@
+.direct-tag-filter {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  margin-top: 4px;
+  min-width: 240px;
+}
+
+.direct-dropdown {
+  position: relative;
+  width: 240px;
+  max-height: 400px;
+  overflow-y: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
