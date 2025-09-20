@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { fetchAllTags } from '../api/materials';
 import { motion, AnimatePresence } from 'framer-motion';
-import './TagFilter.css';
 import './DirectTagFilter.css';
 
 interface DirectTagFilterProps {

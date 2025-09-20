@@ -135,18 +135,31 @@ export function Sidebar({ isSidebarExpanded, setIsSidebarExpanded }: SidebarProp
         </button>
         
         {/* Profile Photo */}
-        <div className="profile-photo flex items-center justify-center md:justify-start px-2 py-2 mb-2">
-          <div className="w-9 h-9 rounded-full overflow-hidden flex-shrink-0 border border-gray-300">
-            <img src={profileImage} alt="Profile" className="w-full h-full object-cover" />
+        <div className="profile-photo px-2 py-2 mb-2">
+          <div className="flex items-center">
+            <div className="w-9 h-9 rounded-full overflow-hidden flex-shrink-0 border border-gray-300">
+              <img src={profileImage} alt="Profile" className="w-full h-full object-cover" />
+            </div>
+            <div className="ml-2">
+              <motion.div 
+                className="flex items-center justify-between w-full"
+                initial={{ opacity: 0, width: 0 }}
+                animate={{ opacity: isSidebarExpanded ? 1 : 0, width: isSidebarExpanded ? "auto" : 0 }}
+                transition={{ duration: 0.3, ease: "easeInOut" }}
+              >
+                <span className="text-sm font-medium text-gray-700 whitespace-nowrap overflow-hidden">Username</span>
+                <span className="text-gray-500 ml-4">...</span>
+              </motion.div>
+              <motion.div
+                className="text-xs text-gray-500"
+                initial={{ opacity: 0, width: 0 }}
+                animate={{ opacity: isSidebarExpanded ? 1 : 0, width: isSidebarExpanded ? "auto" : 0 }}
+                transition={{ duration: 0.3, ease: "easeInOut" }}
+              >
+                Label
+              </motion.div>
+            </div>
           </div>
-          <motion.div 
-            className="ml-2 text-sm font-medium text-gray-700 whitespace-nowrap overflow-hidden"
-            initial={{ opacity: 0, width: 0 }}
-            animate={{ opacity: isSidebarExpanded ? 1 : 0, width: isSidebarExpanded ? "auto" : 0 }}
-            transition={{ duration: 0.3, ease: "easeInOut" }}
-          >
-            Justin Jiang
-          </motion.div>
         </div>
       </div>
     </motion.aside>

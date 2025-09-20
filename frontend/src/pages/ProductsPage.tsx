@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { fetchProducts, fetchAllCategories, Product as ApiProduct } from '../api/products';
 import { ReactComponent as FilterIcon } from '../icons/Filter.svg';
 import { ReactComponent as SortIcon } from '../icons/Sort.svg';
-import { AddProductModalReal } from '../components/AddProductModalReal';
+import { AddProductModal } from '../components/AddProductModal';
 
 // Use the Product interface from the API
 type Product = ApiProduct;
@@ -476,7 +476,7 @@ export function ProductsPage() {
       />
       
       {/* Add Product Modal */}
-      <AddProductModalReal
+      <AddProductModal
         isOpen={isAddProductModalOpen}
         onClose={() => setIsAddProductModalOpen(false)}
         onProductAdded={() => {

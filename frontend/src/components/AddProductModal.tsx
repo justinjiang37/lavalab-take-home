@@ -1,199 +1,192 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { fetchAllTags, createMaterial } from '../api/materials';
-import './AddMaterialModal.css';
+import { fetchAllCategories, createProduct } from '../api/products';
 
-// Define the props for the AddMaterialModal component
-interface AddMaterialModalProps {
+// Define the props for the AddProductModal component
+interface AddProductModalProps {
   isOpen: boolean;
   onClose: () => void;
-  onMaterialAdded: () => void;
+  onProductAdded: () => void;
 }
 
 // Define the form data structure
-interface MaterialFormData {
+interface ProductFormData {
   name: string;
-  color: string;
-  size: string;
-  quantity: number | string;
-  packSize: number | string;
-  tags: string[];
+  description: string;
+  stock: number | string;
+  image: string;
+  categories: string[];
+  sizes: string[];
+  colors: string[];
 }
 
-export const AddMaterialModal = ({ isOpen, onClose, onMaterialAdded }: AddMaterialModalProps) => {
-  // Fixed set of available tags with correct casing
-  const ALLOWED_TAGS = ['Blanks', 'Bright', 'Dark', 'Floral Designs', 'Neutral'];
-  const [availableTags, setAvailableTags] = useState<string[]>(ALLOWED_TAGS);
-  const [isLoadingTags, setIsLoadingTags] = useState(false);
+export const AddProductModal = ({ isOpen, onClose, onProductAdded }: AddProductModalProps) => {
+  // Available categories
+  const AVAILABLE_CATEGORIES = ['T-shirts', 'Hoodies', 'Headwear', 'Sweatpants'];
+  const [availableCategories, setAvailableCategories] = useState<string[]>(AVAILABLE_CATEGORIES);
+  const [isLoadingCategories, setIsLoadingCategories] = useState(false);
   
   // Available sizes
-  const availableSizes = ['XS', 'S', 'M', 'L', 'XL', 'XXL', 'One Size'];
+  const availableSizes = ['XS', 'S', 'M', 'L', 'XL', 'XXL', '2XL', '3XL'];
   
   // Initial form state
-  const initialFormData: MaterialFormData = {
+  const initialFormData: ProductFormData = {
     name: '',
-    color: '',
-    size: '',
-    quantity: '',
-    packSize: '',
-    tags: []
+    description: '',
+    stock: '',
+    image: '',
+    categories: [],
+    sizes: [],
+    colors: []
   };
   
   // Form state
-  const [formData, setFormData] = useState<MaterialFormData>(initialFormData);
-  const [newTag, setNewTag] = useState('');
+  const [formData, setFormData] = useState<ProductFormData>(initialFormData);
+  const [newColor, setNewColor] = useState('');
   const [errors, setErrors] = useState<{
     name?: string;
-    color?: string;
-    size?: string;
-    quantity?: string;
-    packSize?: string;
-    tags?: string;
+    description?: string;
+    stock?: string;
+    categories?: string;
+    sizes?: string;
+    colors?: string;
   }>({});
 
-  // Fetch tags from API - but we'll only use our predefined tags
-  const fetchTags = useCallback(async () => {
-    setIsLoadingTags(true);
+  // Fetch available categories when component mounts
+  const fetchCategories = useCallback(async () => {
+    setIsLoadingCategories(true);
     try {
-      // We're intentionally not using fetched tags anymore
-      // Just using the predefined ALLOWED_TAGS
-      setAvailableTags(ALLOWED_TAGS);
+      const categoriesData = await fetchAllCategories();
+      // Use both predefined and fetched categories
+      const allCategories = Array.from(new Set([...AVAILABLE_CATEGORIES, ...categoriesData]));
+      setAvailableCategories(allCategories);
     } catch (error) {
-      console.error('Error in tags setup:', error);
+      console.error('Error fetching categories:', error);
+      // Fall back to predefined categories
+      setAvailableCategories(AVAILABLE_CATEGORIES);
     } finally {
-      setIsLoadingTags(false);
+      setIsLoadingCategories(false);
     }
-  }, [ALLOWED_TAGS]);
+  }, []);
   
-  // Fetch available tags when component mounts
   useEffect(() => {
     if (isOpen) {
-      fetchTags();
+      fetchCategories();
     }
-  }, [isOpen, fetchTags]);
+  }, [isOpen, fetchCategories]);
   
   // If modal is not open, don't render anything
   if (!isOpen) return null;
   
   // Handle input changes
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     
-    if (name === 'quantity' || name === 'packSize') {
-      // Allow empty input for quantity and packSize
+    if (name === 'stock') {
+      // Allow empty input for stock
       setFormData({ ...formData, [name]: value === '' ? '' : parseInt(value) || 0 });
     } else {
       setFormData({ ...formData, [name]: value });
     }
   };
   
-  // Handle tag toggle with proper casing
-  const handleTagToggle = (tag: string) => {
-    // Check if the tag is already selected (case-insensitive)
-    const isSelected = formData.tags.some(t => t.toLowerCase() === tag.toLowerCase());
+  // Handle category toggle
+  const handleCategoryToggle = (category: string) => {
+    const isSelected = formData.categories.includes(category);
     
     if (isSelected) {
-      // Remove the tag
       setFormData({
         ...formData,
-        tags: formData.tags.filter(t => t.toLowerCase() !== tag.toLowerCase())
+        categories: formData.categories.filter(c => c !== category)
       });
     } else {
-      // Add the tag with correct casing from ALLOWED_TAGS
-      const correctCaseTag = ALLOWED_TAGS.find(t => t.toLowerCase() === tag.toLowerCase()) || tag;
       setFormData({
         ...formData,
-        tags: [...formData.tags, correctCaseTag]
+        categories: [...formData.categories, category]
       });
     }
   };
   
-  // Handle adding a new tag - but only from our allowed list
-  const handleAddTag = () => {
-    const trimmedTag = newTag.trim();
+  // Handle size toggle
+  const handleSizeToggle = (size: string) => {
+    const isSelected = formData.sizes.includes(size);
     
-    if (!trimmedTag) {
-      return; // Don't add empty tags
+    if (isSelected) {
+      setFormData({
+        ...formData,
+        sizes: formData.sizes.filter(s => s !== size)
+      });
+    } else {
+      setFormData({
+        ...formData,
+        sizes: [...formData.sizes, size]
+      });
+    }
+  };
+  
+  // Handle adding a new color
+  const handleAddColor = () => {
+    const trimmedColor = newColor.trim();
+    
+    if (!trimmedColor) {
+      return; // Don't add empty colors
     }
     
-    // Find the matching allowed tag with correct casing
-    const matchingTag = ALLOWED_TAGS.find(
-      tag => tag.toLowerCase() === trimmedTag.toLowerCase()
-    );
-    
-    if (matchingTag) {
-      // Only add if it's not already in selected tags
-      if (!formData.tags.some(tag => tag.toLowerCase() === matchingTag.toLowerCase())) {
-        setFormData({
-          ...formData,
-          tags: [...formData.tags, matchingTag]
-        });
-      }
-    } else {
-      // Show a message that only predefined tags are allowed
-      alert('Please select from the available tags: Blanks, Bright, Dark, Floral Designs, Neutral');
+    if (!formData.colors.includes(trimmedColor)) {
+      setFormData({
+        ...formData,
+        colors: [...formData.colors, trimmedColor]
+      });
     }
     
     // Clear input
-    setNewTag('');
+    setNewColor('');
   };
   
-  // Normalize tags to ensure correct casing and uniqueness
-  const normalizeSelectedTags = (tags: string[]): string[] => {
-    // Create a map of lowercase -> correct case
-    const tagMap = new Map<string, string>();
-    
-    // Add all allowed tags to the map
-    ALLOWED_TAGS.forEach(tag => {
-      tagMap.set(tag.toLowerCase(), tag);
+  // Handle removing a color
+  const handleRemoveColor = (colorToRemove: string) => {
+    setFormData({
+      ...formData,
+      colors: formData.colors.filter(color => color !== colorToRemove)
     });
-    
-    // Create a set of normalized tags
-    const normalizedTags = new Set<string>();
-    
-    // Process each selected tag
-    tags.forEach(tag => {
-      const normalizedTag = tagMap.get(tag.toLowerCase());
-      if (normalizedTag) {
-        normalizedTags.add(normalizedTag);
-      }
-    });
-    
-    return Array.from(normalizedTags);
   };
 
   // Handle form submission
   const handleSubmit = async () => {
-    console.log('Form submitted');
+    console.log('Product form submitted');
     
     // Validate form
     const newErrors: { 
       name?: string; 
-      color?: string; 
-      size?: string; 
-      quantity?: string; 
-      packSize?: string; 
-      tags?: string; 
+      description?: string; 
+      stock?: string; 
+      categories?: string; 
+      sizes?: string;
+      colors?: string;
     } = {};
     
     if (!formData.name.trim()) {
-      newErrors.name = 'Name is required';
+      newErrors.name = 'Product name is required';
     }
     
-    if (!formData.color.trim()) {
-      newErrors.color = 'Color is required';
+    if (!formData.description.trim()) {
+      newErrors.description = 'Description is required';
     }
     
-    if (!formData.size) {
-      newErrors.size = 'Size is required';
+    if (formData.categories.length === 0) {
+      newErrors.categories = 'At least one category is required';
     }
     
-    if (formData.tags.length === 0) {
-      newErrors.tags = 'At least one tag is required';
+    if (formData.sizes.length === 0) {
+      newErrors.sizes = 'At least one size is required';
+    }
+    
+    if (formData.colors.length === 0) {
+      newErrors.colors = 'At least one color is required';
     }
     
     // If there are errors, display them and don't submit
     if (Object.keys(newErrors).length > 0) {
-      console.log('Form validation errors:', newErrors);
+      console.log('Product form validation errors:', newErrors);
       setErrors(newErrors);
       return;
     }
@@ -202,48 +195,41 @@ export const AddMaterialModal = ({ isOpen, onClose, onMaterialAdded }: AddMateri
     setErrors({});
     
     try {
-      // Convert quantity and packSize to numbers with defaults
-      const quantity = typeof formData.quantity === 'string' 
-        ? (formData.quantity === '' ? 0 : parseInt(formData.quantity)) 
-        : formData.quantity;
-      
-      const packSize = typeof formData.packSize === 'string' 
-        ? (formData.packSize === '' ? 1 : parseInt(formData.packSize)) 
-        : formData.packSize;
-      
-      // Normalize tags to ensure correct casing and uniqueness
-      const normalizedTags = normalizeSelectedTags(formData.tags);
-      console.log('Normalized tags:', normalizedTags);
+      // Convert stock to number with default
+      const stock = typeof formData.stock === 'string' 
+        ? (formData.stock === '' ? 0 : parseInt(formData.stock)) 
+        : formData.stock;
       
       // Prepare data to send to API
-      const materialData = {
+      const productData = {
         name: formData.name.trim(),
-        color: formData.color.trim(),
-        size: formData.size,
-        quantity: quantity,
-        packSize: packSize,
-        tags: normalizedTags
+        description: formData.description.trim(),
+        stock: stock,
+        image: formData.image.trim() || undefined,
+        categories: formData.categories,
+        sizes: formData.sizes,
+        colors: formData.colors
       };
       
-      console.log('Sending data to API:', materialData);
+      console.log('Sending product data to API:', productData);
       
-      // Call API to create material
-      const result = await createMaterial(materialData);
-      console.log('API response:', result);
+      // Call API to create product
+      const result = await createProduct(productData);
+      console.log('Product API response:', result);
       
-      // Call the onMaterialAdded callback
-      console.log('Calling onMaterialAdded callback');
-      onMaterialAdded();
+      // Call the onProductAdded callback
+      console.log('Calling onProductAdded callback');
+      onProductAdded();
       
       // Reset form and close modal
-      console.log('Resetting form and closing modal');
+      console.log('Resetting product form and closing modal');
       setFormData(initialFormData);
       onClose();
     } catch (error) {
-      console.error('Error creating material:', error);
+      console.error('Error creating product:', error);
       
       // More detailed error message
-      let errorMessage = 'Failed to add material. ';
+      let errorMessage = 'Failed to add product. ';
       if (error instanceof Error) {
         console.error('Error details:', {
           message: error.message,
@@ -268,7 +254,7 @@ export const AddMaterialModal = ({ isOpen, onClose, onMaterialAdded }: AddMateri
       >
         <div className="p-6">
           <div className="flex justify-between items-center mb-6">
-            <h2 className="text-xl font-semibold text-gray-900">Add New Material</h2>
+            <h2 className="text-xl font-semibold text-gray-900">Add New Product</h2>
             <button 
               onClick={onClose}
               className="text-gray-400 hover:text-gray-600 focus:outline-none"
@@ -280,10 +266,10 @@ export const AddMaterialModal = ({ isOpen, onClose, onMaterialAdded }: AddMateri
           </div>
           
           <form>
-            {/* Material Name */}
+            {/* Product Name */}
             <div className="mb-4">
               <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-                Material Name*
+                Product Name*
               </label>
               <input
                 type="text"
@@ -292,58 +278,38 @@ export const AddMaterialModal = ({ isOpen, onClose, onMaterialAdded }: AddMateri
                 value={formData.name}
                 onChange={handleInputChange}
                 className={`w-full px-3 py-2 border ${errors.name ? 'border-red-500' : 'border-gray-300'} rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500`}
-                placeholder="e.g., Gildan T-Shirt"
+                placeholder="e.g., Premium Cotton T-Shirt"
               />
               {errors.name && <p className="mt-1 text-xs text-red-500">{errors.name}</p>}
             </div>
             
-            {/* Color */}
+            {/* Description */}
             <div className="mb-4">
-              <label htmlFor="color" className="block text-sm font-medium text-gray-700 mb-1">
-                Color*
+              <label htmlFor="description" className="block text-sm font-medium text-gray-700 mb-1">
+                Description*
               </label>
-              <input
-                type="text"
-                id="color"
-                name="color"
-                value={formData.color}
+              <textarea
+                id="description"
+                name="description"
+                value={formData.description}
                 onChange={handleInputChange}
-                className={`w-full px-3 py-2 border ${errors.color ? 'border-red-500' : 'border-gray-300'} rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500`}
-                placeholder="e.g., Red, Black, White"
+                rows={3}
+                className={`w-full px-3 py-2 border ${errors.description ? 'border-red-500' : 'border-gray-300'} rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500`}
+                placeholder="Describe your product..."
               />
-              {errors.color && <p className="mt-1 text-xs text-red-500">{errors.color}</p>}
+              {errors.description && <p className="mt-1 text-xs text-red-500">{errors.description}</p>}
             </div>
             
-            {/* Size */}
+            {/* Stock */}
             <div className="mb-4">
-              <label htmlFor="size" className="block text-sm font-medium text-gray-700 mb-1">
-                Size*
-              </label>
-              <select
-                id="size"
-                name="size"
-                value={formData.size}
-                onChange={handleInputChange}
-                className={`w-full px-3 py-2 border ${errors.size ? 'border-red-500' : 'border-gray-300'} rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500`}
-              >
-                <option value="">Select a size</option>
-                {availableSizes.map(size => (
-                  <option key={size} value={size}>{size}</option>
-                ))}
-              </select>
-              {errors.size && <p className="mt-1 text-xs text-red-500">{errors.size}</p>}
-            </div>
-            
-            {/* Current Stock */}
-            <div className="mb-4">
-              <label htmlFor="quantity" className="block text-sm font-medium text-gray-700 mb-1">
+              <label htmlFor="stock" className="block text-sm font-medium text-gray-700 mb-1">
                 Current Stock
               </label>
               <input
                 type="number"
-                id="quantity"
-                name="quantity"
-                value={formData.quantity}
+                id="stock"
+                name="stock"
+                value={formData.stock}
                 onChange={handleInputChange}
                 min="0"
                 className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
@@ -351,80 +317,119 @@ export const AddMaterialModal = ({ isOpen, onClose, onMaterialAdded }: AddMateri
               />
             </div>
             
-            {/* Pack Size */}
+            {/* Image URL */}
             <div className="mb-4">
-              <label htmlFor="packSize" className="block text-sm font-medium text-gray-700 mb-1">
-                Pack Size (Low Stock Warning Threshold)
+              <label htmlFor="image" className="block text-sm font-medium text-gray-700 mb-1">
+                Image URL
               </label>
               <input
-                type="number"
-                id="packSize"
-                name="packSize"
-                value={formData.packSize}
+                type="url"
+                id="image"
+                name="image"
+                value={formData.image}
                 onChange={handleInputChange}
-                min="1"
                 className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                placeholder="24"
+                placeholder="https://example.com/image.jpg"
               />
             </div>
             
-            {/* Tags Section */}
-            <div className="mb-6 tags-section">
-              <label className="block text-sm font-medium text-gray-700 mb-2 text-center">
-                Tags*
+            {/* Categories */}
+            <div className="mb-4">
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                Categories*
+              </label>
+              <div className="flex flex-wrap gap-2">
+                {isLoadingCategories ? (
+                  <div className="text-center w-full py-2">Loading categories...</div>
+                ) : (
+                  availableCategories.map(category => (
+                    <label 
+                      key={category}
+                      className="flex items-center gap-2 px-3 py-2 border border-gray-300 rounded-md cursor-pointer hover:bg-gray-50"
+                    >
+                      <input
+                        type="checkbox"
+                        checked={formData.categories.includes(category)}
+                        onChange={() => handleCategoryToggle(category)}
+                        className="rounded"
+                      />
+                      <span className="text-sm">{category}</span>
+                    </label>
+                  ))
+                )}
+              </div>
+              {errors.categories && <p className="mt-1 text-xs text-red-500">{errors.categories}</p>}
+            </div>
+            
+            {/* Sizes */}
+            <div className="mb-4">
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                Available Sizes*
+              </label>
+              <div className="flex flex-wrap gap-2">
+                {availableSizes.map(size => (
+                  <label 
+                    key={size}
+                    className="flex items-center gap-2 px-3 py-2 border border-gray-300 rounded-md cursor-pointer hover:bg-gray-50"
+                  >
+                    <input
+                      type="checkbox"
+                      checked={formData.sizes.includes(size)}
+                      onChange={() => handleSizeToggle(size)}
+                      className="rounded"
+                    />
+                    <span className="text-sm">{size}</span>
+                  </label>
+                ))}
+              </div>
+              {errors.sizes && <p className="mt-1 text-xs text-red-500">{errors.sizes}</p>}
+            </div>
+            
+            {/* Colors */}
+            <div className="mb-6">
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                Available Colors*
               </label>
               
-              {/* Add New Tag */}
-              <div className="new-tag-section flex items-center mb-4">
+              {/* Add new color */}
+              <div className="flex items-center gap-2 mb-3">
                 <input
                   type="text"
-                  value={newTag}
-                  onChange={(e) => setNewTag(e.target.value)}
-                  placeholder="Enter new tag"
-                  className="new-tag-input flex-1"
+                  value={newColor}
+                  onChange={(e) => setNewColor(e.target.value)}
+                  placeholder="Enter color name"
+                  className="flex-1 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
                 />
                 <button
                   type="button"
-                  onClick={handleAddTag}
-                  className="add-tag-button bg-indigo-600 text-white"
+                  onClick={handleAddColor}
+                  className="px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500"
                 >
-                  Add Tag
+                  Add Color
                 </button>
               </div>
               
-              {/* Available Tags */}
-              <div className="available-tags flex flex-wrap">
-                {isLoadingTags ? (
-                  <div className="text-center w-full py-2">Loading tags...</div>
-                ) : (
-                  availableTags.map(tag => {
-                    // Check if tag is selected (case insensitive)
-                    const isSelected = formData.tags.some(t => t.toLowerCase() === tag.toLowerCase());
-                    return (
-                      <label 
-                        key={tag}
-                        className="tag-checkbox"
+              {/* Display selected colors */}
+              {formData.colors.length > 0 && (
+                <div className="flex flex-wrap gap-2">
+                  {formData.colors.map((color, index) => (
+                    <span 
+                      key={index}
+                      className="flex items-center gap-2 px-3 py-1 bg-gray-100 rounded-full text-sm"
+                    >
+                      {color}
+                      <button
+                        type="button"
+                        onClick={() => handleRemoveColor(color)}
+                        className="text-red-500 hover:text-red-700"
                       >
-                        <input
-                          type="checkbox"
-                          checked={isSelected}
-                          onChange={() => handleTagToggle(tag)}
-                        />
-                        <span className="tag-name">{tag}</span>
-                      </label>
-                    );
-                  })
-                )}
-              </div>
-              
-              {/* Selected Tags */}
-              {formData.tags.length > 0 && (
-                <div className="selected-tags">
-                  Selected: {normalizeSelectedTags(formData.tags).join(', ')}
+                        ×
+                      </button>
+                    </span>
+                  ))}
                 </div>
               )}
-              
-              {errors.tags && <p className="mt-1 text-xs text-red-500 text-center">{errors.tags}</p>}
+              {errors.colors && <p className="mt-1 text-xs text-red-500">{errors.colors}</p>}
             </div>
             
             {/* Submit Button */}
@@ -441,7 +446,7 @@ export const AddMaterialModal = ({ isOpen, onClose, onMaterialAdded }: AddMateri
                 onClick={handleSubmit}
                 className="px-4 py-2 text-sm font-medium text-white bg-indigo-600 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500"
               >
-                Add Material
+                Add Product
               </button>
             </div>
           </form>

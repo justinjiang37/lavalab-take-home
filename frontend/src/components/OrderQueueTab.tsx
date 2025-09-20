@@ -10,7 +10,6 @@ export function OrderQueueTab() {
   const [isAddOrderModalOpen, setIsAddOrderModalOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
   const [isFilterOpen, setIsFilterOpen] = useState(false);
-  const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const [selectedStatuses, setSelectedStatuses] = useState<OrderStatus[]>([]);
   const [dateFilter, setDateFilter] = useState<{ startDate: string | null; endDate: string | null }>({
     startDate: null,
