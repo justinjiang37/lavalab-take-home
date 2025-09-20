@@ -1,338 +1,352 @@
-import React, { useState, useEffect } from 'react';
-import { createMaterial, fetchAllTags } from '../api/materials';
-import './AddProductModal.css';
+import React, { useState } from 'react';
 
-interface AddMaterialModalProps {
+// Define the props for the AddProductModal component
+interface AddProductModalProps {
   isOpen: boolean;
   onClose: () => void;
   onMaterialAdded: () => void;
 }
 
-export function AddMaterialModal({ isOpen, onClose, onMaterialAdded }: AddMaterialModalProps) {
-  const [formData, setFormData] = useState({
+// Define the form data structure
+interface ProductFormData {
+  name: string;
+  description: string;
+  stock: number;
+  categories: string[];
+  sizes: string[];
+  colors: string[];
+}
+
+export const AddProductModal: React.FC<AddProductModalProps> = ({ isOpen, onClose, onMaterialAdded }) => {
+  // Available categories
+  const availableCategories = ['T-shirts', 'Hoodies', 'Headwear', 'Sweatpants'];
+  
+  // Available sizes
+  const availableSizes = ['XS', 'S', 'M', 'L', 'XL', 'XXL', 'One Size'];
+  
+  // Initial form state
+  const initialFormData: ProductFormData = {
     name: '',
-    color: 'red',
-    size: 'M',
-    quantity: 0,
-    packSize: 24, // packSize now serves as both the pack size and threshold for low stock warning
-    imageUrl: ''
-  } as {
-    name: string;
-    color: string;
-    size: string;
-    quantity: number | string;
-    packSize: number | string;
-    imageUrl: string;
-  });
-  const [selectedTags, setSelectedTags] = useState<string[]>(['blanks']);
-  const [availableTags, setAvailableTags] = useState<string[]>([]);
-  const [newTag, setNewTag] = useState('');
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState<string | null>(null);
-
-  // Load available tags when modal opens
-  useEffect(() => {
-    if (isOpen) {
-      const loadTags = async () => {
-        try {
-          const tags = await fetchAllTags();
-          setAvailableTags(tags);
-        } catch (error) {
-          console.error('Error loading tags:', error);
-        }
-      };
-      loadTags();
-    }
-  }, [isOpen]);
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+    description: '',
+    stock: 0,
+    categories: [],
+    sizes: [],
+    colors: []
+  };
+  
+  // Form state
+  const [formData, setFormData] = useState<ProductFormData>(initialFormData);
+  const [newColor, setNewColor] = useState('');
+  const [errors, setErrors] = useState<{
+    name?: string;
+    description?: string;
+    categories?: string;
+    sizes?: string;
+    colors?: string;
+  }>({});
+  
+  // If modal is not open, don't render anything
+  if (!isOpen) return null;
+  
+  // Handle input changes
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     
-    // Special handling for number fields to allow empty values during editing
-    if (name === 'quantity' || name === 'packSize') {
-      // If the value is empty (user deleted everything), keep it as empty string for editing
-      const processedValue = value === '' ? '' : parseInt(value) || 0;
-      setFormData(prev => ({
-        ...prev,
-        [name]: processedValue
-      }));
+    if (name === 'stock') {
+      // Handle numeric input
+      const numValue = value === '' ? 0 : parseInt(value, 10);
+      setFormData({ ...formData, [name]: numValue });
     } else {
-      // For non-number fields, process normally
-      setFormData(prev => ({
-        ...prev,
-        [name]: value
-      }));
+      setFormData({ ...formData, [name]: value });
     }
   };
-
-  const handleTagToggle = (tag: string) => {
-    if (selectedTags.includes(tag)) {
-      setSelectedTags(selectedTags.filter(t => t !== tag));
+  
+  // Handle category toggle
+  const handleCategoryToggle = (category: string) => {
+    if (formData.categories.includes(category)) {
+      setFormData({
+        ...formData,
+        categories: formData.categories.filter(c => c !== category)
+      });
     } else {
-      setSelectedTags([...selectedTags, tag]);
+      setFormData({
+        ...formData,
+        categories: [...formData.categories, category]
+      });
     }
   };
-
-  const handleAddNewTag = () => {
-    const trimmedTag = newTag.trim().toLowerCase();
-    if (trimmedTag && !selectedTags.includes(trimmedTag) && !availableTags.includes(trimmedTag)) {
-      setSelectedTags([...selectedTags, trimmedTag]);
-      setAvailableTags([...availableTags, trimmedTag]);
-      setNewTag('');
+  
+  // Handle size toggle
+  const handleSizeToggle = (size: string) => {
+    if (formData.sizes.includes(size)) {
+      setFormData({
+        ...formData,
+        sizes: formData.sizes.filter(s => s !== size)
+      });
+    } else {
+      setFormData({
+        ...formData,
+        sizes: [...formData.sizes, size]
+      });
     }
   };
-
-  const handleSubmit = async (e: React.FormEvent) => {
+  
+  // Handle adding a new color
+  const handleAddColor = () => {
+    if (newColor.trim() && !formData.colors.includes(newColor.trim())) {
+      setFormData({
+        ...formData,
+        colors: [...formData.colors, newColor.trim()]
+      });
+      setNewColor('');
+    }
+  };
+  
+  // Handle removing a color
+  const handleRemoveColor = (color: string) => {
+    setFormData({
+      ...formData,
+      colors: formData.colors.filter(c => c !== color)
+    });
+  };
+  
+  // Handle form submission
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
+    // Validate form
+    const newErrors: { 
+      name?: string; 
+      description?: string; 
+      categories?: string; 
+      sizes?: string; 
+      colors?: string; 
+    } = {};
+    
     if (!formData.name.trim()) {
-      setError('Material name is required');
+      newErrors.name = 'Name is required';
+    }
+    
+    if (!formData.description.trim()) {
+      newErrors.description = 'Description is required';
+    }
+    
+    if (formData.categories.length === 0) {
+      newErrors.categories = 'At least one category is required';
+    }
+    
+    if (formData.sizes.length === 0) {
+      newErrors.sizes = 'At least one size is required';
+    }
+    
+    if (formData.colors.length === 0) {
+      newErrors.colors = 'At least one color is required';
+    }
+    
+    // If there are errors, display them and don't submit
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
       return;
     }
-
-    setLoading(true);
-    setError(null);
-
-    try {
-      // Convert any string values back to numbers for submission
-      const quantity = typeof formData.quantity === 'string' 
-        ? parseInt(formData.quantity) || 0 
-        : formData.quantity;
-        
-      const packSize = typeof formData.packSize === 'string' 
-        ? parseInt(formData.packSize) || 1 
-        : formData.packSize;
-      
-      await createMaterial({
-        name: formData.name.trim(),
-        color: formData.color,
-        size: formData.size,
-        quantity: quantity,
-        packSize: packSize, // packSize now serves as both the pack size and threshold for low stock
-        tags: selectedTags,
-        imageUrl: formData.imageUrl || undefined
-      });
-
-      // Reset form
-      setFormData({
-        name: '',
-        color: 'red',
-        size: 'M',
-        quantity: 0,
-        packSize: 24,
-        imageUrl: ''
-      } as {
-        name: string;
-        color: string;
-        size: string;
-        quantity: number | string;
-        packSize: number | string;
-        imageUrl: string;
-      });
-      setSelectedTags(['blanks']);
-      setNewTag('');
-
-      onMaterialAdded();
-      onClose();
-    } catch (err) {
-      setError('Failed to create material. Please try again.');
-      console.error('Error creating material:', err);
-    } finally {
-      setLoading(false);
-    }
+    
+    // Clear errors
+    setErrors({});
+    
+    // Here you would typically call an API to create the product
+    console.log('Creating product:', formData);
+    
+    // Call the onMaterialAdded callback
+    onMaterialAdded();
+    
+    // Reset form and close modal
+    setFormData(initialFormData);
+    onClose();
   };
-
-  const handleClose = () => {
-    if (!loading) {
-      setError(null);
-      onClose();
-    }
-  };
-
-  if (!isOpen) return null;
-
+  
   return (
-    <div className="modal-overlay" onClick={handleClose}>
-      <div className="modal-content" onClick={e => e.stopPropagation()}>
-        <div className="modal-header">
-          <h2>Add New Material</h2>
-          <button 
-            className="modal-close-button" 
-            onClick={handleClose}
-            disabled={loading}
-          >
-            ×
-          </button>
-        </div>
-
-        <form onSubmit={handleSubmit} className="add-product-form">
-          {error && (
-            <div className="error-message">
-              {error}
-            </div>
-          )}
-
-          <div className="form-group">
-            <label htmlFor="name">Material Name *</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              value={formData.name}
-              onChange={handleInputChange}
-              placeholder="e.g. Gildan T-Shirt - Red / M"
-              required
-              disabled={loading}
-            />
+    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+      <div 
+        className="bg-white rounded-lg shadow-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto"
+        onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside modal
+      >
+        <div className="p-6">
+          <div className="flex justify-between items-center mb-6">
+            <h2 className="text-xl font-semibold text-gray-900">Add New Product</h2>
+            <button 
+              onClick={onClose}
+              className="text-gray-400 hover:text-gray-600 focus:outline-none"
+            >
+              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
           </div>
-
-          <div className="form-row">
-            <div className="form-group">
-              <label htmlFor="color">Color</label>
-              <select
-                id="color"
-                name="color"
-                value={formData.color}
+          
+          <form onSubmit={handleSubmit}>
+            {/* Product Name */}
+            <div className="mb-4">
+              <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+                Product Name*
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value={formData.name}
                 onChange={handleInputChange}
-                disabled={loading}
-              >
-                <option value="red">Red</option>
-                <option value="black">Black</option>
-                <option value="white">White</option>
-                <option value="blue">Blue</option>
-                <option value="green">Green</option>
-                <option value="yellow">Yellow</option>
-              </select>
+                className={`w-full px-3 py-2 border ${errors.name ? 'border-red-500' : 'border-gray-300'} rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500`}
+              />
+              {errors.name && <p className="mt-1 text-xs text-red-500">{errors.name}</p>}
             </div>
-
-            <div className="form-group">
-              <label htmlFor="size">Size</label>
-              <select
-                id="size"
-                name="size"
-                value={formData.size}
+            
+            {/* Product Description */}
+            <div className="mb-4">
+              <label htmlFor="description" className="block text-sm font-medium text-gray-700 mb-1">
+                Description*
+              </label>
+              <textarea
+                id="description"
+                name="description"
+                value={formData.description}
                 onChange={handleInputChange}
-                disabled={loading}
-              >
-                <option value="XS">XS</option>
-                <option value="S">S</option>
-                <option value="M">M</option>
-                <option value="L">L</option>
-                <option value="XL">XL</option>
-                <option value="XXL">XXL</option>
-              </select>
+                rows={3}
+                className={`w-full px-3 py-2 border ${errors.description ? 'border-red-500' : 'border-gray-300'} rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500`}
+              />
+              {errors.description && <p className="mt-1 text-xs text-red-500">{errors.description}</p>}
             </div>
-          </div>
-
-          {/* Tags Section */}
-          <div className="form-group">
-            <label>Categories/Tags</label>
-            <div className="tags-section">
-              <div className="available-tags">
-                {availableTags.map(tag => (
-                  <label key={tag} className="tag-checkbox">
+            
+            {/* Stock Amount */}
+            <div className="mb-4">
+              <label htmlFor="stock" className="block text-sm font-medium text-gray-700 mb-1">
+                Stock Amount
+              </label>
+              <input
+                type="number"
+                id="stock"
+                name="stock"
+                value={formData.stock}
+                onChange={handleInputChange}
+                min="0"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              />
+            </div>
+            
+            {/* Categories */}
+            <div className="mb-4">
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                Categories*
+              </label>
+              <div className="flex flex-wrap gap-2">
+                {availableCategories.map(category => (
+                  <label 
+                    key={category}
+                    className={`inline-flex items-center px-3 py-2 rounded-md border cursor-pointer ${
+                      formData.categories.includes(category)
+                        ? 'bg-indigo-100 border-indigo-300 text-indigo-800'
+                        : 'bg-white border-gray-300 text-gray-700 hover:bg-gray-50'
+                    }`}
+                  >
                     <input
                       type="checkbox"
-                      checked={selectedTags.includes(tag)}
-                      onChange={() => handleTagToggle(tag)}
-                      disabled={loading}
+                      className="sr-only"
+                      checked={formData.categories.includes(category)}
+                      onChange={() => handleCategoryToggle(category)}
                     />
-                    <span className="tag-name">{tag}</span>
+                    <span className="text-sm">{category}</span>
                   </label>
                 ))}
               </div>
-              
-              <div className="new-tag-section">
+              {errors.categories && <p className="mt-1 text-xs text-red-500">{errors.categories}</p>}
+            </div>
+            
+            {/* Sizes */}
+            <div className="mb-4">
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                Available Sizes*
+              </label>
+              <div className="flex flex-wrap gap-2">
+                {availableSizes.map(size => (
+                  <label 
+                    key={size}
+                    className={`inline-flex items-center justify-center h-10 w-14 rounded-md border cursor-pointer ${
+                      formData.sizes.includes(size)
+                        ? 'bg-indigo-100 border-indigo-300 text-indigo-800'
+                        : 'bg-white border-gray-300 text-gray-700 hover:bg-gray-50'
+                    }`}
+                  >
+                    <input
+                      type="checkbox"
+                      className="sr-only"
+                      checked={formData.sizes.includes(size)}
+                      onChange={() => handleSizeToggle(size)}
+                    />
+                    <span className="text-sm">{size}</span>
+                  </label>
+                ))}
+              </div>
+              {errors.sizes && <p className="mt-1 text-xs text-red-500">{errors.sizes}</p>}
+            </div>
+            
+            {/* Colors */}
+            <div className="mb-6">
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                Available Colors*
+              </label>
+              <div className="flex mb-2">
                 <input
                   type="text"
-                  placeholder="Add new category..."
-                  value={newTag}
-                  onChange={(e) => setNewTag(e.target.value)}
-                  onKeyPress={(e) => e.key === 'Enter' && handleAddNewTag()}
-                  disabled={loading}
-                  className="new-tag-input"
+                  value={newColor}
+                  onChange={(e) => setNewColor(e.target.value)}
+                  placeholder="Enter color name"
+                  className="flex-1 px-3 py-2 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
                 />
                 <button
                   type="button"
-                  onClick={handleAddNewTag}
-                  disabled={loading || !newTag.trim()}
-                  className="add-tag-button"
+                  onClick={handleAddColor}
+                  className="px-4 py-2 bg-indigo-600 text-white rounded-r-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500"
                 >
                   Add
                 </button>
               </div>
-              
-              {selectedTags.length > 0 && (
-                <div className="selected-tags">
-                  <small>Selected: {selectedTags.join(', ')}</small>
-                </div>
-              )}
+              <div className="flex flex-wrap gap-2 mt-2">
+                {formData.colors.map(color => (
+                  <span 
+                    key={color}
+                    className="inline-flex items-center px-3 py-1 rounded-full bg-gray-100 text-gray-800"
+                  >
+                    {color}
+                    <button
+                      type="button"
+                      onClick={() => handleRemoveColor(color)}
+                      className="ml-1 text-gray-500 hover:text-gray-700"
+                    >
+                      ×
+                    </button>
+                  </span>
+                ))}
+              </div>
+              {errors.colors && <p className="mt-1 text-xs text-red-500">{errors.colors}</p>}
             </div>
-          </div>
-
-          <div className="form-row">
-            <div className="form-group">
-              <label htmlFor="quantity">Current Stock</label>
-              <input
-                type="number"
-                id="quantity"
-                name="quantity"
-                value={formData.quantity}
-                onChange={handleInputChange}
-                min="0"
-                disabled={loading}
-              />
+            
+            {/* Submit Button */}
+            <div className="flex justify-end">
+              <button
+                type="button"
+                onClick={onClose}
+                className="px-4 py-2 mr-2 text-sm font-medium text-gray-700 bg-gray-100 rounded-md hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-500"
+              >
+                Cancel
+              </button>
+              <button
+                type="submit"
+                className="px-4 py-2 text-sm font-medium text-white bg-indigo-600 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              >
+                Add Product
+              </button>
             </div>
-
-            <div className="form-group">
-              <label htmlFor="packSize">Pack Size / Minimum Threshold *</label>
-              <input
-                type="number"
-                id="packSize"
-                name="packSize"
-                value={formData.packSize}
-                onChange={handleInputChange}
-                min="1"
-                required
-                disabled={loading}
-              />
-              <small className="form-help">Standard pack size and threshold for low stock warning</small>
-            </div>
-          </div>
-
-          <div className="form-group">
-            <label htmlFor="imageUrl">Image URL (Optional)</label>
-            <input
-              type="url"
-              id="imageUrl"
-              name="imageUrl"
-              value={formData.imageUrl}
-              onChange={handleInputChange}
-              placeholder="https://example.com/image.jpg"
-              disabled={loading}
-            />
-            <small className="form-help">Leave blank for now - you can add images later</small>
-          </div>
-
-          <div className="form-actions">
-            <button 
-              type="button" 
-              className="cancel-button" 
-              onClick={handleClose}
-              disabled={loading}
-            >
-              Cancel
-            </button>
-            <button 
-              type="submit" 
-              className="submit-button"
-              disabled={loading}
-            >
-              {loading ? 'Adding...' : 'Add Material'}
-            </button>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </div>
   );
-}
+};

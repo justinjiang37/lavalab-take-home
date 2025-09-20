@@ -19,7 +19,7 @@ export interface Material {
 // Get all materials from the backend
 export const fetchMaterials = async (): Promise<Material[]> => {
   try {
-    const response = await fetch(`${API_BASE_URL}/products`);
+    const response = await fetch(`${API_BASE_URL}/materials`);
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
@@ -34,7 +34,7 @@ export const fetchMaterials = async (): Promise<Material[]> => {
 // Get a specific material by ID
 export const fetchMaterialById = async (id: number): Promise<Material> => {
   try {
-    const response = await fetch(`${API_BASE_URL}/products/${id}`);
+    const response = await fetch(`${API_BASE_URL}/materials/${id}`);
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
@@ -49,7 +49,7 @@ export const fetchMaterialById = async (id: number): Promise<Material> => {
 // Update material quantity
 export const updateMaterialQuantity = async (id: number, quantity: number): Promise<Material> => {
   try {
-    const response = await fetch(`${API_BASE_URL}/products/${id}/quantity`, {
+    const response = await fetch(`${API_BASE_URL}/materials/${id}/quantity`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
@@ -80,7 +80,7 @@ export const createMaterial = async (material: {
   imageUrl?: string;
 }): Promise<Material> => {
   try {
-    const response = await fetch(`${API_BASE_URL}/products`, {
+    const response = await fetch(`${API_BASE_URL}/materials`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -103,7 +103,7 @@ export const createMaterial = async (material: {
 // Get all unique tags from materials
 export const fetchAllTags = async (): Promise<string[]> => {
   try {
-    const response = await fetch(`${API_BASE_URL}/products/tags`);
+    const response = await fetch(`${API_BASE_URL}/materials/tags`);
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }

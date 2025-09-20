@@ -158,3 +158,1478 @@
 [Nest] 46422  - 09/19/2025, 3:02:36 AM     LOG [RouterExplorer] Mapped {/products, POST} route +0ms
 [Nest] 46422  - 09/19/2025, 3:02:36 AM     LOG [RouterExplorer] Mapped {/products/:id/quantity, PATCH} route +1ms
 [Nest] 46422  - 09/19/2025, 3:02:36 AM     LOG [NestApplication] Nest application successfully started +0ms
+[2J[3J[H[[90m10:56:10 AM[0m] File change detected. Starting incremental compilation...
+
+[[90m10:56:10 AM[0m] Found 0 errors. Watching for file changes.
+
+[Nest] 47473  - 09/19/2025, 10:56:11 AM     LOG [NestFactory] Starting Nest application...
+[Nest] 47473  - 09/19/2025, 10:56:11 AM     LOG [InstanceLoader] SupabaseModule dependencies initialized +40ms
+[Nest] 47473  - 09/19/2025, 10:56:11 AM     LOG [InstanceLoader] ConfigHostModule dependencies initialized +1ms
+[Nest] 47473  - 09/19/2025, 10:56:11 AM     LOG [InstanceLoader] AppModule dependencies initialized +0ms
+[Nest] 47473  - 09/19/2025, 10:56:11 AM     LOG [InstanceLoader] ConfigModule dependencies initialized +0ms
+[Nest] 47473  - 09/19/2025, 10:56:11 AM     LOG [InstanceLoader] ProductsModule dependencies initialized +0ms
+[Nest] 47473  - 09/19/2025, 10:56:11 AM     LOG [RoutesResolver] AppController {/}: +9ms
+[Nest] 47473  - 09/19/2025, 10:56:11 AM     LOG [RouterExplorer] Mapped {/, GET} route +4ms
+[Nest] 47473  - 09/19/2025, 10:56:11 AM     LOG [RoutesResolver] ProductsController {/products}: +0ms
+[Nest] 47473  - 09/19/2025, 10:56:11 AM     LOG [RouterExplorer] Mapped {/products, GET} route +2ms
+[Nest] 47473  - 09/19/2025, 10:56:11 AM     LOG [RouterExplorer] Mapped {/products/tags, GET} route +0ms
+[Nest] 47473  - 09/19/2025, 10:56:11 AM     LOG [RouterExplorer] Mapped {/products/:id, GET} route +1ms
+[Nest] 47473  - 09/19/2025, 10:56:11 AM     LOG [RouterExplorer] Mapped {/products, POST} route +0ms
+[Nest] 47473  - 09/19/2025, 10:56:11 AM     LOG [RouterExplorer] Mapped {/products/:id/quantity, PATCH} route +0ms
+[Nest] 47473  - 09/19/2025, 10:56:11 AM     LOG [NestApplication] Nest application successfully started +3ms
+[2J[3J[H[[90m10:56:33 AM[0m] File change detected. Starting incremental compilation...
+
+[[90m10:56:33 AM[0m] Found 0 errors. Watching for file changes.
+
+[Nest] 47819  - 09/19/2025, 10:56:34 AM     LOG [NestFactory] Starting Nest application...
+[Nest] 47819  - 09/19/2025, 10:56:34 AM     LOG [InstanceLoader] SupabaseModule dependencies initialized +12ms
+[Nest] 47819  - 09/19/2025, 10:56:34 AM     LOG [InstanceLoader] ConfigHostModule dependencies initialized +0ms
+[Nest] 47819  - 09/19/2025, 10:56:34 AM     LOG [InstanceLoader] AppModule dependencies initialized +0ms
+[Nest] 47819  - 09/19/2025, 10:56:34 AM     LOG [InstanceLoader] ConfigModule dependencies initialized +1ms
+[Nest] 47819  - 09/19/2025, 10:56:34 AM     LOG [InstanceLoader] ProductsModule dependencies initialized +0ms
+[Nest] 47819  - 09/19/2025, 10:56:34 AM     LOG [RoutesResolver] AppController {/}: +1ms
+[Nest] 47819  - 09/19/2025, 10:56:34 AM     LOG [RouterExplorer] Mapped {/, GET} route +1ms
+[Nest] 47819  - 09/19/2025, 10:56:34 AM     LOG [RoutesResolver] ProductsController {/products}: +0ms
+[Nest] 47819  - 09/19/2025, 10:56:34 AM     LOG [RouterExplorer] Mapped {/products, GET} route +1ms
+[Nest] 47819  - 09/19/2025, 10:56:34 AM     LOG [RouterExplorer] Mapped {/products/tags, GET} route +0ms
+[Nest] 47819  - 09/19/2025, 10:56:34 AM     LOG [RouterExplorer] Mapped {/products/:id, GET} route +0ms
+[Nest] 47819  - 09/19/2025, 10:56:34 AM     LOG [RouterExplorer] Mapped {/products, POST} route +1ms
+[Nest] 47819  - 09/19/2025, 10:56:34 AM     LOG [RouterExplorer] Mapped {/products/:id/quantity, PATCH} route +0ms
+[Nest] 47819  - 09/19/2025, 10:56:34 AM     LOG [NestApplication] Nest application successfully started +1ms
+[2J[3J[H[[90m10:56:45 AM[0m] File change detected. Starting incremental compilation...
+
+[[90m10:56:46 AM[0m] Found 0 errors. Watching for file changes.
+
+[Nest] 48014  - 09/19/2025, 10:56:46 AM     LOG [NestFactory] Starting Nest application...
+[Nest] 48014  - 09/19/2025, 10:56:46 AM     LOG [InstanceLoader] SupabaseModule dependencies initialized +11ms
+[Nest] 48014  - 09/19/2025, 10:56:46 AM     LOG [InstanceLoader] ConfigHostModule dependencies initialized +1ms
+[Nest] 48014  - 09/19/2025, 10:56:46 AM     LOG [InstanceLoader] AppModule dependencies initialized +0ms
+[Nest] 48014  - 09/19/2025, 10:56:46 AM     LOG [InstanceLoader] ConfigModule dependencies initialized +0ms
+[Nest] 48014  - 09/19/2025, 10:56:46 AM     LOG [InstanceLoader] ProductsModule dependencies initialized +0ms
+[Nest] 48014  - 09/19/2025, 10:56:46 AM     LOG [RoutesResolver] AppController {/}: +1ms
+[Nest] 48014  - 09/19/2025, 10:56:46 AM     LOG [RouterExplorer] Mapped {/, GET} route +1ms
+[Nest] 48014  - 09/19/2025, 10:56:46 AM     LOG [RoutesResolver] ProductsController {/products}: +0ms
+[Nest] 48014  - 09/19/2025, 10:56:46 AM     LOG [RouterExplorer] Mapped {/products, GET} route +0ms
+[Nest] 48014  - 09/19/2025, 10:56:46 AM     LOG [RouterExplorer] Mapped {/products/tags, GET} route +0ms
+[Nest] 48014  - 09/19/2025, 10:56:46 AM     LOG [RouterExplorer] Mapped {/products/:id, GET} route +1ms
+[Nest] 48014  - 09/19/2025, 10:56:46 AM     LOG [RouterExplorer] Mapped {/products, POST} route +0ms
+[Nest] 48014  - 09/19/2025, 10:56:46 AM     LOG [RouterExplorer] Mapped {/products/:id/quantity, PATCH} route +0ms
+[Nest] 48014  - 09/19/2025, 10:56:46 AM     LOG [NestApplication] Nest application successfully started +1ms
+[2J[3J[H[[90m10:57:20 AM[0m] File change detected. Starting incremental compilation...
+
+[[90m10:57:20 AM[0m] Found 0 errors. Watching for file changes.
+
+[Nest] 48608  - 09/19/2025, 10:57:21 AM     LOG [NestFactory] Starting Nest application...
+[Nest] 48608  - 09/19/2025, 10:57:21 AM     LOG [InstanceLoader] SupabaseModule dependencies initialized +12ms
+[Nest] 48608  - 09/19/2025, 10:57:21 AM     LOG [InstanceLoader] ConfigHostModule dependencies initialized +0ms
+[Nest] 48608  - 09/19/2025, 10:57:21 AM     LOG [InstanceLoader] AppModule dependencies initialized +0ms
+[Nest] 48608  - 09/19/2025, 10:57:21 AM     LOG [InstanceLoader] ConfigModule dependencies initialized +0ms
+[Nest] 48608  - 09/19/2025, 10:57:21 AM     LOG [InstanceLoader] ProductsModule dependencies initialized +0ms
+[Nest] 48608  - 09/19/2025, 10:57:21 AM     LOG [RoutesResolver] AppController {/}: +1ms
+[Nest] 48608  - 09/19/2025, 10:57:21 AM     LOG [RouterExplorer] Mapped {/, GET} route +2ms
+[Nest] 48608  - 09/19/2025, 10:57:21 AM     LOG [RoutesResolver] ProductsController {/products}: +0ms
+[Nest] 48608  - 09/19/2025, 10:57:21 AM     LOG [RouterExplorer] Mapped {/products, GET} route +0ms
+[Nest] 48608  - 09/19/2025, 10:57:21 AM     LOG [RouterExplorer] Mapped {/products/tags, GET} route +0ms
+[Nest] 48608  - 09/19/2025, 10:57:21 AM     LOG [RouterExplorer] Mapped {/products/:id, GET} route +1ms
+[Nest] 48608  - 09/19/2025, 10:57:21 AM     LOG [RouterExplorer] Mapped {/products, POST} route +0ms
+[Nest] 48608  - 09/19/2025, 10:57:21 AM     LOG [RouterExplorer] Mapped {/products/:id/quantity, PATCH} route +0ms
+[Nest] 48608  - 09/19/2025, 10:57:21 AM     LOG [NestApplication] Nest application successfully started +0ms
+[2J[3J[H[[90m10:57:33 AM[0m] File change detected. Starting incremental compilation...
+
+[[90m10:57:33 AM[0m] Found 0 errors. Watching for file changes.
+
+[Nest] 48798  - 09/19/2025, 10:57:34 AM     LOG [NestFactory] Starting Nest application...
+[Nest] 48798  - 09/19/2025, 10:57:34 AM     LOG [InstanceLoader] SupabaseModule dependencies initialized +12ms
+[Nest] 48798  - 09/19/2025, 10:57:34 AM     LOG [InstanceLoader] ConfigHostModule dependencies initialized +0ms
+[Nest] 48798  - 09/19/2025, 10:57:34 AM     LOG [InstanceLoader] AppModule dependencies initialized +0ms
+[Nest] 48798  - 09/19/2025, 10:57:34 AM     LOG [InstanceLoader] ConfigModule dependencies initialized +0ms
+[Nest] 48798  - 09/19/2025, 10:57:34 AM     LOG [InstanceLoader] ProductsModule dependencies initialized +0ms
+[Nest] 48798  - 09/19/2025, 10:57:34 AM     LOG [RoutesResolver] AppController {/}: +1ms
+[Nest] 48798  - 09/19/2025, 10:57:34 AM     LOG [RouterExplorer] Mapped {/, GET} route +1ms
+[Nest] 48798  - 09/19/2025, 10:57:34 AM     LOG [RoutesResolver] ProductsController {/products}: +0ms
+[Nest] 48798  - 09/19/2025, 10:57:34 AM     LOG [RouterExplorer] Mapped {/products, GET} route +1ms
+[Nest] 48798  - 09/19/2025, 10:57:34 AM     LOG [RouterExplorer] Mapped {/products/tags, GET} route +0ms
+[Nest] 48798  - 09/19/2025, 10:57:34 AM     LOG [RouterExplorer] Mapped {/products/:id, GET} route +0ms
+[Nest] 48798  - 09/19/2025, 10:57:34 AM     LOG [RouterExplorer] Mapped {/products, POST} route +0ms
+[Nest] 48798  - 09/19/2025, 10:57:34 AM     LOG [RouterExplorer] Mapped {/products/:id/quantity, PATCH} route +0ms
+[Nest] 48798  - 09/19/2025, 10:57:34 AM     LOG [NestApplication] Nest application successfully started +1ms
+[2J[3J[H[[90m10:59:35 AM[0m] File change detected. Starting incremental compilation...
+
+[[90m10:59:35 AM[0m] Found 0 errors. Watching for file changes.
+
+[Nest] 50481  - 09/19/2025, 10:59:36 AM     LOG [NestFactory] Starting Nest application...
+[Nest] 50481  - 09/19/2025, 10:59:36 AM     LOG [InstanceLoader] SupabaseModule dependencies initialized +10ms
+[Nest] 50481  - 09/19/2025, 10:59:36 AM     LOG [InstanceLoader] ConfigHostModule dependencies initialized +1ms
+[Nest] 50481  - 09/19/2025, 10:59:36 AM     LOG [InstanceLoader] AppModule dependencies initialized +0ms
+[Nest] 50481  - 09/19/2025, 10:59:36 AM     LOG [InstanceLoader] ConfigModule dependencies initialized +0ms
+[Nest] 50481  - 09/19/2025, 10:59:36 AM     LOG [InstanceLoader] ProductsModule dependencies initialized +0ms
+[Nest] 50481  - 09/19/2025, 10:59:36 AM     LOG [RoutesResolver] AppController {/}: +1ms
+[Nest] 50481  - 09/19/2025, 10:59:36 AM     LOG [RouterExplorer] Mapped {/, GET} route +1ms
+[Nest] 50481  - 09/19/2025, 10:59:36 AM     LOG [RoutesResolver] ProductsController {/products}: +0ms
+[Nest] 50481  - 09/19/2025, 10:59:36 AM     LOG [RouterExplorer] Mapped {/products, GET} route +0ms
+[Nest] 50481  - 09/19/2025, 10:59:36 AM     LOG [RouterExplorer] Mapped {/products/tags, GET} route +0ms
+[Nest] 50481  - 09/19/2025, 10:59:36 AM     LOG [RouterExplorer] Mapped {/products/:id, GET} route +1ms
+[Nest] 50481  - 09/19/2025, 10:59:36 AM     LOG [RouterExplorer] Mapped {/products, POST} route +0ms
+[Nest] 50481  - 09/19/2025, 10:59:36 AM     LOG [RouterExplorer] Mapped {/products/:id/quantity, PATCH} route +0ms
+[Nest] 50481  - 09/19/2025, 10:59:36 AM     LOG [NestApplication] Nest application successfully started +0ms
+[2J[3J[H[[90m10:59:37 AM[0m] File change detected. Starting incremental compilation...
+
+[[90m10:59:37 AM[0m] Found 0 errors. Watching for file changes.
+
+[Nest] 50532  - 09/19/2025, 10:59:37 AM     LOG [NestFactory] Starting Nest application...
+[Nest] 50532  - 09/19/2025, 10:59:37 AM     LOG [InstanceLoader] SupabaseModule dependencies initialized +12ms
+[Nest] 50532  - 09/19/2025, 10:59:37 AM     LOG [InstanceLoader] ConfigHostModule dependencies initialized +1ms
+[Nest] 50532  - 09/19/2025, 10:59:37 AM     LOG [InstanceLoader] AppModule dependencies initialized +0ms
+[Nest] 50532  - 09/19/2025, 10:59:37 AM     LOG [InstanceLoader] ConfigModule dependencies initialized +0ms
+[Nest] 50532  - 09/19/2025, 10:59:37 AM     LOG [InstanceLoader] ProductsModule dependencies initialized +0ms
+[Nest] 50532  - 09/19/2025, 10:59:37 AM     LOG [RoutesResolver] AppController {/}: +1ms
+[Nest] 50532  - 09/19/2025, 10:59:37 AM     LOG [RouterExplorer] Mapped {/, GET} route +1ms
+[Nest] 50532  - 09/19/2025, 10:59:37 AM     LOG [RoutesResolver] ProductsController {/products}: +0ms
+[Nest] 50532  - 09/19/2025, 10:59:37 AM     LOG [RouterExplorer] Mapped {/products, GET} route +1ms
+[Nest] 50532  - 09/19/2025, 10:59:37 AM     LOG [RouterExplorer] Mapped {/products/tags, GET} route +0ms
+[Nest] 50532  - 09/19/2025, 10:59:37 AM     LOG [RouterExplorer] Mapped {/products/:id, GET} route +0ms
+[Nest] 50532  - 09/19/2025, 10:59:37 AM     LOG [RouterExplorer] Mapped {/products, POST} route +0ms
+[Nest] 50532  - 09/19/2025, 10:59:37 AM     LOG [RouterExplorer] Mapped {/products/:id/quantity, PATCH} route +1ms
+[Nest] 50532  - 09/19/2025, 10:59:37 AM     LOG [NestApplication] Nest application successfully started +0ms
+[2J[3J[H[[90m10:59:51 AM[0m] File change detected. Starting incremental compilation...
+
+[[90m10:59:51 AM[0m] Found 0 errors. Watching for file changes.
+
+[Nest] 50737  - 09/19/2025, 10:59:52 AM     LOG [NestFactory] Starting Nest application...
+[Nest] 50737  - 09/19/2025, 10:59:52 AM     LOG [InstanceLoader] SupabaseModule dependencies initialized +11ms
+[Nest] 50737  - 09/19/2025, 10:59:52 AM     LOG [InstanceLoader] ConfigHostModule dependencies initialized +0ms
+[Nest] 50737  - 09/19/2025, 10:59:52 AM     LOG [InstanceLoader] AppModule dependencies initialized +0ms
+[Nest] 50737  - 09/19/2025, 10:59:52 AM     LOG [InstanceLoader] ConfigModule dependencies initialized +0ms
+[Nest] 50737  - 09/19/2025, 10:59:52 AM     LOG [InstanceLoader] ProductsModule dependencies initialized +0ms
+[Nest] 50737  - 09/19/2025, 10:59:52 AM     LOG [RoutesResolver] AppController {/}: +1ms
+[Nest] 50737  - 09/19/2025, 10:59:52 AM     LOG [RouterExplorer] Mapped {/, GET} route +1ms
+[Nest] 50737  - 09/19/2025, 10:59:52 AM     LOG [RoutesResolver] ProductsController {/products}: +0ms
+[Nest] 50737  - 09/19/2025, 10:59:52 AM     LOG [RouterExplorer] Mapped {/products, GET} route +0ms
+[Nest] 50737  - 09/19/2025, 10:59:52 AM     LOG [RouterExplorer] Mapped {/products/tags, GET} route +1ms
+[Nest] 50737  - 09/19/2025, 10:59:52 AM     LOG [RouterExplorer] Mapped {/products/:id, GET} route +0ms
+[Nest] 50737  - 09/19/2025, 10:59:52 AM     LOG [RouterExplorer] Mapped {/products, POST} route +0ms
+[Nest] 50737  - 09/19/2025, 10:59:52 AM     LOG [RouterExplorer] Mapped {/products/:id/quantity, PATCH} route +0ms
+[Nest] 50737  - 09/19/2025, 10:59:52 AM     LOG [NestApplication] Nest application successfully started +1ms
+[2J[3J[H[[90m11:00:14 AM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/orders/orders.module.ts[0m:[93m2[0m:[93m34[0m - [91merror[0m[90m TS2307: [0mCannot find module './orders.controller' or its corresponding type declarations.
+
+[7m2[0m import { OrdersController } from './orders.controller';
+[7m [0m [91m                                 ~~~~~~~~~~~~~~~~~~~~~[0m
+
+[[90m11:00:14 AM[0m] Found 1 error. Watching for file changes.
+
+[2J[3J[H[[90m11:00:35 AM[0m] File change detected. Starting incremental compilation...
+
+[[90m11:00:35 AM[0m] Found 0 errors. Watching for file changes.
+
+[Nest] 51373  - 09/19/2025, 11:00:36 AM     LOG [NestFactory] Starting Nest application...
+[Nest] 51373  - 09/19/2025, 11:00:36 AM     LOG [InstanceLoader] SupabaseModule dependencies initialized +12ms
+[Nest] 51373  - 09/19/2025, 11:00:36 AM     LOG [InstanceLoader] ConfigHostModule dependencies initialized +0ms
+[Nest] 51373  - 09/19/2025, 11:00:36 AM     LOG [InstanceLoader] AppModule dependencies initialized +0ms
+[Nest] 51373  - 09/19/2025, 11:00:36 AM     LOG [InstanceLoader] ConfigModule dependencies initialized +0ms
+[Nest] 51373  - 09/19/2025, 11:00:36 AM     LOG [InstanceLoader] ProductsModule dependencies initialized +0ms
+[Nest] 51373  - 09/19/2025, 11:00:36 AM     LOG [RoutesResolver] AppController {/}: +1ms
+[Nest] 51373  - 09/19/2025, 11:00:36 AM     LOG [RouterExplorer] Mapped {/, GET} route +1ms
+[Nest] 51373  - 09/19/2025, 11:00:36 AM     LOG [RoutesResolver] ProductsController {/products}: +0ms
+[Nest] 51373  - 09/19/2025, 11:00:36 AM     LOG [RouterExplorer] Mapped {/products, GET} route +1ms
+[Nest] 51373  - 09/19/2025, 11:00:36 AM     LOG [RouterExplorer] Mapped {/products/tags, GET} route +0ms
+[Nest] 51373  - 09/19/2025, 11:00:36 AM     LOG [RouterExplorer] Mapped {/products/:id, GET} route +0ms
+[Nest] 51373  - 09/19/2025, 11:00:36 AM     LOG [RouterExplorer] Mapped {/products, POST} route +1ms
+[Nest] 51373  - 09/19/2025, 11:00:36 AM     LOG [RouterExplorer] Mapped {/products/:id/quantity, PATCH} route +0ms
+[Nest] 51373  - 09/19/2025, 11:00:36 AM     LOG [NestApplication] Nest application successfully started +0ms
+[2J[3J[H[[90m11:00:48 AM[0m] File change detected. Starting incremental compilation...
+
+[[90m11:00:48 AM[0m] Found 0 errors. Watching for file changes.
+
+[Nest] 51578  - 09/19/2025, 11:00:48 AM     LOG [NestFactory] Starting Nest application...
+[Nest] 51578  - 09/19/2025, 11:00:48 AM     LOG [InstanceLoader] SupabaseModule dependencies initialized +11ms
+[Nest] 51578  - 09/19/2025, 11:00:48 AM     LOG [InstanceLoader] ConfigHostModule dependencies initialized +0ms
+[Nest] 51578  - 09/19/2025, 11:00:48 AM     LOG [InstanceLoader] AppModule dependencies initialized +0ms
+[Nest] 51578  - 09/19/2025, 11:00:48 AM     LOG [InstanceLoader] ConfigModule dependencies initialized +0ms
+[Nest] 51578  - 09/19/2025, 11:00:48 AM     LOG [InstanceLoader] ProductsModule dependencies initialized +0ms
+[Nest] 51578  - 09/19/2025, 11:00:48 AM     LOG [InstanceLoader] OrdersModule dependencies initialized +0ms
+[Nest] 51578  - 09/19/2025, 11:00:48 AM     LOG [RoutesResolver] AppController {/}: +1ms
+[Nest] 51578  - 09/19/2025, 11:00:48 AM     LOG [RouterExplorer] Mapped {/, GET} route +1ms
+[Nest] 51578  - 09/19/2025, 11:00:48 AM     LOG [RoutesResolver] ProductsController {/products}: +0ms
+[Nest] 51578  - 09/19/2025, 11:00:48 AM     LOG [RouterExplorer] Mapped {/products, GET} route +0ms
+[Nest] 51578  - 09/19/2025, 11:00:48 AM     LOG [RouterExplorer] Mapped {/products/tags, GET} route +1ms
+[Nest] 51578  - 09/19/2025, 11:00:48 AM     LOG [RouterExplorer] Mapped {/products/:id, GET} route +0ms
+[Nest] 51578  - 09/19/2025, 11:00:48 AM     LOG [RouterExplorer] Mapped {/products, POST} route +0ms
+[Nest] 51578  - 09/19/2025, 11:00:48 AM     LOG [RouterExplorer] Mapped {/products/:id/quantity, PATCH} route +0ms
+[Nest] 51578  - 09/19/2025, 11:00:48 AM     LOG [RoutesResolver] OrdersController {/orders}: +0ms
+[Nest] 51578  - 09/19/2025, 11:00:48 AM     LOG [RouterExplorer] Mapped {/orders, GET} route +0ms
+[Nest] 51578  - 09/19/2025, 11:00:48 AM     LOG [RouterExplorer] Mapped {/orders/:id, GET} route +0ms
+[Nest] 51578  - 09/19/2025, 11:00:48 AM     LOG [RouterExplorer] Mapped {/orders, POST} route +1ms
+[Nest] 51578  - 09/19/2025, 11:00:48 AM     LOG [RouterExplorer] Mapped {/orders/:id/status, PATCH} route +0ms
+[Nest] 51578  - 09/19/2025, 11:00:48 AM     LOG [RouterExplorer] Mapped {/orders/:id, PATCH} route +0ms
+[Nest] 51578  - 09/19/2025, 11:00:48 AM     LOG [RouterExplorer] Mapped {/orders/:id, DELETE} route +0ms
+[Nest] 51578  - 09/19/2025, 11:00:48 AM     LOG [NestApplication] Nest application successfully started +1ms
+[Nest] 51578  - 09/19/2025, 11:03:05 AM   ERROR [ExceptionsHandler] Object(4) {
+  code: [32m'PGRST205'[39m,
+  details: [1mnull[22m,
+  hint: [1mnull[22m,
+  message: [32m"Could not find the table 'public.Order' in the schema cache"[39m
+}
+[Nest] 51578  - 09/19/2025, 11:51:18 AM   ERROR [ExceptionsHandler] Object(4) {
+  code: [32m'PGRST205'[39m,
+  details: [1mnull[22m,
+  hint: [1mnull[22m,
+  message: [32m"Could not find the table 'public.Order' in the schema cache"[39m
+}
+[Nest] 51578  - 09/19/2025, 11:51:19 AM   ERROR [ExceptionsHandler] Object(4) {
+  code: [32m'PGRST205'[39m,
+  details: [1mnull[22m,
+  hint: [1mnull[22m,
+  message: [32m"Could not find the table 'public.Order' in the schema cache"[39m
+}
+[Nest] 51578  - 09/19/2025, 11:51:25 AM   ERROR [ExceptionsHandler] Object(4) {
+  code: [32m'PGRST205'[39m,
+  details: [1mnull[22m,
+  hint: [1mnull[22m,
+  message: [32m"Could not find the table 'public.Order' in the schema cache"[39m
+}
+[2J[3J[H[[90m11:53:12 AM[0m] File change detected. Starting incremental compilation...
+
+[[90m11:53:12 AM[0m] Found 0 errors. Watching for file changes.
+
+[Nest] 94664  - 09/19/2025, 11:53:13 AM     LOG [NestFactory] Starting Nest application...
+[Nest] 94664  - 09/19/2025, 11:53:13 AM     LOG [InstanceLoader] SupabaseModule dependencies initialized +18ms
+[Nest] 94664  - 09/19/2025, 11:53:13 AM     LOG [InstanceLoader] ConfigHostModule dependencies initialized +1ms
+[Nest] 94664  - 09/19/2025, 11:53:13 AM     LOG [InstanceLoader] AppModule dependencies initialized +0ms
+[Nest] 94664  - 09/19/2025, 11:53:13 AM     LOG [InstanceLoader] ConfigModule dependencies initialized +0ms
+[Nest] 94664  - 09/19/2025, 11:53:13 AM     LOG [InstanceLoader] ProductsModule dependencies initialized +0ms
+[Nest] 94664  - 09/19/2025, 11:53:13 AM     LOG [InstanceLoader] OrdersModule dependencies initialized +0ms
+[Nest] 94664  - 09/19/2025, 11:53:13 AM     LOG [RoutesResolver] AppController {/}: +1ms
+[Nest] 94664  - 09/19/2025, 11:53:13 AM     LOG [RouterExplorer] Mapped {/, GET} route +1ms
+[Nest] 94664  - 09/19/2025, 11:53:13 AM     LOG [RoutesResolver] ProductsController {/products}: +1ms
+[Nest] 94664  - 09/19/2025, 11:53:13 AM     LOG [RouterExplorer] Mapped {/products, GET} route +0ms
+[Nest] 94664  - 09/19/2025, 11:53:13 AM     LOG [RouterExplorer] Mapped {/products/tags, GET} route +0ms
+[Nest] 94664  - 09/19/2025, 11:53:13 AM     LOG [RouterExplorer] Mapped {/products/:id, GET} route +0ms
+[Nest] 94664  - 09/19/2025, 11:53:13 AM     LOG [RouterExplorer] Mapped {/products, POST} route +1ms
+[Nest] 94664  - 09/19/2025, 11:53:13 AM     LOG [RouterExplorer] Mapped {/products/:id/quantity, PATCH} route +0ms
+[Nest] 94664  - 09/19/2025, 11:53:13 AM     LOG [RoutesResolver] OrdersController {/orders}: +0ms
+[Nest] 94664  - 09/19/2025, 11:53:13 AM     LOG [RouterExplorer] Mapped {/orders, GET} route +0ms
+[Nest] 94664  - 09/19/2025, 11:53:13 AM     LOG [RouterExplorer] Mapped {/orders/:id, GET} route +0ms
+[Nest] 94664  - 09/19/2025, 11:53:13 AM     LOG [RouterExplorer] Mapped {/orders, POST} route +0ms
+[Nest] 94664  - 09/19/2025, 11:53:13 AM     LOG [RouterExplorer] Mapped {/orders/:id/status, PATCH} route +0ms
+[Nest] 94664  - 09/19/2025, 11:53:13 AM     LOG [RouterExplorer] Mapped {/orders/:id, PATCH} route +1ms
+[Nest] 94664  - 09/19/2025, 11:53:13 AM     LOG [RouterExplorer] Mapped {/orders/:id, DELETE} route +0ms
+[Nest] 94664  - 09/19/2025, 11:53:13 AM     LOG [NestApplication] Nest application successfully started +0ms
+[2J[3J[H[[90m11:53:54 AM[0m] File change detected. Starting incremental compilation...
+
+[[90m11:53:54 AM[0m] Found 0 errors. Watching for file changes.
+
+[Nest] 95266  - 09/19/2025, 11:53:56 AM     LOG [NestFactory] Starting Nest application...
+[Nest] 95266  - 09/19/2025, 11:53:56 AM     LOG [InstanceLoader] SupabaseModule dependencies initialized +15ms
+[Nest] 95266  - 09/19/2025, 11:53:56 AM     LOG [InstanceLoader] ConfigHostModule dependencies initialized +0ms
+[Nest] 95266  - 09/19/2025, 11:53:56 AM     LOG [InstanceLoader] AppModule dependencies initialized +0ms
+[Nest] 95266  - 09/19/2025, 11:53:56 AM     LOG [InstanceLoader] ConfigModule dependencies initialized +0ms
+[Nest] 95266  - 09/19/2025, 11:53:56 AM     LOG [InstanceLoader] ProductsModule dependencies initialized +0ms
+[Nest] 95266  - 09/19/2025, 11:53:56 AM     LOG [InstanceLoader] OrdersModule dependencies initialized +0ms
+[Nest] 95266  - 09/19/2025, 11:53:56 AM     LOG [RoutesResolver] AppController {/}: +4ms
+[Nest] 95266  - 09/19/2025, 11:53:56 AM     LOG [RouterExplorer] Mapped {/, GET} route +4ms
+[Nest] 95266  - 09/19/2025, 11:53:56 AM     LOG [RoutesResolver] ProductsController {/products}: +0ms
+[Nest] 95266  - 09/19/2025, 11:53:56 AM     LOG [RouterExplorer] Mapped {/products, GET} route +0ms
+[Nest] 95266  - 09/19/2025, 11:53:56 AM     LOG [RouterExplorer] Mapped {/products/tags, GET} route +0ms
+[Nest] 95266  - 09/19/2025, 11:53:56 AM     LOG [RouterExplorer] Mapped {/products/:id, GET} route +1ms
+[Nest] 95266  - 09/19/2025, 11:53:56 AM     LOG [RouterExplorer] Mapped {/products, POST} route +1ms
+[Nest] 95266  - 09/19/2025, 11:53:56 AM     LOG [RouterExplorer] Mapped {/products/:id/quantity, PATCH} route +1ms
+[Nest] 95266  - 09/19/2025, 11:53:56 AM     LOG [RoutesResolver] OrdersController {/orders}: +0ms
+[Nest] 95266  - 09/19/2025, 11:53:56 AM     LOG [RouterExplorer] Mapped {/orders, GET} route +0ms
+[Nest] 95266  - 09/19/2025, 11:53:56 AM     LOG [RouterExplorer] Mapped {/orders/:id, GET} route +1ms
+[Nest] 95266  - 09/19/2025, 11:53:56 AM     LOG [RouterExplorer] Mapped {/orders, POST} route +0ms
+[Nest] 95266  - 09/19/2025, 11:53:56 AM     LOG [RouterExplorer] Mapped {/orders/:id/status, PATCH} route +0ms
+[Nest] 95266  - 09/19/2025, 11:53:56 AM     LOG [RouterExplorer] Mapped {/orders/:id, PATCH} route +0ms
+[Nest] 95266  - 09/19/2025, 11:53:56 AM     LOG [RouterExplorer] Mapped {/orders/:id, DELETE} route +0ms
+[Nest] 95266  - 09/19/2025, 11:53:56 AM     LOG [NestApplication] Nest application successfully started +1ms
+[2J[3J[H[[90m11:54:20 AM[0m] File change detected. Starting incremental compilation...
+
+[[90m11:54:20 AM[0m] Found 0 errors. Watching for file changes.
+
+[Nest] 95663  - 09/19/2025, 11:54:21 AM     LOG [NestFactory] Starting Nest application...
+[Nest] 95663  - 09/19/2025, 11:54:21 AM     LOG [InstanceLoader] SupabaseModule dependencies initialized +12ms
+[Nest] 95663  - 09/19/2025, 11:54:21 AM     LOG [InstanceLoader] ConfigHostModule dependencies initialized +0ms
+[Nest] 95663  - 09/19/2025, 11:54:21 AM     LOG [InstanceLoader] AppModule dependencies initialized +0ms
+[Nest] 95663  - 09/19/2025, 11:54:21 AM     LOG [InstanceLoader] ConfigModule dependencies initialized +0ms
+[Nest] 95663  - 09/19/2025, 11:54:21 AM     LOG [InstanceLoader] ProductsModule dependencies initialized +0ms
+[Nest] 95663  - 09/19/2025, 11:54:21 AM     LOG [InstanceLoader] OrdersModule dependencies initialized +0ms
+[Nest] 95663  - 09/19/2025, 11:54:21 AM     LOG [RoutesResolver] AppController {/}: +1ms
+[Nest] 95663  - 09/19/2025, 11:54:21 AM     LOG [RouterExplorer] Mapped {/, GET} route +1ms
+[Nest] 95663  - 09/19/2025, 11:54:21 AM     LOG [RoutesResolver] ProductsController {/products}: +1ms
+[Nest] 95663  - 09/19/2025, 11:54:21 AM     LOG [RouterExplorer] Mapped {/products, GET} route +0ms
+[Nest] 95663  - 09/19/2025, 11:54:21 AM     LOG [RouterExplorer] Mapped {/products/tags, GET} route +0ms
+[Nest] 95663  - 09/19/2025, 11:54:21 AM     LOG [RouterExplorer] Mapped {/products/:id, GET} route +0ms
+[Nest] 95663  - 09/19/2025, 11:54:21 AM     LOG [RouterExplorer] Mapped {/products, POST} route +0ms
+[Nest] 95663  - 09/19/2025, 11:54:21 AM     LOG [RouterExplorer] Mapped {/products/:id/quantity, PATCH} route +1ms
+[Nest] 95663  - 09/19/2025, 11:54:21 AM     LOG [RoutesResolver] OrdersController {/orders}: +0ms
+[Nest] 95663  - 09/19/2025, 11:54:21 AM     LOG [RouterExplorer] Mapped {/orders, GET} route +0ms
+[Nest] 95663  - 09/19/2025, 11:54:21 AM     LOG [RouterExplorer] Mapped {/orders/:id, GET} route +0ms
+[Nest] 95663  - 09/19/2025, 11:54:21 AM     LOG [RouterExplorer] Mapped {/orders, POST} route +0ms
+[Nest] 95663  - 09/19/2025, 11:54:21 AM     LOG [RouterExplorer] Mapped {/orders/:id/status, PATCH} route +0ms
+[Nest] 95663  - 09/19/2025, 11:54:21 AM     LOG [RouterExplorer] Mapped {/orders/:id, PATCH} route +0ms
+[Nest] 95663  - 09/19/2025, 11:54:21 AM     LOG [RouterExplorer] Mapped {/orders/:id, DELETE} route +0ms
+[Nest] 95663  - 09/19/2025, 11:54:21 AM     LOG [NestApplication] Nest application successfully started +1ms
+[2J[3J[H[[90m12:05:07 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m12:05:07 PM[0m] Found 0 errors. Watching for file changes.
+
+[Nest] 4988  - 09/19/2025, 12:05:08 PM     LOG [NestFactory] Starting Nest application...
+[Nest] 4988  - 09/19/2025, 12:05:08 PM     LOG [InstanceLoader] SupabaseModule dependencies initialized +12ms
+[Nest] 4988  - 09/19/2025, 12:05:08 PM     LOG [InstanceLoader] ConfigHostModule dependencies initialized +0ms
+[Nest] 4988  - 09/19/2025, 12:05:08 PM     LOG [InstanceLoader] AppModule dependencies initialized +0ms
+[Nest] 4988  - 09/19/2025, 12:05:08 PM     LOG [InstanceLoader] ConfigModule dependencies initialized +0ms
+[Nest] 4988  - 09/19/2025, 12:05:08 PM     LOG [InstanceLoader] ProductsModule dependencies initialized +0ms
+[Nest] 4988  - 09/19/2025, 12:05:08 PM     LOG [InstanceLoader] OrdersModule dependencies initialized +0ms
+[Nest] 4988  - 09/19/2025, 12:05:08 PM     LOG [RoutesResolver] AppController {/}: +2ms
+[Nest] 4988  - 09/19/2025, 12:05:08 PM     LOG [RouterExplorer] Mapped {/, GET} route +1ms
+[Nest] 4988  - 09/19/2025, 12:05:08 PM     LOG [RoutesResolver] ProductsController {/products}: +0ms
+[Nest] 4988  - 09/19/2025, 12:05:08 PM     LOG [RouterExplorer] Mapped {/products, GET} route +0ms
+[Nest] 4988  - 09/19/2025, 12:05:08 PM     LOG [RouterExplorer] Mapped {/products/tags, GET} route +0ms
+[Nest] 4988  - 09/19/2025, 12:05:08 PM     LOG [RouterExplorer] Mapped {/products/:id, GET} route +1ms
+[Nest] 4988  - 09/19/2025, 12:05:08 PM     LOG [RouterExplorer] Mapped {/products, POST} route +0ms
+[Nest] 4988  - 09/19/2025, 12:05:08 PM     LOG [RouterExplorer] Mapped {/products/:id/quantity, PATCH} route +0ms
+[Nest] 4988  - 09/19/2025, 12:05:08 PM     LOG [RoutesResolver] OrdersController {/orders}: +0ms
+[Nest] 4988  - 09/19/2025, 12:05:08 PM     LOG [RouterExplorer] Mapped {/orders, GET} route +0ms
+[Nest] 4988  - 09/19/2025, 12:05:08 PM     LOG [RouterExplorer] Mapped {/orders/:id, GET} route +0ms
+[Nest] 4988  - 09/19/2025, 12:05:08 PM     LOG [RouterExplorer] Mapped {/orders, POST} route +0ms
+[Nest] 4988  - 09/19/2025, 12:05:08 PM     LOG [RouterExplorer] Mapped {/orders/:id/status, PATCH} route +1ms
+[Nest] 4988  - 09/19/2025, 12:05:08 PM     LOG [RouterExplorer] Mapped {/orders/:id, PATCH} route +0ms
+[Nest] 4988  - 09/19/2025, 12:05:08 PM     LOG [RouterExplorer] Mapped {/orders/:id, DELETE} route +0ms
+[Nest] 4988  - 09/19/2025, 12:05:08 PM     LOG [NestApplication] Nest application successfully started +1ms
+[2J[3J[H[[90m12:05:17 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/orders/orders.controller.ts[0m:[93m25[0m:[93m45[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ orderFrom: string; contactInfo: string; scheduledDelivery: string; status: OrderStatus; }' is not assignable to parameter of type '{ orderFrom: string; contactInfo: string; description: string; quantity: number; scheduledDelivery: string; status: OrderStatus; }'.
+  Type '{ orderFrom: string; contactInfo: string; scheduledDelivery: string; status: OrderStatus; }' is missing the following properties from type '{ orderFrom: string; contactInfo: string; description: string; quantity: number; scheduledDelivery: string; status: OrderStatus; }': description, quantity
+
+[7m25[0m     return this.supabaseService.createOrder(createOrderDto);
+[7m  [0m [91m                                            ~~~~~~~~~~~~~~[0m
+
+[[90m12:05:17 PM[0m] Found 1 error. Watching for file changes.
+
+[2J[3J[H[[90m12:05:25 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m12:05:25 PM[0m] Found 0 errors. Watching for file changes.
+
+[Nest] 5269  - 09/19/2025, 12:05:26 PM     LOG [NestFactory] Starting Nest application...
+[Nest] 5269  - 09/19/2025, 12:05:26 PM     LOG [InstanceLoader] SupabaseModule dependencies initialized +11ms
+[Nest] 5269  - 09/19/2025, 12:05:26 PM     LOG [InstanceLoader] ConfigHostModule dependencies initialized +0ms
+[Nest] 5269  - 09/19/2025, 12:05:26 PM     LOG [InstanceLoader] AppModule dependencies initialized +0ms
+[Nest] 5269  - 09/19/2025, 12:05:26 PM     LOG [InstanceLoader] ConfigModule dependencies initialized +0ms
+[Nest] 5269  - 09/19/2025, 12:05:26 PM     LOG [InstanceLoader] ProductsModule dependencies initialized +0ms
+[Nest] 5269  - 09/19/2025, 12:05:26 PM     LOG [InstanceLoader] OrdersModule dependencies initialized +0ms
+[Nest] 5269  - 09/19/2025, 12:05:26 PM     LOG [RoutesResolver] AppController {/}: +1ms
+[Nest] 5269  - 09/19/2025, 12:05:26 PM     LOG [RouterExplorer] Mapped {/, GET} route +1ms
+[Nest] 5269  - 09/19/2025, 12:05:26 PM     LOG [RoutesResolver] ProductsController {/products}: +0ms
+[Nest] 5269  - 09/19/2025, 12:05:26 PM     LOG [RouterExplorer] Mapped {/products, GET} route +1ms
+[Nest] 5269  - 09/19/2025, 12:05:26 PM     LOG [RouterExplorer] Mapped {/products/tags, GET} route +0ms
+[Nest] 5269  - 09/19/2025, 12:05:26 PM     LOG [RouterExplorer] Mapped {/products/:id, GET} route +0ms
+[Nest] 5269  - 09/19/2025, 12:05:26 PM     LOG [RouterExplorer] Mapped {/products, POST} route +0ms
+[Nest] 5269  - 09/19/2025, 12:05:26 PM     LOG [RouterExplorer] Mapped {/products/:id/quantity, PATCH} route +0ms
+[Nest] 5269  - 09/19/2025, 12:05:26 PM     LOG [RoutesResolver] OrdersController {/orders}: +0ms
+[Nest] 5269  - 09/19/2025, 12:05:26 PM     LOG [RouterExplorer] Mapped {/orders, GET} route +0ms
+[Nest] 5269  - 09/19/2025, 12:05:26 PM     LOG [RouterExplorer] Mapped {/orders/:id, GET} route +1ms
+[Nest] 5269  - 09/19/2025, 12:05:26 PM     LOG [RouterExplorer] Mapped {/orders, POST} route +0ms
+[Nest] 5269  - 09/19/2025, 12:05:26 PM     LOG [RouterExplorer] Mapped {/orders/:id/status, PATCH} route +0ms
+[Nest] 5269  - 09/19/2025, 12:05:26 PM     LOG [RouterExplorer] Mapped {/orders/:id, PATCH} route +0ms
+[Nest] 5269  - 09/19/2025, 12:05:26 PM     LOG [RouterExplorer] Mapped {/orders/:id, DELETE} route +0ms
+[Nest] 5269  - 09/19/2025, 12:05:26 PM     LOG [NestApplication] Nest application successfully started +1ms
+[2J[3J[H[[90m12:05:34 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m12:05:34 PM[0m] Found 0 errors. Watching for file changes.
+
+[Nest] 5407  - 09/19/2025, 12:05:34 PM     LOG [NestFactory] Starting Nest application...
+[Nest] 5407  - 09/19/2025, 12:05:34 PM     LOG [InstanceLoader] SupabaseModule dependencies initialized +11ms
+[Nest] 5407  - 09/19/2025, 12:05:34 PM     LOG [InstanceLoader] ConfigHostModule dependencies initialized +0ms
+[Nest] 5407  - 09/19/2025, 12:05:34 PM     LOG [InstanceLoader] AppModule dependencies initialized +0ms
+[Nest] 5407  - 09/19/2025, 12:05:34 PM     LOG [InstanceLoader] ConfigModule dependencies initialized +0ms
+[Nest] 5407  - 09/19/2025, 12:05:34 PM     LOG [InstanceLoader] ProductsModule dependencies initialized +0ms
+[Nest] 5407  - 09/19/2025, 12:05:34 PM     LOG [InstanceLoader] OrdersModule dependencies initialized +0ms
+[Nest] 5407  - 09/19/2025, 12:05:34 PM     LOG [RoutesResolver] AppController {/}: +2ms
+[Nest] 5407  - 09/19/2025, 12:05:34 PM     LOG [RouterExplorer] Mapped {/, GET} route +1ms
+[Nest] 5407  - 09/19/2025, 12:05:34 PM     LOG [RoutesResolver] ProductsController {/products}: +0ms
+[Nest] 5407  - 09/19/2025, 12:05:34 PM     LOG [RouterExplorer] Mapped {/products, GET} route +0ms
+[Nest] 5407  - 09/19/2025, 12:05:34 PM     LOG [RouterExplorer] Mapped {/products/tags, GET} route +0ms
+[Nest] 5407  - 09/19/2025, 12:05:34 PM     LOG [RouterExplorer] Mapped {/products/:id, GET} route +0ms
+[Nest] 5407  - 09/19/2025, 12:05:34 PM     LOG [RouterExplorer] Mapped {/products, POST} route +1ms
+[Nest] 5407  - 09/19/2025, 12:05:34 PM     LOG [RouterExplorer] Mapped {/products/:id/quantity, PATCH} route +0ms
+[Nest] 5407  - 09/19/2025, 12:05:34 PM     LOG [RoutesResolver] OrdersController {/orders}: +0ms
+[Nest] 5407  - 09/19/2025, 12:05:34 PM     LOG [RouterExplorer] Mapped {/orders, GET} route +0ms
+[Nest] 5407  - 09/19/2025, 12:05:34 PM     LOG [RouterExplorer] Mapped {/orders/:id, GET} route +0ms
+[Nest] 5407  - 09/19/2025, 12:05:34 PM     LOG [RouterExplorer] Mapped {/orders, POST} route +0ms
+[Nest] 5407  - 09/19/2025, 12:05:34 PM     LOG [RouterExplorer] Mapped {/orders/:id/status, PATCH} route +0ms
+[Nest] 5407  - 09/19/2025, 12:05:34 PM     LOG [RouterExplorer] Mapped {/orders/:id, PATCH} route +0ms
+[Nest] 5407  - 09/19/2025, 12:05:34 PM     LOG [RouterExplorer] Mapped {/orders/:id, DELETE} route +1ms
+[Nest] 5407  - 09/19/2025, 12:05:34 PM     LOG [NestApplication] Nest application successfully started +0ms
+[2J[3J[H[[90m2:29:19 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/materials/materials.controller.ts[0m:[93m10[0m:[93m33[0m - [91merror[0m[90m TS2339: [0mProperty 'getMaterials' does not exist on type 'SupabaseService'.
+
+[7m10[0m     return this.supabaseService.getMaterials();
+[7m  [0m [91m                                ~~~~~~~~~~~~[0m
+
+[96msrc/materials/materials.controller.ts[0m:[93m20[0m:[93m33[0m - [91merror[0m[90m TS2339: [0mProperty 'getMaterialById' does not exist on type 'SupabaseService'.
+
+[7m20[0m     return this.supabaseService.getMaterialById(Number(id));
+[7m  [0m [91m                                ~~~~~~~~~~~~~~~[0m
+
+[96msrc/materials/materials.controller.ts[0m:[93m33[0m:[93m33[0m - [91merror[0m[90m TS2339: [0mProperty 'createMaterial' does not exist on type 'SupabaseService'.
+
+[7m33[0m     return this.supabaseService.createMaterial(createMaterialDto);
+[7m  [0m [91m                                ~~~~~~~~~~~~~~[0m
+
+[96msrc/materials/materials.controller.ts[0m:[93m41[0m:[93m33[0m - [91merror[0m[90m TS2339: [0mProperty 'updateMaterialQuantity' does not exist on type 'SupabaseService'.
+
+[7m41[0m     return this.supabaseService.updateMaterialQuantity(
+[7m  [0m [91m                                ~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[[90m2:29:19 PM[0m] Found 4 errors. Watching for file changes.
+
+[2J[3J[H[[90m2:29:26 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/materials/materials.controller.ts[0m:[93m10[0m:[93m33[0m - [91merror[0m[90m TS2339: [0mProperty 'getMaterials' does not exist on type 'SupabaseService'.
+
+[7m10[0m     return this.supabaseService.getMaterials();
+[7m  [0m [91m                                ~~~~~~~~~~~~[0m
+
+[96msrc/materials/materials.controller.ts[0m:[93m20[0m:[93m33[0m - [91merror[0m[90m TS2339: [0mProperty 'getMaterialById' does not exist on type 'SupabaseService'.
+
+[7m20[0m     return this.supabaseService.getMaterialById(Number(id));
+[7m  [0m [91m                                ~~~~~~~~~~~~~~~[0m
+
+[96msrc/materials/materials.controller.ts[0m:[93m33[0m:[93m33[0m - [91merror[0m[90m TS2339: [0mProperty 'createMaterial' does not exist on type 'SupabaseService'.
+
+[7m33[0m     return this.supabaseService.createMaterial(createMaterialDto);
+[7m  [0m [91m                                ~~~~~~~~~~~~~~[0m
+
+[96msrc/materials/materials.controller.ts[0m:[93m41[0m:[93m33[0m - [91merror[0m[90m TS2339: [0mProperty 'updateMaterialQuantity' does not exist on type 'SupabaseService'.
+
+[7m41[0m     return this.supabaseService.updateMaterialQuantity(
+[7m  [0m [91m                                ~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[[90m2:29:26 PM[0m] Found 4 errors. Watching for file changes.
+
+[2J[3J[H[[90m2:29:39 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/app.module.ts[0m:[93m15[0m:[93m5[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ProductsModule'.
+
+[7m15[0m     ProductsModule,
+[7m  [0m [91m    ~~~~~~~~~~~~~~[0m
+
+[96msrc/materials/materials.controller.ts[0m:[93m10[0m:[93m33[0m - [91merror[0m[90m TS2339: [0mProperty 'getMaterials' does not exist on type 'SupabaseService'.
+
+[7m10[0m     return this.supabaseService.getMaterials();
+[7m  [0m [91m                                ~~~~~~~~~~~~[0m
+
+[96msrc/materials/materials.controller.ts[0m:[93m20[0m:[93m33[0m - [91merror[0m[90m TS2339: [0mProperty 'getMaterialById' does not exist on type 'SupabaseService'.
+
+[7m20[0m     return this.supabaseService.getMaterialById(Number(id));
+[7m  [0m [91m                                ~~~~~~~~~~~~~~~[0m
+
+[96msrc/materials/materials.controller.ts[0m:[93m33[0m:[93m33[0m - [91merror[0m[90m TS2339: [0mProperty 'createMaterial' does not exist on type 'SupabaseService'.
+
+[7m33[0m     return this.supabaseService.createMaterial(createMaterialDto);
+[7m  [0m [91m                                ~~~~~~~~~~~~~~[0m
+
+[96msrc/materials/materials.controller.ts[0m:[93m41[0m:[93m33[0m - [91merror[0m[90m TS2339: [0mProperty 'updateMaterialQuantity' does not exist on type 'SupabaseService'.
+
+[7m41[0m     return this.supabaseService.updateMaterialQuantity(
+[7m  [0m [91m                                ~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[[90m2:29:39 PM[0m] Found 5 errors. Watching for file changes.
+
+[2J[3J[H[[90m2:29:46 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/materials/materials.controller.ts[0m:[93m10[0m:[93m33[0m - [91merror[0m[90m TS2339: [0mProperty 'getMaterials' does not exist on type 'SupabaseService'.
+
+[7m10[0m     return this.supabaseService.getMaterials();
+[7m  [0m [91m                                ~~~~~~~~~~~~[0m
+
+[96msrc/materials/materials.controller.ts[0m:[93m20[0m:[93m33[0m - [91merror[0m[90m TS2339: [0mProperty 'getMaterialById' does not exist on type 'SupabaseService'.
+
+[7m20[0m     return this.supabaseService.getMaterialById(Number(id));
+[7m  [0m [91m                                ~~~~~~~~~~~~~~~[0m
+
+[96msrc/materials/materials.controller.ts[0m:[93m33[0m:[93m33[0m - [91merror[0m[90m TS2339: [0mProperty 'createMaterial' does not exist on type 'SupabaseService'.
+
+[7m33[0m     return this.supabaseService.createMaterial(createMaterialDto);
+[7m  [0m [91m                                ~~~~~~~~~~~~~~[0m
+
+[96msrc/materials/materials.controller.ts[0m:[93m41[0m:[93m33[0m - [91merror[0m[90m TS2339: [0mProperty 'updateMaterialQuantity' does not exist on type 'SupabaseService'.
+
+[7m41[0m     return this.supabaseService.updateMaterialQuantity(
+[7m  [0m [91m                                ~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[[90m2:29:46 PM[0m] Found 4 errors. Watching for file changes.
+
+[2J[3J[H[[90m2:29:56 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/materials/materials.controller.ts[0m:[93m33[0m:[93m33[0m - [91merror[0m[90m TS2339: [0mProperty 'createMaterial' does not exist on type 'SupabaseService'.
+
+[7m33[0m     return this.supabaseService.createMaterial(createMaterialDto);
+[7m  [0m [91m                                ~~~~~~~~~~~~~~[0m
+
+[96msrc/materials/materials.controller.ts[0m:[93m41[0m:[93m33[0m - [91merror[0m[90m TS2339: [0mProperty 'updateMaterialQuantity' does not exist on type 'SupabaseService'.
+
+[7m41[0m     return this.supabaseService.updateMaterialQuantity(
+[7m  [0m [91m                                ~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/products/products.controller.ts[0m:[93m10[0m:[93m33[0m - [91merror[0m[90m TS2339: [0mProperty 'getProducts' does not exist on type 'SupabaseService'.
+
+[7m10[0m     return this.supabaseService.getProducts();
+[7m  [0m [91m                                ~~~~~~~~~~~[0m
+
+[96msrc/products/products.controller.ts[0m:[93m20[0m:[93m33[0m - [91merror[0m[90m TS2339: [0mProperty 'getProductById' does not exist on type 'SupabaseService'.
+
+[7m20[0m     return this.supabaseService.getProductById(Number(id));
+[7m  [0m [91m                                ~~~~~~~~~~~~~~[0m
+
+[[90m2:29:56 PM[0m] Found 4 errors. Watching for file changes.
+
+[2J[3J[H[[90m2:30:26 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/materials/materials.controller.ts[0m:[93m33[0m:[93m33[0m - [91merror[0m[90m TS2339: [0mProperty 'createMaterial' does not exist on type 'SupabaseService'.
+
+[7m33[0m     return this.supabaseService.createMaterial(createMaterialDto);
+[7m  [0m [91m                                ~~~~~~~~~~~~~~[0m
+
+[96msrc/products/products.controller.ts[0m:[93m10[0m:[93m33[0m - [91merror[0m[90m TS2339: [0mProperty 'getProducts' does not exist on type 'SupabaseService'.
+
+[7m10[0m     return this.supabaseService.getProducts();
+[7m  [0m [91m                                ~~~~~~~~~~~[0m
+
+[96msrc/products/products.controller.ts[0m:[93m20[0m:[93m33[0m - [91merror[0m[90m TS2339: [0mProperty 'getProductById' does not exist on type 'SupabaseService'.
+
+[7m20[0m     return this.supabaseService.getProductById(Number(id));
+[7m  [0m [91m                                ~~~~~~~~~~~~~~[0m
+
+[96msrc/products/products.controller.ts[0m:[93m41[0m:[93m33[0m - [91merror[0m[90m TS2339: [0mProperty 'updateProductQuantity' does not exist on type 'SupabaseService'.
+
+[7m41[0m     return this.supabaseService.updateProductQuantity(
+[7m  [0m [91m                                ~~~~~~~~~~~~~~~~~~~~~[0m
+
+[[90m2:30:26 PM[0m] Found 4 errors. Watching for file changes.
+
+[2J[3J[H[[90m2:30:35 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/products/products.controller.ts[0m:[93m10[0m:[93m33[0m - [91merror[0m[90m TS2339: [0mProperty 'getProducts' does not exist on type 'SupabaseService'.
+
+[7m10[0m     return this.supabaseService.getProducts();
+[7m  [0m [91m                                ~~~~~~~~~~~[0m
+
+[96msrc/products/products.controller.ts[0m:[93m20[0m:[93m33[0m - [91merror[0m[90m TS2339: [0mProperty 'getProductById' does not exist on type 'SupabaseService'.
+
+[7m20[0m     return this.supabaseService.getProductById(Number(id));
+[7m  [0m [91m                                ~~~~~~~~~~~~~~[0m
+
+[96msrc/products/products.controller.ts[0m:[93m33[0m:[93m33[0m - [91merror[0m[90m TS2339: [0mProperty 'createProduct' does not exist on type 'SupabaseService'.
+
+[7m33[0m     return this.supabaseService.createProduct(createProductDto);
+[7m  [0m [91m                                ~~~~~~~~~~~~~[0m
+
+[96msrc/products/products.controller.ts[0m:[93m41[0m:[93m33[0m - [91merror[0m[90m TS2339: [0mProperty 'updateProductQuantity' does not exist on type 'SupabaseService'.
+
+[7m41[0m     return this.supabaseService.updateProductQuantity(
+[7m  [0m [91m                                ~~~~~~~~~~~~~~~~~~~~~[0m
+
+[[90m2:30:35 PM[0m] Found 4 errors. Watching for file changes.
+
+[2J[3J[H[[90m2:30:44 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/products/products.controller.ts[0m:[93m10[0m:[93m33[0m - [91merror[0m[90m TS2339: [0mProperty 'getProducts' does not exist on type 'SupabaseService'.
+
+[7m10[0m     return this.supabaseService.getProducts();
+[7m  [0m [91m                                ~~~~~~~~~~~[0m
+
+[96msrc/products/products.controller.ts[0m:[93m20[0m:[93m33[0m - [91merror[0m[90m TS2339: [0mProperty 'getProductById' does not exist on type 'SupabaseService'.
+
+[7m20[0m     return this.supabaseService.getProductById(Number(id));
+[7m  [0m [91m                                ~~~~~~~~~~~~~~[0m
+
+[96msrc/products/products.controller.ts[0m:[93m33[0m:[93m33[0m - [91merror[0m[90m TS2339: [0mProperty 'createProduct' does not exist on type 'SupabaseService'.
+
+[7m33[0m     return this.supabaseService.createProduct(createProductDto);
+[7m  [0m [91m                                ~~~~~~~~~~~~~[0m
+
+[96msrc/products/products.controller.ts[0m:[93m41[0m:[93m33[0m - [91merror[0m[90m TS2339: [0mProperty 'updateProductQuantity' does not exist on type 'SupabaseService'.
+
+[7m41[0m     return this.supabaseService.updateProductQuantity(
+[7m  [0m [91m                                ~~~~~~~~~~~~~~~~~~~~~[0m
+
+[[90m2:30:44 PM[0m] Found 4 errors. Watching for file changes.
+
+[2J[3J[H[[90m5:04:09 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/products/products.controller.ts[0m:[93m10[0m:[93m33[0m - [91merror[0m[90m TS2339: [0mProperty 'getProducts' does not exist on type 'SupabaseService'.
+
+[7m10[0m     return this.supabaseService.getProducts();
+[7m  [0m [91m                                ~~~~~~~~~~~[0m
+
+[96msrc/products/products.controller.ts[0m:[93m20[0m:[93m33[0m - [91merror[0m[90m TS2339: [0mProperty 'getProductById' does not exist on type 'SupabaseService'.
+
+[7m20[0m     return this.supabaseService.getProductById(Number(id));
+[7m  [0m [91m                                ~~~~~~~~~~~~~~[0m
+
+[96msrc/products/products.controller.ts[0m:[93m33[0m:[93m33[0m - [91merror[0m[90m TS2339: [0mProperty 'createProduct' does not exist on type 'SupabaseService'.
+
+[7m33[0m     return this.supabaseService.createProduct(createProductDto);
+[7m  [0m [91m                                ~~~~~~~~~~~~~[0m
+
+[96msrc/products/products.controller.ts[0m:[93m41[0m:[93m33[0m - [91merror[0m[90m TS2339: [0mProperty 'updateProductQuantity' does not exist on type 'SupabaseService'.
+
+[7m41[0m     return this.supabaseService.updateProductQuantity(
+[7m  [0m [91m                                ~~~~~~~~~~~~~~~~~~~~~[0m
+
+[[90m5:04:09 PM[0m] Found 4 errors. Watching for file changes.
+
+[2J[3J[H[[90m5:07:11 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/products/products.module.ts[0m:[93m2[0m:[93m36[0m - [91merror[0m[90m TS2307: [0mCannot find module './products.controller' or its corresponding type declarations.
+
+[7m2[0m import { ProductsController } from './products.controller';
+[7m [0m [91m                                   ~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[[90m5:07:11 PM[0m] Found 1 error. Watching for file changes.
+
+[2J[3J[H[[90m5:07:16 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m5:07:16 PM[0m] Found 0 errors. Watching for file changes.
+
+[Nest] 55637  - 09/19/2025, 5:07:17 PM     LOG [NestFactory] Starting Nest application...
+[Nest] 55637  - 09/19/2025, 5:07:17 PM     LOG [InstanceLoader] SupabaseModule dependencies initialized +20ms
+[Nest] 55637  - 09/19/2025, 5:07:17 PM     LOG [InstanceLoader] ConfigHostModule dependencies initialized +0ms
+[Nest] 55637  - 09/19/2025, 5:07:17 PM     LOG [InstanceLoader] AppModule dependencies initialized +0ms
+[Nest] 55637  - 09/19/2025, 5:07:17 PM     LOG [InstanceLoader] ConfigModule dependencies initialized +0ms
+[Nest] 55637  - 09/19/2025, 5:07:17 PM     LOG [InstanceLoader] MaterialsModule dependencies initialized +0ms
+[Nest] 55637  - 09/19/2025, 5:07:17 PM     LOG [InstanceLoader] OrdersModule dependencies initialized +0ms
+[Nest] 55637  - 09/19/2025, 5:07:17 PM     LOG [RoutesResolver] AppController {/}: +2ms
+[Nest] 55637  - 09/19/2025, 5:07:17 PM     LOG [RouterExplorer] Mapped {/, GET} route +1ms
+[Nest] 55637  - 09/19/2025, 5:07:17 PM     LOG [RoutesResolver] MaterialsController {/materials}: +0ms
+[Nest] 55637  - 09/19/2025, 5:07:17 PM     LOG [RouterExplorer] Mapped {/materials, GET} route +0ms
+[Nest] 55637  - 09/19/2025, 5:07:17 PM     LOG [RouterExplorer] Mapped {/materials/tags, GET} route +1ms
+[Nest] 55637  - 09/19/2025, 5:07:17 PM     LOG [RouterExplorer] Mapped {/materials/:id, GET} route +0ms
+[Nest] 55637  - 09/19/2025, 5:07:17 PM     LOG [RouterExplorer] Mapped {/materials, POST} route +0ms
+[Nest] 55637  - 09/19/2025, 5:07:17 PM     LOG [RouterExplorer] Mapped {/materials/:id/quantity, PATCH} route +0ms
+[Nest] 55637  - 09/19/2025, 5:07:17 PM     LOG [RoutesResolver] OrdersController {/orders}: +0ms
+[Nest] 55637  - 09/19/2025, 5:07:17 PM     LOG [RouterExplorer] Mapped {/orders, GET} route +0ms
+[Nest] 55637  - 09/19/2025, 5:07:17 PM     LOG [RouterExplorer] Mapped {/orders/:id, GET} route +0ms
+[Nest] 55637  - 09/19/2025, 5:07:17 PM     LOG [RouterExplorer] Mapped {/orders, POST} route +1ms
+[Nest] 55637  - 09/19/2025, 5:07:17 PM     LOG [RouterExplorer] Mapped {/orders/:id/status, PATCH} route +0ms
+[Nest] 55637  - 09/19/2025, 5:07:17 PM     LOG [RouterExplorer] Mapped {/orders/:id, PATCH} route +0ms
+[Nest] 55637  - 09/19/2025, 5:07:17 PM     LOG [RouterExplorer] Mapped {/orders/:id, DELETE} route +0ms
+[Nest] 55637  - 09/19/2025, 5:07:17 PM     LOG [NestApplication] Nest application successfully started +1ms
+[2J[3J[H[[90m5:11:36 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m5:11:36 PM[0m] Found 0 errors. Watching for file changes.
+
+[Nest] 59470  - 09/19/2025, 5:11:36 PM     LOG [NestFactory] Starting Nest application...
+[Nest] 59470  - 09/19/2025, 5:11:36 PM     LOG [InstanceLoader] SupabaseModule dependencies initialized +11ms
+[Nest] 59470  - 09/19/2025, 5:11:36 PM     LOG [InstanceLoader] ConfigHostModule dependencies initialized +1ms
+[Nest] 59470  - 09/19/2025, 5:11:36 PM     LOG [InstanceLoader] AppModule dependencies initialized +0ms
+[Nest] 59470  - 09/19/2025, 5:11:36 PM     LOG [InstanceLoader] ConfigModule dependencies initialized +0ms
+[Nest] 59470  - 09/19/2025, 5:11:36 PM     LOG [InstanceLoader] MaterialsModule dependencies initialized +0ms
+[Nest] 59470  - 09/19/2025, 5:11:36 PM     LOG [InstanceLoader] OrdersModule dependencies initialized +0ms
+[Nest] 59470  - 09/19/2025, 5:11:36 PM     LOG [RoutesResolver] AppController {/}: +1ms
+[Nest] 59470  - 09/19/2025, 5:11:36 PM     LOG [RouterExplorer] Mapped {/, GET} route +1ms
+[Nest] 59470  - 09/19/2025, 5:11:36 PM     LOG [RoutesResolver] MaterialsController {/materials}: +0ms
+[Nest] 59470  - 09/19/2025, 5:11:36 PM     LOG [RouterExplorer] Mapped {/materials, GET} route +1ms
+[Nest] 59470  - 09/19/2025, 5:11:36 PM     LOG [RouterExplorer] Mapped {/materials/tags, GET} route +0ms
+[Nest] 59470  - 09/19/2025, 5:11:36 PM     LOG [RouterExplorer] Mapped {/materials/:id, GET} route +0ms
+[Nest] 59470  - 09/19/2025, 5:11:36 PM     LOG [RouterExplorer] Mapped {/materials, POST} route +0ms
+[Nest] 59470  - 09/19/2025, 5:11:36 PM     LOG [RouterExplorer] Mapped {/materials/:id/quantity, PATCH} route +0ms
+[Nest] 59470  - 09/19/2025, 5:11:36 PM     LOG [RoutesResolver] OrdersController {/orders}: +0ms
+[Nest] 59470  - 09/19/2025, 5:11:36 PM     LOG [RouterExplorer] Mapped {/orders, GET} route +1ms
+[Nest] 59470  - 09/19/2025, 5:11:36 PM     LOG [RouterExplorer] Mapped {/orders/:id, GET} route +0ms
+[Nest] 59470  - 09/19/2025, 5:11:36 PM     LOG [RouterExplorer] Mapped {/orders, POST} route +0ms
+[Nest] 59470  - 09/19/2025, 5:11:36 PM     LOG [RouterExplorer] Mapped {/orders/:id/status, PATCH} route +0ms
+[Nest] 59470  - 09/19/2025, 5:11:36 PM     LOG [RouterExplorer] Mapped {/orders/:id, PATCH} route +0ms
+[Nest] 59470  - 09/19/2025, 5:11:36 PM     LOG [RouterExplorer] Mapped {/orders/:id, DELETE} route +0ms
+[Nest] 59470  - 09/19/2025, 5:11:36 PM     LOG [NestApplication] Nest application successfully started +1ms
+[2J[3J[H[[90m5:11:55 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m5:11:55 PM[0m] Found 0 errors. Watching for file changes.
+
+[Nest] 59756  - 09/19/2025, 5:11:56 PM     LOG [NestFactory] Starting Nest application...
+[Nest] 59756  - 09/19/2025, 5:11:56 PM     LOG [InstanceLoader] SupabaseModule dependencies initialized +11ms
+[Nest] 59756  - 09/19/2025, 5:11:56 PM     LOG [InstanceLoader] ConfigHostModule dependencies initialized +0ms
+[Nest] 59756  - 09/19/2025, 5:11:56 PM     LOG [InstanceLoader] AppModule dependencies initialized +0ms
+[Nest] 59756  - 09/19/2025, 5:11:56 PM     LOG [InstanceLoader] ConfigModule dependencies initialized +0ms
+[Nest] 59756  - 09/19/2025, 5:11:56 PM     LOG [InstanceLoader] MaterialsModule dependencies initialized +0ms
+[Nest] 59756  - 09/19/2025, 5:11:56 PM     LOG [InstanceLoader] OrdersModule dependencies initialized +0ms
+[Nest] 59756  - 09/19/2025, 5:11:56 PM     LOG [RoutesResolver] AppController {/}: +2ms
+[Nest] 59756  - 09/19/2025, 5:11:56 PM     LOG [RouterExplorer] Mapped {/, GET} route +0ms
+[Nest] 59756  - 09/19/2025, 5:11:56 PM     LOG [RoutesResolver] MaterialsController {/materials}: +1ms
+[Nest] 59756  - 09/19/2025, 5:11:56 PM     LOG [RouterExplorer] Mapped {/materials, GET} route +0ms
+[Nest] 59756  - 09/19/2025, 5:11:56 PM     LOG [RouterExplorer] Mapped {/materials/tags, GET} route +0ms
+[Nest] 59756  - 09/19/2025, 5:11:56 PM     LOG [RouterExplorer] Mapped {/materials/:id, GET} route +0ms
+[Nest] 59756  - 09/19/2025, 5:11:56 PM     LOG [RouterExplorer] Mapped {/materials, POST} route +0ms
+[Nest] 59756  - 09/19/2025, 5:11:56 PM     LOG [RouterExplorer] Mapped {/materials/:id/quantity, PATCH} route +0ms
+[Nest] 59756  - 09/19/2025, 5:11:56 PM     LOG [RoutesResolver] OrdersController {/orders}: +0ms
+[Nest] 59756  - 09/19/2025, 5:11:56 PM     LOG [RouterExplorer] Mapped {/orders, GET} route +1ms
+[Nest] 59756  - 09/19/2025, 5:11:56 PM     LOG [RouterExplorer] Mapped {/orders/:id, GET} route +0ms
+[Nest] 59756  - 09/19/2025, 5:11:56 PM     LOG [RouterExplorer] Mapped {/orders, POST} route +0ms
+[Nest] 59756  - 09/19/2025, 5:11:56 PM     LOG [RouterExplorer] Mapped {/orders/:id/status, PATCH} route +0ms
+[Nest] 59756  - 09/19/2025, 5:11:56 PM     LOG [RouterExplorer] Mapped {/orders/:id, PATCH} route +0ms
+[Nest] 59756  - 09/19/2025, 5:11:56 PM     LOG [RouterExplorer] Mapped {/orders/:id, DELETE} route +0ms
+[Nest] 59756  - 09/19/2025, 5:11:56 PM     LOG [NestApplication] Nest application successfully started +1ms
+[2J[3J[H[[90m5:12:00 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m5:12:00 PM[0m] Found 0 errors. Watching for file changes.
+
+[Nest] 59846  - 09/19/2025, 5:12:00 PM     LOG [NestFactory] Starting Nest application...
+[Nest] 59846  - 09/19/2025, 5:12:00 PM     LOG [InstanceLoader] SupabaseModule dependencies initialized +14ms
+[Nest] 59846  - 09/19/2025, 5:12:00 PM     LOG [InstanceLoader] ConfigHostModule dependencies initialized +0ms
+[Nest] 59846  - 09/19/2025, 5:12:00 PM     LOG [InstanceLoader] AppModule dependencies initialized +0ms
+[Nest] 59846  - 09/19/2025, 5:12:00 PM     LOG [InstanceLoader] ConfigModule dependencies initialized +0ms
+[Nest] 59846  - 09/19/2025, 5:12:00 PM     LOG [InstanceLoader] MaterialsModule dependencies initialized +0ms
+[Nest] 59846  - 09/19/2025, 5:12:00 PM     LOG [InstanceLoader] OrdersModule dependencies initialized +0ms
+[Nest] 59846  - 09/19/2025, 5:12:00 PM     LOG [RoutesResolver] AppController {/}: +1ms
+[Nest] 59846  - 09/19/2025, 5:12:00 PM     LOG [RouterExplorer] Mapped {/, GET} route +1ms
+[Nest] 59846  - 09/19/2025, 5:12:00 PM     LOG [RoutesResolver] MaterialsController {/materials}: +1ms
+[Nest] 59846  - 09/19/2025, 5:12:00 PM     LOG [RouterExplorer] Mapped {/materials, GET} route +0ms
+[Nest] 59846  - 09/19/2025, 5:12:00 PM     LOG [RouterExplorer] Mapped {/materials/tags, GET} route +0ms
+[Nest] 59846  - 09/19/2025, 5:12:00 PM     LOG [RouterExplorer] Mapped {/materials/:id, GET} route +0ms
+[Nest] 59846  - 09/19/2025, 5:12:00 PM     LOG [RouterExplorer] Mapped {/materials, POST} route +1ms
+[Nest] 59846  - 09/19/2025, 5:12:00 PM     LOG [RouterExplorer] Mapped {/materials/:id/quantity, PATCH} route +0ms
+[Nest] 59846  - 09/19/2025, 5:12:00 PM     LOG [RoutesResolver] OrdersController {/orders}: +0ms
+[Nest] 59846  - 09/19/2025, 5:12:00 PM     LOG [RouterExplorer] Mapped {/orders, GET} route +0ms
+[Nest] 59846  - 09/19/2025, 5:12:00 PM     LOG [RouterExplorer] Mapped {/orders/:id, GET} route +0ms
+[Nest] 59846  - 09/19/2025, 5:12:00 PM     LOG [RouterExplorer] Mapped {/orders, POST} route +0ms
+[Nest] 59846  - 09/19/2025, 5:12:00 PM     LOG [RouterExplorer] Mapped {/orders/:id/status, PATCH} route +1ms
+[Nest] 59846  - 09/19/2025, 5:12:00 PM     LOG [RouterExplorer] Mapped {/orders/:id, PATCH} route +0ms
+[Nest] 59846  - 09/19/2025, 5:12:00 PM     LOG [RouterExplorer] Mapped {/orders/:id, DELETE} route +0ms
+[Nest] 59846  - 09/19/2025, 5:12:00 PM     LOG [NestApplication] Nest application successfully started +1ms
+[2J[3J[H[[90m5:12:00 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m5:12:00 PM[0m] Found 0 errors. Watching for file changes.
+
+[Nest] 59864  - 09/19/2025, 5:12:01 PM     LOG [NestFactory] Starting Nest application...
+[Nest] 59864  - 09/19/2025, 5:12:01 PM     LOG [InstanceLoader] SupabaseModule dependencies initialized +11ms
+[Nest] 59864  - 09/19/2025, 5:12:01 PM     LOG [InstanceLoader] ConfigHostModule dependencies initialized +1ms
+[Nest] 59864  - 09/19/2025, 5:12:01 PM     LOG [InstanceLoader] AppModule dependencies initialized +0ms
+[Nest] 59864  - 09/19/2025, 5:12:01 PM     LOG [InstanceLoader] ConfigModule dependencies initialized +0ms
+[Nest] 59864  - 09/19/2025, 5:12:01 PM     LOG [InstanceLoader] MaterialsModule dependencies initialized +0ms
+[Nest] 59864  - 09/19/2025, 5:12:01 PM     LOG [InstanceLoader] OrdersModule dependencies initialized +0ms
+[Nest] 59864  - 09/19/2025, 5:12:01 PM     LOG [RoutesResolver] AppController {/}: +1ms
+[Nest] 59864  - 09/19/2025, 5:12:01 PM     LOG [RouterExplorer] Mapped {/, GET} route +1ms
+[Nest] 59864  - 09/19/2025, 5:12:01 PM     LOG [RoutesResolver] MaterialsController {/materials}: +0ms
+[Nest] 59864  - 09/19/2025, 5:12:01 PM     LOG [RouterExplorer] Mapped {/materials, GET} route +0ms
+[Nest] 59864  - 09/19/2025, 5:12:01 PM     LOG [RouterExplorer] Mapped {/materials/tags, GET} route +0ms
+[Nest] 59864  - 09/19/2025, 5:12:01 PM     LOG [RouterExplorer] Mapped {/materials/:id, GET} route +1ms
+[Nest] 59864  - 09/19/2025, 5:12:01 PM     LOG [RouterExplorer] Mapped {/materials, POST} route +0ms
+[Nest] 59864  - 09/19/2025, 5:12:01 PM     LOG [RouterExplorer] Mapped {/materials/:id/quantity, PATCH} route +0ms
+[Nest] 59864  - 09/19/2025, 5:12:01 PM     LOG [RoutesResolver] OrdersController {/orders}: +0ms
+[Nest] 59864  - 09/19/2025, 5:12:01 PM     LOG [RouterExplorer] Mapped {/orders, GET} route +0ms
+[Nest] 59864  - 09/19/2025, 5:12:01 PM     LOG [RouterExplorer] Mapped {/orders/:id, GET} route +0ms
+[Nest] 59864  - 09/19/2025, 5:12:01 PM     LOG [RouterExplorer] Mapped {/orders, POST} route +0ms
+[Nest] 59864  - 09/19/2025, 5:12:01 PM     LOG [RouterExplorer] Mapped {/orders/:id/status, PATCH} route +1ms
+[Nest] 59864  - 09/19/2025, 5:12:01 PM     LOG [RouterExplorer] Mapped {/orders/:id, PATCH} route +0ms
+[Nest] 59864  - 09/19/2025, 5:12:01 PM     LOG [RouterExplorer] Mapped {/orders/:id, DELETE} route +0ms
+[Nest] 59864  - 09/19/2025, 5:12:01 PM     LOG [NestApplication] Nest application successfully started +1ms
+[2J[3J[H[[90m5:12:17 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m5:12:17 PM[0m] Found 0 errors. Watching for file changes.
+
+[Nest] 60139  - 09/19/2025, 5:12:17 PM     LOG [NestFactory] Starting Nest application...
+[Nest] 60139  - 09/19/2025, 5:12:18 PM     LOG [InstanceLoader] SupabaseModule dependencies initialized +11ms
+[Nest] 60139  - 09/19/2025, 5:12:18 PM     LOG [InstanceLoader] ConfigHostModule dependencies initialized +1ms
+[Nest] 60139  - 09/19/2025, 5:12:18 PM     LOG [InstanceLoader] AppModule dependencies initialized +0ms
+[Nest] 60139  - 09/19/2025, 5:12:18 PM     LOG [InstanceLoader] ConfigModule dependencies initialized +0ms
+[Nest] 60139  - 09/19/2025, 5:12:18 PM     LOG [InstanceLoader] MaterialsModule dependencies initialized +0ms
+[Nest] 60139  - 09/19/2025, 5:12:18 PM     LOG [InstanceLoader] OrdersModule dependencies initialized +0ms
+[Nest] 60139  - 09/19/2025, 5:12:18 PM     LOG [RoutesResolver] AppController {/}: +1ms
+[Nest] 60139  - 09/19/2025, 5:12:18 PM     LOG [RouterExplorer] Mapped {/, GET} route +1ms
+[Nest] 60139  - 09/19/2025, 5:12:18 PM     LOG [RoutesResolver] MaterialsController {/materials}: +0ms
+[Nest] 60139  - 09/19/2025, 5:12:18 PM     LOG [RouterExplorer] Mapped {/materials, GET} route +0ms
+[Nest] 60139  - 09/19/2025, 5:12:18 PM     LOG [RouterExplorer] Mapped {/materials/tags, GET} route +0ms
+[Nest] 60139  - 09/19/2025, 5:12:18 PM     LOG [RouterExplorer] Mapped {/materials/:id, GET} route +1ms
+[Nest] 60139  - 09/19/2025, 5:12:18 PM     LOG [RouterExplorer] Mapped {/materials, POST} route +0ms
+[Nest] 60139  - 09/19/2025, 5:12:18 PM     LOG [RouterExplorer] Mapped {/materials/:id/quantity, PATCH} route +0ms
+[Nest] 60139  - 09/19/2025, 5:12:18 PM     LOG [RoutesResolver] OrdersController {/orders}: +0ms
+[Nest] 60139  - 09/19/2025, 5:12:18 PM     LOG [RouterExplorer] Mapped {/orders, GET} route +0ms
+[Nest] 60139  - 09/19/2025, 5:12:18 PM     LOG [RouterExplorer] Mapped {/orders/:id, GET} route +0ms
+[Nest] 60139  - 09/19/2025, 5:12:18 PM     LOG [RouterExplorer] Mapped {/orders, POST} route +0ms
+[Nest] 60139  - 09/19/2025, 5:12:18 PM     LOG [RouterExplorer] Mapped {/orders/:id/status, PATCH} route +0ms
+[Nest] 60139  - 09/19/2025, 5:12:18 PM     LOG [RouterExplorer] Mapped {/orders/:id, PATCH} route +1ms
+[Nest] 60139  - 09/19/2025, 5:12:18 PM     LOG [RouterExplorer] Mapped {/orders/:id, DELETE} route +0ms
+[Nest] 60139  - 09/19/2025, 5:12:18 PM     LOG [NestApplication] Nest application successfully started +0ms
+[2J[3J[H[[90m5:12:23 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m5:12:23 PM[0m] Found 0 errors. Watching for file changes.
+
+[Nest] 60238  - 09/19/2025, 5:12:23 PM     LOG [NestFactory] Starting Nest application...
+[Nest] 60238  - 09/19/2025, 5:12:23 PM     LOG [InstanceLoader] SupabaseModule dependencies initialized +12ms
+[Nest] 60238  - 09/19/2025, 5:12:23 PM     LOG [InstanceLoader] ConfigHostModule dependencies initialized +1ms
+[Nest] 60238  - 09/19/2025, 5:12:23 PM     LOG [InstanceLoader] AppModule dependencies initialized +0ms
+[Nest] 60238  - 09/19/2025, 5:12:23 PM     LOG [InstanceLoader] ConfigModule dependencies initialized +0ms
+[Nest] 60238  - 09/19/2025, 5:12:23 PM     LOG [InstanceLoader] MaterialsModule dependencies initialized +0ms
+[Nest] 60238  - 09/19/2025, 5:12:23 PM     LOG [InstanceLoader] OrdersModule dependencies initialized +0ms
+[Nest] 60238  - 09/19/2025, 5:12:23 PM     LOG [InstanceLoader] ProductsModule dependencies initialized +0ms
+[Nest] 60238  - 09/19/2025, 5:12:23 PM     LOG [RoutesResolver] AppController {/}: +1ms
+[Nest] 60238  - 09/19/2025, 5:12:23 PM     LOG [RouterExplorer] Mapped {/, GET} route +1ms
+[Nest] 60238  - 09/19/2025, 5:12:23 PM     LOG [RoutesResolver] MaterialsController {/materials}: +0ms
+[Nest] 60238  - 09/19/2025, 5:12:23 PM     LOG [RouterExplorer] Mapped {/materials, GET} route +1ms
+[Nest] 60238  - 09/19/2025, 5:12:23 PM     LOG [RouterExplorer] Mapped {/materials/tags, GET} route +0ms
+[Nest] 60238  - 09/19/2025, 5:12:23 PM     LOG [RouterExplorer] Mapped {/materials/:id, GET} route +0ms
+[Nest] 60238  - 09/19/2025, 5:12:23 PM     LOG [RouterExplorer] Mapped {/materials, POST} route +0ms
+[Nest] 60238  - 09/19/2025, 5:12:23 PM     LOG [RouterExplorer] Mapped {/materials/:id/quantity, PATCH} route +0ms
+[Nest] 60238  - 09/19/2025, 5:12:23 PM     LOG [RoutesResolver] OrdersController {/orders}: +1ms
+[Nest] 60238  - 09/19/2025, 5:12:23 PM     LOG [RouterExplorer] Mapped {/orders, GET} route +0ms
+[Nest] 60238  - 09/19/2025, 5:12:23 PM     LOG [RouterExplorer] Mapped {/orders/:id, GET} route +0ms
+[Nest] 60238  - 09/19/2025, 5:12:23 PM     LOG [RouterExplorer] Mapped {/orders, POST} route +0ms
+[Nest] 60238  - 09/19/2025, 5:12:23 PM     LOG [RouterExplorer] Mapped {/orders/:id/status, PATCH} route +0ms
+[Nest] 60238  - 09/19/2025, 5:12:23 PM     LOG [RouterExplorer] Mapped {/orders/:id, PATCH} route +0ms
+[Nest] 60238  - 09/19/2025, 5:12:23 PM     LOG [RouterExplorer] Mapped {/orders/:id, DELETE} route +0ms
+[Nest] 60238  - 09/19/2025, 5:12:23 PM     LOG [RoutesResolver] ProductsController {/products}: +0ms
+[Nest] 60238  - 09/19/2025, 5:12:23 PM     LOG [RouterExplorer] Mapped {/products, GET} route +0ms
+[Nest] 60238  - 09/19/2025, 5:12:23 PM     LOG [RouterExplorer] Mapped {/products/categories, GET} route +1ms
+[Nest] 60238  - 09/19/2025, 5:12:23 PM     LOG [RouterExplorer] Mapped {/products/:id, GET} route +0ms
+[Nest] 60238  - 09/19/2025, 5:12:23 PM     LOG [RouterExplorer] Mapped {/products, POST} route +0ms
+[Nest] 60238  - 09/19/2025, 5:12:23 PM     LOG [RouterExplorer] Mapped {/products/:id/stock, PATCH} route +0ms
+[Nest] 60238  - 09/19/2025, 5:12:23 PM     LOG [RouterExplorer] Mapped {/products/:id, PATCH} route +0ms
+[Nest] 60238  - 09/19/2025, 5:12:23 PM     LOG [RouterExplorer] Mapped {/products/:id, DELETE} route +0ms
+[Nest] 60238  - 09/19/2025, 5:12:23 PM     LOG [NestApplication] Nest application successfully started +1ms
+[2J[3J[H[[90m9:08:12 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m9:08:12 PM[0m] Found 0 errors. Watching for file changes.
+
+[Nest] 56428  - 09/19/2025, 9:08:13 PM     LOG [NestFactory] Starting Nest application...
+[Nest] 56428  - 09/19/2025, 9:08:13 PM     LOG [InstanceLoader] SupabaseModule dependencies initialized +20ms
+[Nest] 56428  - 09/19/2025, 9:08:13 PM     LOG [InstanceLoader] ConfigHostModule dependencies initialized +0ms
+[Nest] 56428  - 09/19/2025, 9:08:13 PM     LOG [InstanceLoader] AppModule dependencies initialized +0ms
+[Nest] 56428  - 09/19/2025, 9:08:13 PM     LOG [InstanceLoader] ConfigModule dependencies initialized +0ms
+[Nest] 56428  - 09/19/2025, 9:08:13 PM     LOG [InstanceLoader] MaterialsModule dependencies initialized +0ms
+[Nest] 56428  - 09/19/2025, 9:08:13 PM     LOG [InstanceLoader] OrdersModule dependencies initialized +0ms
+[Nest] 56428  - 09/19/2025, 9:08:13 PM     LOG [InstanceLoader] ProductsModule dependencies initialized +0ms
+[Nest] 56428  - 09/19/2025, 9:08:13 PM     LOG [RoutesResolver] AppController {/}: +1ms
+[Nest] 56428  - 09/19/2025, 9:08:13 PM     LOG [RouterExplorer] Mapped {/, GET} route +1ms
+[Nest] 56428  - 09/19/2025, 9:08:13 PM     LOG [RoutesResolver] MaterialsController {/materials}: +0ms
+[Nest] 56428  - 09/19/2025, 9:08:13 PM     LOG [RouterExplorer] Mapped {/materials, GET} route +1ms
+[Nest] 56428  - 09/19/2025, 9:08:13 PM     LOG [RouterExplorer] Mapped {/materials/tags, GET} route +0ms
+[Nest] 56428  - 09/19/2025, 9:08:13 PM     LOG [RouterExplorer] Mapped {/materials/:id, GET} route +0ms
+[Nest] 56428  - 09/19/2025, 9:08:13 PM     LOG [RouterExplorer] Mapped {/materials, POST} route +0ms
+[Nest] 56428  - 09/19/2025, 9:08:13 PM     LOG [RouterExplorer] Mapped {/materials/:id/quantity, PATCH} route +0ms
+[Nest] 56428  - 09/19/2025, 9:08:13 PM     LOG [RoutesResolver] OrdersController {/orders}: +0ms
+[Nest] 56428  - 09/19/2025, 9:08:13 PM     LOG [RouterExplorer] Mapped {/orders, GET} route +0ms
+[Nest] 56428  - 09/19/2025, 9:08:13 PM     LOG [RouterExplorer] Mapped {/orders/:id, GET} route +0ms
+[Nest] 56428  - 09/19/2025, 9:08:13 PM     LOG [RouterExplorer] Mapped {/orders, POST} route +1ms
+[Nest] 56428  - 09/19/2025, 9:08:13 PM     LOG [RouterExplorer] Mapped {/orders/:id/status, PATCH} route +0ms
+[Nest] 56428  - 09/19/2025, 9:08:13 PM     LOG [RouterExplorer] Mapped {/orders/:id, PATCH} route +0ms
+[Nest] 56428  - 09/19/2025, 9:08:13 PM     LOG [RouterExplorer] Mapped {/orders/:id, DELETE} route +0ms
+[Nest] 56428  - 09/19/2025, 9:08:13 PM     LOG [RoutesResolver] ProductsController {/products}: +0ms
+[Nest] 56428  - 09/19/2025, 9:08:13 PM     LOG [RouterExplorer] Mapped {/products, GET} route +0ms
+[Nest] 56428  - 09/19/2025, 9:08:13 PM     LOG [RouterExplorer] Mapped {/products/categories, GET} route +0ms
+[Nest] 56428  - 09/19/2025, 9:08:13 PM     LOG [RouterExplorer] Mapped {/products/:id, GET} route +0ms
+[Nest] 56428  - 09/19/2025, 9:08:13 PM     LOG [RouterExplorer] Mapped {/products, POST} route +0ms
+[Nest] 56428  - 09/19/2025, 9:08:13 PM     LOG [RouterExplorer] Mapped {/products/:id/stock, PATCH} route +0ms
+[Nest] 56428  - 09/19/2025, 9:08:13 PM     LOG [RouterExplorer] Mapped {/products/:id, PATCH} route +0ms
+[Nest] 56428  - 09/19/2025, 9:08:13 PM     LOG [RouterExplorer] Mapped {/products/:id, DELETE} route +1ms
+[Nest] 56428  - 09/19/2025, 9:08:13 PM     LOG [NestApplication] Nest application successfully started +0ms
+[2J[3J[H[[90m9:08:44 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m9:08:44 PM[0m] Found 0 errors. Watching for file changes.
+
+[Nest] 56886  - 09/19/2025, 9:08:45 PM     LOG [NestFactory] Starting Nest application...
+[Nest] 56886  - 09/19/2025, 9:08:45 PM     LOG [InstanceLoader] SupabaseModule dependencies initialized +13ms
+[Nest] 56886  - 09/19/2025, 9:08:45 PM     LOG [InstanceLoader] ConfigHostModule dependencies initialized +0ms
+[Nest] 56886  - 09/19/2025, 9:08:45 PM     LOG [InstanceLoader] AppModule dependencies initialized +0ms
+[Nest] 56886  - 09/19/2025, 9:08:45 PM     LOG [InstanceLoader] ConfigModule dependencies initialized +0ms
+[Nest] 56886  - 09/19/2025, 9:08:45 PM     LOG [InstanceLoader] MaterialsModule dependencies initialized +0ms
+[Nest] 56886  - 09/19/2025, 9:08:45 PM     LOG [InstanceLoader] OrdersModule dependencies initialized +0ms
+[Nest] 56886  - 09/19/2025, 9:08:45 PM     LOG [InstanceLoader] ProductsModule dependencies initialized +0ms
+[Nest] 56886  - 09/19/2025, 9:08:45 PM     LOG [RoutesResolver] AppController {/}: +1ms
+[Nest] 56886  - 09/19/2025, 9:08:45 PM     LOG [RouterExplorer] Mapped {/, GET} route +2ms
+[Nest] 56886  - 09/19/2025, 9:08:45 PM     LOG [RoutesResolver] MaterialsController {/materials}: +0ms
+[Nest] 56886  - 09/19/2025, 9:08:45 PM     LOG [RouterExplorer] Mapped {/materials, GET} route +0ms
+[Nest] 56886  - 09/19/2025, 9:08:45 PM     LOG [RouterExplorer] Mapped {/materials/tags, GET} route +0ms
+[Nest] 56886  - 09/19/2025, 9:08:45 PM     LOG [RouterExplorer] Mapped {/materials/:id, GET} route +0ms
+[Nest] 56886  - 09/19/2025, 9:08:45 PM     LOG [RouterExplorer] Mapped {/materials, POST} route +0ms
+[Nest] 56886  - 09/19/2025, 9:08:45 PM     LOG [RouterExplorer] Mapped {/materials/:id/quantity, PATCH} route +1ms
+[Nest] 56886  - 09/19/2025, 9:08:45 PM     LOG [RoutesResolver] OrdersController {/orders}: +0ms
+[Nest] 56886  - 09/19/2025, 9:08:45 PM     LOG [RouterExplorer] Mapped {/orders, GET} route +0ms
+[Nest] 56886  - 09/19/2025, 9:08:45 PM     LOG [RouterExplorer] Mapped {/orders/:id, GET} route +0ms
+[Nest] 56886  - 09/19/2025, 9:08:45 PM     LOG [RouterExplorer] Mapped {/orders, POST} route +0ms
+[Nest] 56886  - 09/19/2025, 9:08:45 PM     LOG [RouterExplorer] Mapped {/orders/:id/status, PATCH} route +0ms
+[Nest] 56886  - 09/19/2025, 9:08:45 PM     LOG [RouterExplorer] Mapped {/orders/:id, PATCH} route +0ms
+[Nest] 56886  - 09/19/2025, 9:08:45 PM     LOG [RouterExplorer] Mapped {/orders/:id, DELETE} route +0ms
+[Nest] 56886  - 09/19/2025, 9:08:45 PM     LOG [RoutesResolver] ProductsController {/products}: +0ms
+[Nest] 56886  - 09/19/2025, 9:08:45 PM     LOG [RouterExplorer] Mapped {/products, GET} route +1ms
+[Nest] 56886  - 09/19/2025, 9:08:45 PM     LOG [RouterExplorer] Mapped {/products/categories, GET} route +0ms
+[Nest] 56886  - 09/19/2025, 9:08:45 PM     LOG [RouterExplorer] Mapped {/products/:id, GET} route +0ms
+[Nest] 56886  - 09/19/2025, 9:08:45 PM     LOG [RouterExplorer] Mapped {/products, POST} route +0ms
+[Nest] 56886  - 09/19/2025, 9:08:45 PM     LOG [RouterExplorer] Mapped {/products/:id/stock, PATCH} route +0ms
+[Nest] 56886  - 09/19/2025, 9:08:45 PM     LOG [RouterExplorer] Mapped {/products/:id, PATCH} route +0ms
+[Nest] 56886  - 09/19/2025, 9:08:45 PM     LOG [RouterExplorer] Mapped {/products/:id, DELETE} route +0ms
+[Nest] 56886  - 09/19/2025, 9:08:45 PM     LOG [NestApplication] Nest application successfully started +1ms
+[2J[3J[H[[90m9:11:06 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m9:11:06 PM[0m] Found 0 errors. Watching for file changes.
+
+[Nest] 58874  - 09/19/2025, 9:11:07 PM     LOG [NestFactory] Starting Nest application...
+[Nest] 58874  - 09/19/2025, 9:11:07 PM     LOG [InstanceLoader] SupabaseModule dependencies initialized +11ms
+[Nest] 58874  - 09/19/2025, 9:11:07 PM     LOG [InstanceLoader] ConfigHostModule dependencies initialized +0ms
+[Nest] 58874  - 09/19/2025, 9:11:07 PM     LOG [InstanceLoader] AppModule dependencies initialized +0ms
+[Nest] 58874  - 09/19/2025, 9:11:07 PM     LOG [InstanceLoader] ConfigModule dependencies initialized +0ms
+[Nest] 58874  - 09/19/2025, 9:11:07 PM     LOG [InstanceLoader] MaterialsModule dependencies initialized +0ms
+[Nest] 58874  - 09/19/2025, 9:11:07 PM     LOG [InstanceLoader] OrdersModule dependencies initialized +0ms
+[Nest] 58874  - 09/19/2025, 9:11:07 PM     LOG [InstanceLoader] ProductsModule dependencies initialized +1ms
+[Nest] 58874  - 09/19/2025, 9:11:07 PM     LOG [RoutesResolver] AppController {/}: +1ms
+[Nest] 58874  - 09/19/2025, 9:11:07 PM     LOG [RouterExplorer] Mapped {/, GET} route +1ms
+[Nest] 58874  - 09/19/2025, 9:11:07 PM     LOG [RoutesResolver] MaterialsController {/materials}: +0ms
+[Nest] 58874  - 09/19/2025, 9:11:07 PM     LOG [RouterExplorer] Mapped {/materials, GET} route +0ms
+[Nest] 58874  - 09/19/2025, 9:11:07 PM     LOG [RouterExplorer] Mapped {/materials/tags, GET} route +0ms
+[Nest] 58874  - 09/19/2025, 9:11:07 PM     LOG [RouterExplorer] Mapped {/materials/:id, GET} route +0ms
+[Nest] 58874  - 09/19/2025, 9:11:07 PM     LOG [RouterExplorer] Mapped {/materials, POST} route +1ms
+[Nest] 58874  - 09/19/2025, 9:11:07 PM     LOG [RouterExplorer] Mapped {/materials/:id/quantity, PATCH} route +0ms
+[Nest] 58874  - 09/19/2025, 9:11:07 PM     LOG [RoutesResolver] OrdersController {/orders}: +0ms
+[Nest] 58874  - 09/19/2025, 9:11:07 PM     LOG [RouterExplorer] Mapped {/orders, GET} route +0ms
+[Nest] 58874  - 09/19/2025, 9:11:07 PM     LOG [RouterExplorer] Mapped {/orders/:id, GET} route +0ms
+[Nest] 58874  - 09/19/2025, 9:11:07 PM     LOG [RouterExplorer] Mapped {/orders, POST} route +0ms
+[Nest] 58874  - 09/19/2025, 9:11:07 PM     LOG [RouterExplorer] Mapped {/orders/:id/status, PATCH} route +0ms
+[Nest] 58874  - 09/19/2025, 9:11:07 PM     LOG [RouterExplorer] Mapped {/orders/:id, PATCH} route +0ms
+[Nest] 58874  - 09/19/2025, 9:11:07 PM     LOG [RouterExplorer] Mapped {/orders/:id, DELETE} route +1ms
+[Nest] 58874  - 09/19/2025, 9:11:07 PM     LOG [RoutesResolver] ProductsController {/products}: +0ms
+[Nest] 58874  - 09/19/2025, 9:11:07 PM     LOG [RouterExplorer] Mapped {/products, GET} route +0ms
+[Nest] 58874  - 09/19/2025, 9:11:07 PM     LOG [RouterExplorer] Mapped {/products/categories, GET} route +0ms
+[Nest] 58874  - 09/19/2025, 9:11:07 PM     LOG [RouterExplorer] Mapped {/products/:id, GET} route +0ms
+[Nest] 58874  - 09/19/2025, 9:11:07 PM     LOG [RouterExplorer] Mapped {/products, POST} route +0ms
+[Nest] 58874  - 09/19/2025, 9:11:07 PM     LOG [RouterExplorer] Mapped {/products/:id/stock, PATCH} route +0ms
+[Nest] 58874  - 09/19/2025, 9:11:07 PM     LOG [RouterExplorer] Mapped {/products/:id, PATCH} route +0ms
+[Nest] 58874  - 09/19/2025, 9:11:07 PM     LOG [RouterExplorer] Mapped {/products/:id, DELETE} route +0ms
+[Nest] 58874  - 09/19/2025, 9:11:07 PM     LOG [NestApplication] Nest application successfully started +1ms
+[2J[3J[H[[90m9:11:37 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m9:11:37 PM[0m] Found 0 errors. Watching for file changes.
+
+[Nest] 59318  - 09/19/2025, 9:11:38 PM     LOG [NestFactory] Starting Nest application...
+[Nest] 59318  - 09/19/2025, 9:11:38 PM     LOG [InstanceLoader] SupabaseModule dependencies initialized +11ms
+[Nest] 59318  - 09/19/2025, 9:11:38 PM     LOG [InstanceLoader] ConfigHostModule dependencies initialized +0ms
+[Nest] 59318  - 09/19/2025, 9:11:38 PM     LOG [InstanceLoader] AppModule dependencies initialized +0ms
+[Nest] 59318  - 09/19/2025, 9:11:38 PM     LOG [InstanceLoader] ConfigModule dependencies initialized +0ms
+[Nest] 59318  - 09/19/2025, 9:11:38 PM     LOG [InstanceLoader] MaterialsModule dependencies initialized +0ms
+[Nest] 59318  - 09/19/2025, 9:11:38 PM     LOG [InstanceLoader] OrdersModule dependencies initialized +0ms
+[Nest] 59318  - 09/19/2025, 9:11:38 PM     LOG [InstanceLoader] ProductsModule dependencies initialized +0ms
+[Nest] 59318  - 09/19/2025, 9:11:38 PM     LOG [RoutesResolver] AppController {/}: +2ms
+[Nest] 59318  - 09/19/2025, 9:11:38 PM     LOG [RouterExplorer] Mapped {/, GET} route +1ms
+[Nest] 59318  - 09/19/2025, 9:11:38 PM     LOG [RoutesResolver] MaterialsController {/materials}: +0ms
+[Nest] 59318  - 09/19/2025, 9:11:38 PM     LOG [RouterExplorer] Mapped {/materials, GET} route +0ms
+[Nest] 59318  - 09/19/2025, 9:11:38 PM     LOG [RouterExplorer] Mapped {/materials/tags, GET} route +0ms
+[Nest] 59318  - 09/19/2025, 9:11:38 PM     LOG [RouterExplorer] Mapped {/materials/:id, GET} route +0ms
+[Nest] 59318  - 09/19/2025, 9:11:38 PM     LOG [RouterExplorer] Mapped {/materials, POST} route +1ms
+[Nest] 59318  - 09/19/2025, 9:11:38 PM     LOG [RouterExplorer] Mapped {/materials/:id/quantity, PATCH} route +0ms
+[Nest] 59318  - 09/19/2025, 9:11:38 PM     LOG [RoutesResolver] OrdersController {/orders}: +0ms
+[Nest] 59318  - 09/19/2025, 9:11:38 PM     LOG [RouterExplorer] Mapped {/orders, GET} route +0ms
+[Nest] 59318  - 09/19/2025, 9:11:38 PM     LOG [RouterExplorer] Mapped {/orders/:id, GET} route +0ms
+[Nest] 59318  - 09/19/2025, 9:11:38 PM     LOG [RouterExplorer] Mapped {/orders, POST} route +0ms
+[Nest] 59318  - 09/19/2025, 9:11:38 PM     LOG [RouterExplorer] Mapped {/orders/:id/status, PATCH} route +0ms
+[Nest] 59318  - 09/19/2025, 9:11:38 PM     LOG [RouterExplorer] Mapped {/orders/:id, PATCH} route +0ms
+[Nest] 59318  - 09/19/2025, 9:11:38 PM     LOG [RouterExplorer] Mapped {/orders/:id, DELETE} route +0ms
+[Nest] 59318  - 09/19/2025, 9:11:38 PM     LOG [RoutesResolver] ProductsController {/products}: +0ms
+[Nest] 59318  - 09/19/2025, 9:11:38 PM     LOG [RouterExplorer] Mapped {/products, GET} route +1ms
+[Nest] 59318  - 09/19/2025, 9:11:38 PM     LOG [RouterExplorer] Mapped {/products/categories, GET} route +0ms
+[Nest] 59318  - 09/19/2025, 9:11:38 PM     LOG [RouterExplorer] Mapped {/products/:id, GET} route +0ms
+[Nest] 59318  - 09/19/2025, 9:11:38 PM     LOG [RouterExplorer] Mapped {/products, POST} route +0ms
+[Nest] 59318  - 09/19/2025, 9:11:38 PM     LOG [RouterExplorer] Mapped {/products/:id/stock, PATCH} route +0ms
+[Nest] 59318  - 09/19/2025, 9:11:38 PM     LOG [RouterExplorer] Mapped {/products/:id, PATCH} route +0ms
+[Nest] 59318  - 09/19/2025, 9:11:38 PM     LOG [RouterExplorer] Mapped {/products/:id, DELETE} route +0ms
+[Nest] 59318  - 09/19/2025, 9:11:38 PM     LOG [NestApplication] Nest application successfully started +1ms
+[2J[3J[H[[90m9:12:01 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m9:12:01 PM[0m] Found 0 errors. Watching for file changes.
+
+[Nest] 59679  - 09/19/2025, 9:12:02 PM     LOG [NestFactory] Starting Nest application...
+[Nest] 59679  - 09/19/2025, 9:12:02 PM     LOG [InstanceLoader] SupabaseModule dependencies initialized +12ms
+[Nest] 59679  - 09/19/2025, 9:12:02 PM     LOG [InstanceLoader] ConfigHostModule dependencies initialized +0ms
+[Nest] 59679  - 09/19/2025, 9:12:02 PM     LOG [InstanceLoader] AppModule dependencies initialized +0ms
+[Nest] 59679  - 09/19/2025, 9:12:02 PM     LOG [InstanceLoader] ConfigModule dependencies initialized +0ms
+[Nest] 59679  - 09/19/2025, 9:12:02 PM     LOG [InstanceLoader] MaterialsModule dependencies initialized +0ms
+[Nest] 59679  - 09/19/2025, 9:12:02 PM     LOG [InstanceLoader] OrdersModule dependencies initialized +0ms
+[Nest] 59679  - 09/19/2025, 9:12:02 PM     LOG [InstanceLoader] ProductsModule dependencies initialized +0ms
+[Nest] 59679  - 09/19/2025, 9:12:02 PM     LOG [RoutesResolver] AppController {/}: +2ms
+[Nest] 59679  - 09/19/2025, 9:12:02 PM     LOG [RouterExplorer] Mapped {/, GET} route +1ms
+[Nest] 59679  - 09/19/2025, 9:12:02 PM     LOG [RoutesResolver] MaterialsController {/materials}: +0ms
+[Nest] 59679  - 09/19/2025, 9:12:02 PM     LOG [RouterExplorer] Mapped {/materials, GET} route +0ms
+[Nest] 59679  - 09/19/2025, 9:12:02 PM     LOG [RouterExplorer] Mapped {/materials/tags, GET} route +0ms
+[Nest] 59679  - 09/19/2025, 9:12:02 PM     LOG [RouterExplorer] Mapped {/materials/:id, GET} route +0ms
+[Nest] 59679  - 09/19/2025, 9:12:02 PM     LOG [RouterExplorer] Mapped {/materials, POST} route +1ms
+[Nest] 59679  - 09/19/2025, 9:12:02 PM     LOG [RouterExplorer] Mapped {/materials/:id/quantity, PATCH} route +0ms
+[Nest] 59679  - 09/19/2025, 9:12:02 PM     LOG [RoutesResolver] OrdersController {/orders}: +0ms
+[Nest] 59679  - 09/19/2025, 9:12:02 PM     LOG [RouterExplorer] Mapped {/orders, GET} route +0ms
+[Nest] 59679  - 09/19/2025, 9:12:02 PM     LOG [RouterExplorer] Mapped {/orders/:id, GET} route +0ms
+[Nest] 59679  - 09/19/2025, 9:12:02 PM     LOG [RouterExplorer] Mapped {/orders, POST} route +0ms
+[Nest] 59679  - 09/19/2025, 9:12:02 PM     LOG [RouterExplorer] Mapped {/orders/:id/status, PATCH} route +0ms
+[Nest] 59679  - 09/19/2025, 9:12:02 PM     LOG [RouterExplorer] Mapped {/orders/:id, PATCH} route +0ms
+[Nest] 59679  - 09/19/2025, 9:12:02 PM     LOG [RouterExplorer] Mapped {/orders/:id, DELETE} route +1ms
+[Nest] 59679  - 09/19/2025, 9:12:02 PM     LOG [RoutesResolver] ProductsController {/products}: +0ms
+[Nest] 59679  - 09/19/2025, 9:12:02 PM     LOG [RouterExplorer] Mapped {/products, GET} route +0ms
+[Nest] 59679  - 09/19/2025, 9:12:02 PM     LOG [RouterExplorer] Mapped {/products/categories, GET} route +0ms
+[Nest] 59679  - 09/19/2025, 9:12:02 PM     LOG [RouterExplorer] Mapped {/products/:id, GET} route +0ms
+[Nest] 59679  - 09/19/2025, 9:12:02 PM     LOG [RouterExplorer] Mapped {/products, POST} route +0ms
+[Nest] 59679  - 09/19/2025, 9:12:02 PM     LOG [RouterExplorer] Mapped {/products/:id/stock, PATCH} route +0ms
+[Nest] 59679  - 09/19/2025, 9:12:02 PM     LOG [RouterExplorer] Mapped {/products/:id, PATCH} route +0ms
+[Nest] 59679  - 09/19/2025, 9:12:02 PM     LOG [RouterExplorer] Mapped {/products/:id, DELETE} route +0ms
+[Nest] 59679  - 09/19/2025, 9:12:02 PM     LOG [NestApplication] Nest application successfully started +1ms
+[2J[3J[H[[90m9:12:25 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m9:12:25 PM[0m] Found 0 errors. Watching for file changes.
+
+[Nest] 60031  - 09/19/2025, 9:12:26 PM     LOG [NestFactory] Starting Nest application...
+[Nest] 60031  - 09/19/2025, 9:12:26 PM     LOG [InstanceLoader] SupabaseModule dependencies initialized +12ms
+[Nest] 60031  - 09/19/2025, 9:12:26 PM     LOG [InstanceLoader] ConfigHostModule dependencies initialized +0ms
+[Nest] 60031  - 09/19/2025, 9:12:26 PM     LOG [InstanceLoader] AppModule dependencies initialized +0ms
+[Nest] 60031  - 09/19/2025, 9:12:26 PM     LOG [InstanceLoader] ConfigModule dependencies initialized +0ms
+[Nest] 60031  - 09/19/2025, 9:12:26 PM     LOG [InstanceLoader] MaterialsModule dependencies initialized +0ms
+[Nest] 60031  - 09/19/2025, 9:12:26 PM     LOG [InstanceLoader] OrdersModule dependencies initialized +0ms
+[Nest] 60031  - 09/19/2025, 9:12:26 PM     LOG [InstanceLoader] ProductsModule dependencies initialized +0ms
+[Nest] 60031  - 09/19/2025, 9:12:26 PM     LOG [InstanceLoader] FulfillmentModule dependencies initialized +0ms
+[Nest] 60031  - 09/19/2025, 9:12:26 PM     LOG [RoutesResolver] AppController {/}: +2ms
+[Nest] 60031  - 09/19/2025, 9:12:26 PM     LOG [RouterExplorer] Mapped {/, GET} route +1ms
+[Nest] 60031  - 09/19/2025, 9:12:26 PM     LOG [RoutesResolver] MaterialsController {/materials}: +0ms
+[Nest] 60031  - 09/19/2025, 9:12:26 PM     LOG [RouterExplorer] Mapped {/materials, GET} route +0ms
+[Nest] 60031  - 09/19/2025, 9:12:26 PM     LOG [RouterExplorer] Mapped {/materials/tags, GET} route +0ms
+[Nest] 60031  - 09/19/2025, 9:12:26 PM     LOG [RouterExplorer] Mapped {/materials/:id, GET} route +1ms
+[Nest] 60031  - 09/19/2025, 9:12:26 PM     LOG [RouterExplorer] Mapped {/materials, POST} route +0ms
+[Nest] 60031  - 09/19/2025, 9:12:26 PM     LOG [RouterExplorer] Mapped {/materials/:id/quantity, PATCH} route +0ms
+[Nest] 60031  - 09/19/2025, 9:12:26 PM     LOG [RoutesResolver] OrdersController {/orders}: +0ms
+[Nest] 60031  - 09/19/2025, 9:12:26 PM     LOG [RouterExplorer] Mapped {/orders, GET} route +0ms
+[Nest] 60031  - 09/19/2025, 9:12:26 PM     LOG [RouterExplorer] Mapped {/orders/:id, GET} route +0ms
+[Nest] 60031  - 09/19/2025, 9:12:26 PM     LOG [RouterExplorer] Mapped {/orders, POST} route +0ms
+[Nest] 60031  - 09/19/2025, 9:12:26 PM     LOG [RouterExplorer] Mapped {/orders/:id/status, PATCH} route +1ms
+[Nest] 60031  - 09/19/2025, 9:12:26 PM     LOG [RouterExplorer] Mapped {/orders/:id, PATCH} route +0ms
+[Nest] 60031  - 09/19/2025, 9:12:26 PM     LOG [RouterExplorer] Mapped {/orders/:id, DELETE} route +0ms
+[Nest] 60031  - 09/19/2025, 9:12:26 PM     LOG [RoutesResolver] ProductsController {/products}: +0ms
+[Nest] 60031  - 09/19/2025, 9:12:26 PM     LOG [RouterExplorer] Mapped {/products, GET} route +0ms
+[Nest] 60031  - 09/19/2025, 9:12:26 PM     LOG [RouterExplorer] Mapped {/products/categories, GET} route +0ms
+[Nest] 60031  - 09/19/2025, 9:12:26 PM     LOG [RouterExplorer] Mapped {/products/:id, GET} route +0ms
+[Nest] 60031  - 09/19/2025, 9:12:26 PM     LOG [RouterExplorer] Mapped {/products, POST} route +0ms
+[Nest] 60031  - 09/19/2025, 9:12:26 PM     LOG [RouterExplorer] Mapped {/products/:id/stock, PATCH} route +0ms
+[Nest] 60031  - 09/19/2025, 9:12:26 PM     LOG [RouterExplorer] Mapped {/products/:id, PATCH} route +0ms
+[Nest] 60031  - 09/19/2025, 9:12:26 PM     LOG [RouterExplorer] Mapped {/products/:id, DELETE} route +1ms
+[Nest] 60031  - 09/19/2025, 9:12:26 PM     LOG [RoutesResolver] FulfillmentController {/fulfillment}: +0ms
+[Nest] 60031  - 09/19/2025, 9:12:26 PM     LOG [RouterExplorer] Mapped {/fulfillment/orders, GET} route +0ms
+[Nest] 60031  - 09/19/2025, 9:12:26 PM     LOG [RouterExplorer] Mapped {/fulfillment/orders/:id, GET} route +0ms
+[Nest] 60031  - 09/19/2025, 9:12:26 PM     LOG [RouterExplorer] Mapped {/fulfillment/orders, POST} route +0ms
+[Nest] 60031  - 09/19/2025, 9:12:26 PM     LOG [RouterExplorer] Mapped {/fulfillment/orders/:id, PATCH} route +0ms
+[Nest] 60031  - 09/19/2025, 9:12:26 PM     LOG [RouterExplorer] Mapped {/fulfillment/orders/:id, DELETE} route +0ms
+[Nest] 60031  - 09/19/2025, 9:12:26 PM     LOG [RouterExplorer] Mapped {/fulfillment/orders/:id/items, POST} route +0ms
+[Nest] 60031  - 09/19/2025, 9:12:26 PM     LOG [RouterExplorer] Mapped {/fulfillment/items/:id, PATCH} route +0ms
+[Nest] 60031  - 09/19/2025, 9:12:26 PM     LOG [RouterExplorer] Mapped {/fulfillment/items/:id, DELETE} route +0ms
+[Nest] 60031  - 09/19/2025, 9:12:26 PM     LOG [NestApplication] Nest application successfully started +1ms
+[2J[3J[H[[90m9:19:28 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m9:19:28 PM[0m] Found 0 errors. Watching for file changes.
+
+[2J[3J[H[[90m9:19:28 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m9:19:28 PM[0m] Found 0 errors. Watching for file changes.
+
+[Nest] 66248  - 09/19/2025, 9:19:29 PM     LOG [NestFactory] Starting Nest application...
+[Nest] 66248  - 09/19/2025, 9:19:29 PM     LOG [InstanceLoader] SupabaseModule dependencies initialized +13ms
+[Nest] 66248  - 09/19/2025, 9:19:29 PM     LOG [InstanceLoader] ConfigHostModule dependencies initialized +0ms
+[Nest] 66248  - 09/19/2025, 9:19:29 PM     LOG [InstanceLoader] AppModule dependencies initialized +0ms
+[Nest] 66248  - 09/19/2025, 9:19:29 PM     LOG [InstanceLoader] ConfigModule dependencies initialized +0ms
+[Nest] 66248  - 09/19/2025, 9:19:29 PM     LOG [InstanceLoader] MaterialsModule dependencies initialized +0ms
+[Nest] 66248  - 09/19/2025, 9:19:29 PM     LOG [InstanceLoader] OrdersModule dependencies initialized +0ms
+[Nest] 66248  - 09/19/2025, 9:19:29 PM     LOG [InstanceLoader] ProductsModule dependencies initialized +0ms
+[Nest] 66248  - 09/19/2025, 9:19:29 PM     LOG [InstanceLoader] FulfillmentModule dependencies initialized +1ms
+[Nest] 66248  - 09/19/2025, 9:19:29 PM     LOG [RoutesResolver] AppController {/}: +1ms
+[Nest] 66248  - 09/19/2025, 9:19:29 PM     LOG [RouterExplorer] Mapped {/, GET} route +1ms
+[Nest] 66248  - 09/19/2025, 9:19:29 PM     LOG [RoutesResolver] MaterialsController {/materials}: +0ms
+[Nest] 66248  - 09/19/2025, 9:19:29 PM     LOG [RouterExplorer] Mapped {/materials, GET} route +1ms
+[Nest] 66248  - 09/19/2025, 9:19:29 PM     LOG [RouterExplorer] Mapped {/materials/tags, GET} route +0ms
+[Nest] 66248  - 09/19/2025, 9:19:29 PM     LOG [RouterExplorer] Mapped {/materials/:id, GET} route +0ms
+[Nest] 66248  - 09/19/2025, 9:19:29 PM     LOG [RouterExplorer] Mapped {/materials, POST} route +0ms
+[Nest] 66248  - 09/19/2025, 9:19:29 PM     LOG [RouterExplorer] Mapped {/materials/:id/quantity, PATCH} route +0ms
+[Nest] 66248  - 09/19/2025, 9:19:29 PM     LOG [RoutesResolver] OrdersController {/orders}: +0ms
+[Nest] 66248  - 09/19/2025, 9:19:29 PM     LOG [RouterExplorer] Mapped {/orders, GET} route +0ms
+[Nest] 66248  - 09/19/2025, 9:19:29 PM     LOG [RouterExplorer] Mapped {/orders/:id, GET} route +1ms
+[Nest] 66248  - 09/19/2025, 9:19:29 PM     LOG [RouterExplorer] Mapped {/orders, POST} route +0ms
+[Nest] 66248  - 09/19/2025, 9:19:29 PM     LOG [RouterExplorer] Mapped {/orders/:id/status, PATCH} route +0ms
+[Nest] 66248  - 09/19/2025, 9:19:29 PM     LOG [RouterExplorer] Mapped {/orders/:id, PATCH} route +0ms
+[Nest] 66248  - 09/19/2025, 9:19:29 PM     LOG [RouterExplorer] Mapped {/orders/:id, DELETE} route +0ms
+[Nest] 66248  - 09/19/2025, 9:19:29 PM     LOG [RoutesResolver] ProductsController {/products}: +0ms
+[Nest] 66248  - 09/19/2025, 9:19:29 PM     LOG [RouterExplorer] Mapped {/products, GET} route +0ms
+[Nest] 66248  - 09/19/2025, 9:19:29 PM     LOG [RouterExplorer] Mapped {/products/categories, GET} route +0ms
+[Nest] 66248  - 09/19/2025, 9:19:29 PM     LOG [RouterExplorer] Mapped {/products/:id, GET} route +0ms
+[Nest] 66248  - 09/19/2025, 9:19:29 PM     LOG [RouterExplorer] Mapped {/products, POST} route +0ms
+[Nest] 66248  - 09/19/2025, 9:19:29 PM     LOG [RouterExplorer] Mapped {/products/:id/stock, PATCH} route +1ms
+[Nest] 66248  - 09/19/2025, 9:19:29 PM     LOG [RouterExplorer] Mapped {/products/:id, PATCH} route +0ms
+[Nest] 66248  - 09/19/2025, 9:19:29 PM     LOG [RouterExplorer] Mapped {/products/:id, DELETE} route +0ms
+[Nest] 66248  - 09/19/2025, 9:19:29 PM     LOG [RoutesResolver] FulfillmentController {/fulfillment}: +0ms
+[Nest] 66248  - 09/19/2025, 9:19:29 PM     LOG [RouterExplorer] Mapped {/fulfillment/orders, GET} route +0ms
+[Nest] 66248  - 09/19/2025, 9:19:29 PM     LOG [RouterExplorer] Mapped {/fulfillment/orders/:id, GET} route +0ms
+[Nest] 66248  - 09/19/2025, 9:19:29 PM     LOG [RouterExplorer] Mapped {/fulfillment/orders, POST} route +0ms
+[Nest] 66248  - 09/19/2025, 9:19:29 PM     LOG [RouterExplorer] Mapped {/fulfillment/orders/:id, PATCH} route +0ms
+[Nest] 66248  - 09/19/2025, 9:19:29 PM     LOG [RouterExplorer] Mapped {/fulfillment/orders/:id, DELETE} route +2ms
+[Nest] 66248  - 09/19/2025, 9:19:29 PM     LOG [RouterExplorer] Mapped {/fulfillment/orders/:id/items, POST} route +0ms
+[Nest] 66248  - 09/19/2025, 9:19:29 PM     LOG [RouterExplorer] Mapped {/fulfillment/items/:id, PATCH} route +0ms
+[Nest] 66248  - 09/19/2025, 9:19:29 PM     LOG [RouterExplorer] Mapped {/fulfillment/items/:id, DELETE} route +0ms
+[Nest] 66248  - 09/19/2025, 9:19:29 PM     LOG [NestApplication] Nest application successfully started +1ms
+[2J[3J[H[[90m9:20:01 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m9:20:01 PM[0m] Found 0 errors. Watching for file changes.
+
+[Nest] 66748  - 09/19/2025, 9:20:02 PM     LOG [NestFactory] Starting Nest application...
+[Nest] 66748  - 09/19/2025, 9:20:02 PM     LOG [InstanceLoader] SupabaseModule dependencies initialized +12ms
+[Nest] 66748  - 09/19/2025, 9:20:02 PM     LOG [InstanceLoader] ConfigHostModule dependencies initialized +0ms
+[Nest] 66748  - 09/19/2025, 9:20:02 PM     LOG [InstanceLoader] AppModule dependencies initialized +0ms
+[Nest] 66748  - 09/19/2025, 9:20:02 PM     LOG [InstanceLoader] ConfigModule dependencies initialized +0ms
+[Nest] 66748  - 09/19/2025, 9:20:02 PM     LOG [InstanceLoader] MaterialsModule dependencies initialized +0ms
+[Nest] 66748  - 09/19/2025, 9:20:02 PM     LOG [InstanceLoader] OrdersModule dependencies initialized +0ms
+[Nest] 66748  - 09/19/2025, 9:20:02 PM     LOG [InstanceLoader] ProductsModule dependencies initialized +0ms
+[Nest] 66748  - 09/19/2025, 9:20:02 PM     LOG [InstanceLoader] FulfillmentModule dependencies initialized +0ms
+[Nest] 66748  - 09/19/2025, 9:20:02 PM     LOG [RoutesResolver] AppController {/}: +2ms
+[Nest] 66748  - 09/19/2025, 9:20:02 PM     LOG [RouterExplorer] Mapped {/, GET} route +1ms
+[Nest] 66748  - 09/19/2025, 9:20:02 PM     LOG [RoutesResolver] MaterialsController {/materials}: +0ms
+[Nest] 66748  - 09/19/2025, 9:20:02 PM     LOG [RouterExplorer] Mapped {/materials, GET} route +0ms
+[Nest] 66748  - 09/19/2025, 9:20:02 PM     LOG [RouterExplorer] Mapped {/materials/tags, GET} route +0ms
+[Nest] 66748  - 09/19/2025, 9:20:02 PM     LOG [RouterExplorer] Mapped {/materials/:id, GET} route +0ms
+[Nest] 66748  - 09/19/2025, 9:20:02 PM     LOG [RouterExplorer] Mapped {/materials, POST} route +0ms
+[Nest] 66748  - 09/19/2025, 9:20:02 PM     LOG [RouterExplorer] Mapped {/materials/:id/quantity, PATCH} route +0ms
+[Nest] 66748  - 09/19/2025, 9:20:02 PM     LOG [RoutesResolver] OrdersController {/orders}: +1ms
+[Nest] 66748  - 09/19/2025, 9:20:02 PM     LOG [RouterExplorer] Mapped {/orders, GET} route +0ms
+[Nest] 66748  - 09/19/2025, 9:20:02 PM     LOG [RouterExplorer] Mapped {/orders/:id, GET} route +0ms
+[Nest] 66748  - 09/19/2025, 9:20:02 PM     LOG [RouterExplorer] Mapped {/orders, POST} route +0ms
+[Nest] 66748  - 09/19/2025, 9:20:02 PM     LOG [RouterExplorer] Mapped {/orders/:id/status, PATCH} route +0ms
+[Nest] 66748  - 09/19/2025, 9:20:02 PM     LOG [RouterExplorer] Mapped {/orders/:id, PATCH} route +0ms
+[Nest] 66748  - 09/19/2025, 9:20:02 PM     LOG [RouterExplorer] Mapped {/orders/:id, DELETE} route +0ms
+[Nest] 66748  - 09/19/2025, 9:20:02 PM     LOG [RoutesResolver] ProductsController {/products}: +0ms
+[Nest] 66748  - 09/19/2025, 9:20:02 PM     LOG [RouterExplorer] Mapped {/products, GET} route +0ms
+[Nest] 66748  - 09/19/2025, 9:20:02 PM     LOG [RouterExplorer] Mapped {/products/categories, GET} route +1ms
+[Nest] 66748  - 09/19/2025, 9:20:02 PM     LOG [RouterExplorer] Mapped {/products/:id, GET} route +0ms
+[Nest] 66748  - 09/19/2025, 9:20:02 PM     LOG [RouterExplorer] Mapped {/products, POST} route +0ms
+[Nest] 66748  - 09/19/2025, 9:20:02 PM     LOG [RouterExplorer] Mapped {/products/:id/stock, PATCH} route +0ms
+[Nest] 66748  - 09/19/2025, 9:20:02 PM     LOG [RouterExplorer] Mapped {/products/:id, PATCH} route +0ms
+[Nest] 66748  - 09/19/2025, 9:20:02 PM     LOG [RouterExplorer] Mapped {/products/:id, DELETE} route +0ms
+[Nest] 66748  - 09/19/2025, 9:20:02 PM     LOG [RoutesResolver] FulfillmentController {/fulfillment}: +0ms
+[Nest] 66748  - 09/19/2025, 9:20:02 PM     LOG [RouterExplorer] Mapped {/fulfillment/orders, GET} route +0ms
+[Nest] 66748  - 09/19/2025, 9:20:02 PM     LOG [RouterExplorer] Mapped {/fulfillment/orders/:id, GET} route +0ms
+[Nest] 66748  - 09/19/2025, 9:20:02 PM     LOG [RouterExplorer] Mapped {/fulfillment/orders, POST} route +0ms
+[Nest] 66748  - 09/19/2025, 9:20:02 PM     LOG [RouterExplorer] Mapped {/fulfillment/orders/:id, PATCH} route +0ms
+[Nest] 66748  - 09/19/2025, 9:20:02 PM     LOG [RouterExplorer] Mapped {/fulfillment/orders/:id, DELETE} route +0ms
+[Nest] 66748  - 09/19/2025, 9:20:02 PM     LOG [RouterExplorer] Mapped {/fulfillment/orders/:id/items, POST} route +0ms
+[Nest] 66748  - 09/19/2025, 9:20:02 PM     LOG [RouterExplorer] Mapped {/fulfillment/items/:id, PATCH} route +1ms
+[Nest] 66748  - 09/19/2025, 9:20:02 PM     LOG [RouterExplorer] Mapped {/fulfillment/items/:id, DELETE} route +0ms
+[Nest] 66748  - 09/19/2025, 9:20:02 PM     LOG [NestApplication] Nest application successfully started +1ms
+[2J[3J[H[[90m9:20:35 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m9:20:36 PM[0m] Found 0 errors. Watching for file changes.
+
+[Nest] 67267  - 09/19/2025, 9:20:36 PM     LOG [NestFactory] Starting Nest application...
+[Nest] 67267  - 09/19/2025, 9:20:36 PM     LOG [InstanceLoader] SupabaseModule dependencies initialized +13ms
+[Nest] 67267  - 09/19/2025, 9:20:36 PM     LOG [InstanceLoader] ConfigHostModule dependencies initialized +0ms
+[Nest] 67267  - 09/19/2025, 9:20:36 PM     LOG [InstanceLoader] AppModule dependencies initialized +0ms
+[Nest] 67267  - 09/19/2025, 9:20:36 PM     LOG [InstanceLoader] ConfigModule dependencies initialized +0ms
+[Nest] 67267  - 09/19/2025, 9:20:36 PM     LOG [InstanceLoader] MaterialsModule dependencies initialized +0ms
+[Nest] 67267  - 09/19/2025, 9:20:36 PM     LOG [InstanceLoader] OrdersModule dependencies initialized +0ms
+[Nest] 67267  - 09/19/2025, 9:20:36 PM     LOG [InstanceLoader] ProductsModule dependencies initialized +0ms
+[Nest] 67267  - 09/19/2025, 9:20:36 PM     LOG [InstanceLoader] FulfillmentModule dependencies initialized +0ms
+[Nest] 67267  - 09/19/2025, 9:20:36 PM     LOG [RoutesResolver] AppController {/}: +2ms
+[Nest] 67267  - 09/19/2025, 9:20:36 PM     LOG [RouterExplorer] Mapped {/, GET} route +1ms
+[Nest] 67267  - 09/19/2025, 9:20:36 PM     LOG [RoutesResolver] MaterialsController {/materials}: +0ms
+[Nest] 67267  - 09/19/2025, 9:20:36 PM     LOG [RouterExplorer] Mapped {/materials, GET} route +0ms
+[Nest] 67267  - 09/19/2025, 9:20:36 PM     LOG [RouterExplorer] Mapped {/materials/tags, GET} route +0ms
+[Nest] 67267  - 09/19/2025, 9:20:36 PM     LOG [RouterExplorer] Mapped {/materials/:id, GET} route +0ms
+[Nest] 67267  - 09/19/2025, 9:20:36 PM     LOG [RouterExplorer] Mapped {/materials, POST} route +0ms
+[Nest] 67267  - 09/19/2025, 9:20:36 PM     LOG [RouterExplorer] Mapped {/materials/:id/quantity, PATCH} route +0ms
+[Nest] 67267  - 09/19/2025, 9:20:36 PM     LOG [RoutesResolver] OrdersController {/orders}: +1ms
+[Nest] 67267  - 09/19/2025, 9:20:36 PM     LOG [RouterExplorer] Mapped {/orders, GET} route +0ms
+[Nest] 67267  - 09/19/2025, 9:20:36 PM     LOG [RouterExplorer] Mapped {/orders/:id, GET} route +0ms
+[Nest] 67267  - 09/19/2025, 9:20:36 PM     LOG [RouterExplorer] Mapped {/orders, POST} route +0ms
+[Nest] 67267  - 09/19/2025, 9:20:36 PM     LOG [RouterExplorer] Mapped {/orders/:id/status, PATCH} route +0ms
+[Nest] 67267  - 09/19/2025, 9:20:36 PM     LOG [RouterExplorer] Mapped {/orders/:id, PATCH} route +0ms
+[Nest] 67267  - 09/19/2025, 9:20:36 PM     LOG [RouterExplorer] Mapped {/orders/:id, DELETE} route +0ms
+[Nest] 67267  - 09/19/2025, 9:20:36 PM     LOG [RoutesResolver] ProductsController {/products}: +0ms
+[Nest] 67267  - 09/19/2025, 9:20:36 PM     LOG [RouterExplorer] Mapped {/products, GET} route +0ms
+[Nest] 67267  - 09/19/2025, 9:20:36 PM     LOG [RouterExplorer] Mapped {/products/categories, GET} route +1ms
+[Nest] 67267  - 09/19/2025, 9:20:36 PM     LOG [RouterExplorer] Mapped {/products/:id, GET} route +0ms
+[Nest] 67267  - 09/19/2025, 9:20:36 PM     LOG [RouterExplorer] Mapped {/products, POST} route +0ms
+[Nest] 67267  - 09/19/2025, 9:20:36 PM     LOG [RouterExplorer] Mapped {/products/:id/stock, PATCH} route +0ms
+[Nest] 67267  - 09/19/2025, 9:20:36 PM     LOG [RouterExplorer] Mapped {/products/:id, PATCH} route +0ms
+[Nest] 67267  - 09/19/2025, 9:20:36 PM     LOG [RouterExplorer] Mapped {/products/:id, DELETE} route +0ms
+[Nest] 67267  - 09/19/2025, 9:20:36 PM     LOG [RoutesResolver] FulfillmentController {/fulfillment}: +0ms
+[Nest] 67267  - 09/19/2025, 9:20:36 PM     LOG [RouterExplorer] Mapped {/fulfillment/orders, GET} route +0ms
+[Nest] 67267  - 09/19/2025, 9:20:36 PM     LOG [RouterExplorer] Mapped {/fulfillment/orders/:id, GET} route +0ms
+[Nest] 67267  - 09/19/2025, 9:20:36 PM     LOG [RouterExplorer] Mapped {/fulfillment/orders, POST} route +0ms
+[Nest] 67267  - 09/19/2025, 9:20:36 PM     LOG [RouterExplorer] Mapped {/fulfillment/orders/:id, PATCH} route +0ms
+[Nest] 67267  - 09/19/2025, 9:20:36 PM     LOG [RouterExplorer] Mapped {/fulfillment/orders/:id, DELETE} route +0ms
+[Nest] 67267  - 09/19/2025, 9:20:36 PM     LOG [RouterExplorer] Mapped {/fulfillment/orders/:id/items, POST} route +0ms
+[Nest] 67267  - 09/19/2025, 9:20:36 PM     LOG [RouterExplorer] Mapped {/fulfillment/items/:id, PATCH} route +0ms
+[Nest] 67267  - 09/19/2025, 9:20:36 PM     LOG [RouterExplorer] Mapped {/fulfillment/items/:id, DELETE} route +0ms
+[Nest] 67267  - 09/19/2025, 9:20:36 PM     LOG [NestApplication] Nest application successfully started +1ms
+[2J[3J[H[[90m9:22:17 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/fulfillment/fulfillment.controller.ts[0m:[93m2[0m:[93m79[0m - [91merror[0m[90m TS2305: [0mModule '"../supabase/supabase.service"' has no exported member 'OrderItem'.
+
+[7m2[0m import { SupabaseService, FulfillmentOrder, PaymentStatus, FulfillmentStatus, OrderItem } from '../supabase/supabase.service';
+[7m [0m [91m                                                                              ~~~~~~~~~[0m
+
+[96msrc/fulfillment/fulfillment.controller.ts[0m:[93m60[0m:[93m33[0m - [91merror[0m[90m TS2339: [0mProperty 'addOrderItems' does not exist on type 'SupabaseService'.
+
+[7m60[0m     return this.supabaseService.addOrderItems(Number(id), items);
+[7m  [0m [91m                                ~~~~~~~~~~~~~[0m
+
+[96msrc/fulfillment/fulfillment.controller.ts[0m:[93m68[0m:[93m33[0m - [91merror[0m[90m TS2551: [0mProperty 'updateOrderItem' does not exist on type 'SupabaseService'. Did you mean 'updateOrderItems'?
+
+[7m68[0m     return this.supabaseService.updateOrderItem(Number(id), updateItemDto);
+[7m  [0m [91m                                ~~~~~~~~~~~~~~~[0m
+
+  [96msrc/supabase/supabase.service.ts[0m:[93m478[0m:[93m9[0m
+    [7m478[0m   async updateOrderItems(id: number, items: any) {
+    [7m   [0m [96m        ~~~~~~~~~~~~~~~~[0m
+    'updateOrderItems' is declared here.
+
+[96msrc/fulfillment/fulfillment.controller.ts[0m:[93m73[0m:[93m33[0m - [91merror[0m[90m TS2551: [0mProperty 'deleteOrderItem' does not exist on type 'SupabaseService'. Did you mean 'deleteOrder'?
+
+[7m73[0m     return this.supabaseService.deleteOrderItem(Number(id));
+[7m  [0m [91m                                ~~~~~~~~~~~~~~~[0m
+
+  [96msrc/supabase/supabase.service.ts[0m:[93m250[0m:[93m9[0m
+    [7m250[0m   async deleteOrder(id: number) {
+    [7m   [0m [96m        ~~~~~~~~~~~[0m
+    'deleteOrder' is declared here.
+
+[[90m9:22:17 PM[0m] Found 4 errors. Watching for file changes.
+
+[2J[3J[H[[90m9:22:47 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m9:22:47 PM[0m] Found 0 errors. Watching for file changes.
+
+[Nest] 69103  - 09/19/2025, 9:22:48 PM     LOG [NestFactory] Starting Nest application...
+[Nest] 69103  - 09/19/2025, 9:22:48 PM     LOG [InstanceLoader] SupabaseModule dependencies initialized +12ms
+[Nest] 69103  - 09/19/2025, 9:22:48 PM     LOG [InstanceLoader] ConfigHostModule dependencies initialized +0ms
+[Nest] 69103  - 09/19/2025, 9:22:48 PM     LOG [InstanceLoader] AppModule dependencies initialized +0ms
+[Nest] 69103  - 09/19/2025, 9:22:48 PM     LOG [InstanceLoader] ConfigModule dependencies initialized +0ms
+[Nest] 69103  - 09/19/2025, 9:22:48 PM     LOG [InstanceLoader] MaterialsModule dependencies initialized +0ms
+[Nest] 69103  - 09/19/2025, 9:22:48 PM     LOG [InstanceLoader] OrdersModule dependencies initialized +0ms
+[Nest] 69103  - 09/19/2025, 9:22:48 PM     LOG [InstanceLoader] ProductsModule dependencies initialized +0ms
+[Nest] 69103  - 09/19/2025, 9:22:48 PM     LOG [InstanceLoader] FulfillmentModule dependencies initialized +0ms
+[Nest] 69103  - 09/19/2025, 9:22:48 PM     LOG [RoutesResolver] AppController {/}: +2ms
+[Nest] 69103  - 09/19/2025, 9:22:48 PM     LOG [RouterExplorer] Mapped {/, GET} route +1ms
+[Nest] 69103  - 09/19/2025, 9:22:48 PM     LOG [RoutesResolver] MaterialsController {/materials}: +0ms
+[Nest] 69103  - 09/19/2025, 9:22:48 PM     LOG [RouterExplorer] Mapped {/materials, GET} route +0ms
+[Nest] 69103  - 09/19/2025, 9:22:48 PM     LOG [RouterExplorer] Mapped {/materials/tags, GET} route +0ms
+[Nest] 69103  - 09/19/2025, 9:22:48 PM     LOG [RouterExplorer] Mapped {/materials/:id, GET} route +0ms
+[Nest] 69103  - 09/19/2025, 9:22:48 PM     LOG [RouterExplorer] Mapped {/materials, POST} route +0ms
+[Nest] 69103  - 09/19/2025, 9:22:48 PM     LOG [RouterExplorer] Mapped {/materials/:id/quantity, PATCH} route +0ms
+[Nest] 69103  - 09/19/2025, 9:22:48 PM     LOG [RoutesResolver] OrdersController {/orders}: +0ms
+[Nest] 69103  - 09/19/2025, 9:22:48 PM     LOG [RouterExplorer] Mapped {/orders, GET} route +1ms
+[Nest] 69103  - 09/19/2025, 9:22:48 PM     LOG [RouterExplorer] Mapped {/orders/:id, GET} route +0ms
+[Nest] 69103  - 09/19/2025, 9:22:48 PM     LOG [RouterExplorer] Mapped {/orders, POST} route +0ms
+[Nest] 69103  - 09/19/2025, 9:22:48 PM     LOG [RouterExplorer] Mapped {/orders/:id/status, PATCH} route +0ms
+[Nest] 69103  - 09/19/2025, 9:22:48 PM     LOG [RouterExplorer] Mapped {/orders/:id, PATCH} route +0ms
+[Nest] 69103  - 09/19/2025, 9:22:48 PM     LOG [RouterExplorer] Mapped {/orders/:id, DELETE} route +0ms
+[Nest] 69103  - 09/19/2025, 9:22:48 PM     LOG [RoutesResolver] ProductsController {/products}: +0ms
+[Nest] 69103  - 09/19/2025, 9:22:48 PM     LOG [RouterExplorer] Mapped {/products, GET} route +0ms
+[Nest] 69103  - 09/19/2025, 9:22:48 PM     LOG [RouterExplorer] Mapped {/products/categories, GET} route +0ms
+[Nest] 69103  - 09/19/2025, 9:22:48 PM     LOG [RouterExplorer] Mapped {/products/:id, GET} route +0ms
+[Nest] 69103  - 09/19/2025, 9:22:48 PM     LOG [RouterExplorer] Mapped {/products, POST} route +0ms
+[Nest] 69103  - 09/19/2025, 9:22:48 PM     LOG [RouterExplorer] Mapped {/products/:id/stock, PATCH} route +1ms
+[Nest] 69103  - 09/19/2025, 9:22:48 PM     LOG [RouterExplorer] Mapped {/products/:id, PATCH} route +0ms
+[Nest] 69103  - 09/19/2025, 9:22:48 PM     LOG [RouterExplorer] Mapped {/products/:id, DELETE} route +0ms
+[Nest] 69103  - 09/19/2025, 9:22:48 PM     LOG [RoutesResolver] FulfillmentController {/fulfillment}: +0ms
+[Nest] 69103  - 09/19/2025, 9:22:48 PM     LOG [RouterExplorer] Mapped {/fulfillment/orders, GET} route +0ms
+[Nest] 69103  - 09/19/2025, 9:22:48 PM     LOG [RouterExplorer] Mapped {/fulfillment/orders/:id, GET} route +0ms
+[Nest] 69103  - 09/19/2025, 9:22:48 PM     LOG [RouterExplorer] Mapped {/fulfillment/orders, POST} route +0ms
+[Nest] 69103  - 09/19/2025, 9:22:48 PM     LOG [RouterExplorer] Mapped {/fulfillment/orders/:id, PATCH} route +0ms
+[Nest] 69103  - 09/19/2025, 9:22:48 PM     LOG [RouterExplorer] Mapped {/fulfillment/orders/:id, DELETE} route +1ms
+[Nest] 69103  - 09/19/2025, 9:22:48 PM     LOG [RouterExplorer] Mapped {/fulfillment/orders/:id/items, PATCH} route +0ms
+[Nest] 69103  - 09/19/2025, 9:22:48 PM     LOG [NestApplication] Nest application successfully started +1ms
+[2J[3J[H[[90m9:23:55 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/update-fulfillment-table.ts[0m:[93m75[0m:[93m15[0m - [91merror[0m[90m TS2322: [0mType '{ name: string; quantity: number; price: number; }' is not assignable to type 'never'.
+
+[7m75[0m               { name: 'Navy Jersey Pocket Tee', quantity: 2, price: 29.99 },
+[7m  [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/update-fulfillment-table.ts[0m:[93m76[0m:[93m15[0m - [91merror[0m[90m TS2322: [0mType '{ name: string; quantity: number; price: number; }' is not assignable to type 'never'.
+
+[7m76[0m               { name: 'Charcoal Beanie', quantity: 1, price: 29.99 }
+[7m  [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/update-fulfillment-table.ts[0m:[93m81[0m:[93m15[0m - [91merror[0m[90m TS2322: [0mType '{ name: string; quantity: number; price: number; }' is not assignable to type 'never'.
+
+[7m81[0m               { name: 'White Midweight Hoodie', quantity: 1, price: 79.99 },
+[7m  [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/update-fulfillment-table.ts[0m:[93m82[0m:[93m15[0m - [91merror[0m[90m TS2322: [0mType '{ name: string; quantity: number; price: number; }' is not assignable to type 'never'.
+
+[7m82[0m               { name: 'Navy Boiled Wool Hat', quantity: 1, price: 49.99 }
+[7m  [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/update-fulfillment-table.ts[0m:[93m87[0m:[93m15[0m - [91merror[0m[90m TS2322: [0mType '{ name: string; quantity: number; price: number; }' is not assignable to type 'never'.
+
+[7m87[0m               { name: 'Dark Coffee Fleece Hoodie', quantity: 1, price: 89.99 },
+[7m  [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/update-fulfillment-table.ts[0m:[93m88[0m:[93m15[0m - [91merror[0m[90m TS2322: [0mType '{ name: string; quantity: number; price: number; }' is not assignable to type 'never'.
+
+[7m88[0m               { name: 'Dark Coffee Sweatpants', quantity: 1, price: 69.98 }
+[7m  [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/update-fulfillment-table.ts[0m:[93m93[0m:[93m15[0m - [91merror[0m[90m TS2322: [0mType '{ name: string; quantity: number; price: number; }' is not assignable to type 'never'.
+
+[7m93[0m               { name: 'Ash Heather Heavyweight Tee', quantity: 2, price: 29.99 }
+[7m  [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/update-fulfillment-table.ts[0m:[93m98[0m:[93m15[0m - [91merror[0m[90m TS2322: [0mType '{ name: string; quantity: number; price: number; }' is not assignable to type 'never'.
+
+[7m98[0m               { name: 'White Midweight Hoodie', quantity: 1, price: 79.99 },
+[7m  [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/update-fulfillment-table.ts[0m:[93m99[0m:[93m15[0m - [91merror[0m[90m TS2322: [0mType '{ name: string; quantity: number; price: number; }' is not assignable to type 'never'.
+
+[7m99[0m               { name: 'Ash Heather Sweatpants', quantity: 2, price: 69.98 }
+[7m  [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/update-fulfillment-table.ts[0m:[93m104[0m:[93m15[0m - [91merror[0m[90m TS2322: [0mType '{ name: string; quantity: number; price: number; }' is not assignable to type 'never'.
+
+[7m104[0m               { name: 'Sample Product', quantity: 1, price: 49.99 }
+[7m   [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[[90m9:23:55 PM[0m] Found 10 errors. Watching for file changes.
+
+[Nest] 70084  - 09/19/2025, 9:23:56 PM     LOG [NestFactory] Starting Nest application...
+[Nest] 70084  - 09/19/2025, 9:23:56 PM     LOG [InstanceLoader] SupabaseModule dependencies initialized +12ms
+[Nest] 70084  - 09/19/2025, 9:23:56 PM     LOG [InstanceLoader] ConfigHostModule dependencies initialized +0ms
+[Nest] 70084  - 09/19/2025, 9:23:56 PM     LOG [InstanceLoader] AppModule dependencies initialized +0ms
+[Nest] 70084  - 09/19/2025, 9:23:56 PM     LOG [InstanceLoader] ConfigModule dependencies initialized +0ms
+[Nest] 70084  - 09/19/2025, 9:23:56 PM     LOG [InstanceLoader] MaterialsModule dependencies initialized +0ms
+[Nest] 70084  - 09/19/2025, 9:23:56 PM     LOG [InstanceLoader] OrdersModule dependencies initialized +0ms
+[Nest] 70084  - 09/19/2025, 9:23:56 PM     LOG [InstanceLoader] ProductsModule dependencies initialized +0ms
+[Nest] 70084  - 09/19/2025, 9:23:56 PM     LOG [InstanceLoader] FulfillmentModule dependencies initialized +0ms
+[Nest] 70084  - 09/19/2025, 9:23:56 PM     LOG [RoutesResolver] AppController {/}: +2ms
+[Nest] 70084  - 09/19/2025, 9:23:56 PM     LOG [RouterExplorer] Mapped {/, GET} route +1ms
+[Nest] 70084  - 09/19/2025, 9:23:56 PM     LOG [RoutesResolver] MaterialsController {/materials}: +0ms
+[Nest] 70084  - 09/19/2025, 9:23:56 PM     LOG [RouterExplorer] Mapped {/materials, GET} route +0ms
+[Nest] 70084  - 09/19/2025, 9:23:56 PM     LOG [RouterExplorer] Mapped {/materials/tags, GET} route +0ms
+[Nest] 70084  - 09/19/2025, 9:23:56 PM     LOG [RouterExplorer] Mapped {/materials/:id, GET} route +0ms
+[Nest] 70084  - 09/19/2025, 9:23:56 PM     LOG [RouterExplorer] Mapped {/materials, POST} route +0ms
+[Nest] 70084  - 09/19/2025, 9:23:56 PM     LOG [RouterExplorer] Mapped {/materials/:id/quantity, PATCH} route +0ms
+[Nest] 70084  - 09/19/2025, 9:23:56 PM     LOG [RoutesResolver] OrdersController {/orders}: +0ms
+[Nest] 70084  - 09/19/2025, 9:23:56 PM     LOG [RouterExplorer] Mapped {/orders, GET} route +1ms
+[Nest] 70084  - 09/19/2025, 9:23:56 PM     LOG [RouterExplorer] Mapped {/orders/:id, GET} route +0ms
+[Nest] 70084  - 09/19/2025, 9:23:56 PM     LOG [RouterExplorer] Mapped {/orders, POST} route +0ms
+[Nest] 70084  - 09/19/2025, 9:23:56 PM     LOG [RouterExplorer] Mapped {/orders/:id/status, PATCH} route +0ms
+[Nest] 70084  - 09/19/2025, 9:23:56 PM     LOG [RouterExplorer] Mapped {/orders/:id, PATCH} route +0ms
+[Nest] 70084  - 09/19/2025, 9:23:56 PM     LOG [RouterExplorer] Mapped {/orders/:id, DELETE} route +0ms
+[Nest] 70084  - 09/19/2025, 9:23:56 PM     LOG [RoutesResolver] ProductsController {/products}: +0ms
+[Nest] 70084  - 09/19/2025, 9:23:56 PM     LOG [RouterExplorer] Mapped {/products, GET} route +0ms
+[Nest] 70084  - 09/19/2025, 9:23:56 PM     LOG [RouterExplorer] Mapped {/products/categories, GET} route +0ms
+[Nest] 70084  - 09/19/2025, 9:23:56 PM     LOG [RouterExplorer] Mapped {/products/:id, GET} route +0ms
+[Nest] 70084  - 09/19/2025, 9:23:56 PM     LOG [RouterExplorer] Mapped {/products, POST} route +0ms
+[Nest] 70084  - 09/19/2025, 9:23:56 PM     LOG [RouterExplorer] Mapped {/products/:id/stock, PATCH} route +1ms
+[Nest] 70084  - 09/19/2025, 9:23:56 PM     LOG [RouterExplorer] Mapped {/products/:id, PATCH} route +0ms
+[Nest] 70084  - 09/19/2025, 9:23:56 PM     LOG [RouterExplorer] Mapped {/products/:id, DELETE} route +0ms
+[Nest] 70084  - 09/19/2025, 9:23:56 PM     LOG [RoutesResolver] FulfillmentController {/fulfillment}: +0ms
+[Nest] 70084  - 09/19/2025, 9:23:56 PM     LOG [RouterExplorer] Mapped {/fulfillment/orders, GET} route +0ms
+[Nest] 70084  - 09/19/2025, 9:23:56 PM     LOG [RouterExplorer] Mapped {/fulfillment/orders/:id, GET} route +0ms
+[Nest] 70084  - 09/19/2025, 9:23:56 PM     LOG [RouterExplorer] Mapped {/fulfillment/orders, POST} route +0ms
+[Nest] 70084  - 09/19/2025, 9:23:56 PM     LOG [RouterExplorer] Mapped {/fulfillment/orders/:id, PATCH} route +0ms
+[Nest] 70084  - 09/19/2025, 9:23:56 PM     LOG [RouterExplorer] Mapped {/fulfillment/orders/:id, DELETE} route +0ms
+[Nest] 70084  - 09/19/2025, 9:23:56 PM     LOG [RouterExplorer] Mapped {/fulfillment/orders/:id/items, PATCH} route +0ms
+[Nest] 70084  - 09/19/2025, 9:23:56 PM     LOG [NestApplication] Nest application successfully started +1ms
+[2J[3J[H[[90m9:27:57 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/app.module.ts[0m:[93m8[0m:[93m35[0m - [91merror[0m[90m TS2307: [0mCannot find module './fulfillment/fulfillment.module' or its corresponding type declarations.
+
+[7m8[0m import { FulfillmentModule } from './fulfillment/fulfillment.module';
+[7m [0m [91m                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/update-fulfillment-table.ts[0m:[93m75[0m:[93m15[0m - [91merror[0m[90m TS2322: [0mType '{ name: string; quantity: number; price: number; }' is not assignable to type 'never'.
+
+[7m75[0m               { name: 'Navy Jersey Pocket Tee', quantity: 2, price: 29.99 },
+[7m  [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/update-fulfillment-table.ts[0m:[93m76[0m:[93m15[0m - [91merror[0m[90m TS2322: [0mType '{ name: string; quantity: number; price: number; }' is not assignable to type 'never'.
+
+[7m76[0m               { name: 'Charcoal Beanie', quantity: 1, price: 29.99 }
+[7m  [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/update-fulfillment-table.ts[0m:[93m81[0m:[93m15[0m - [91merror[0m[90m TS2322: [0mType '{ name: string; quantity: number; price: number; }' is not assignable to type 'never'.
+
+[7m81[0m               { name: 'White Midweight Hoodie', quantity: 1, price: 79.99 },
+[7m  [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/update-fulfillment-table.ts[0m:[93m82[0m:[93m15[0m - [91merror[0m[90m TS2322: [0mType '{ name: string; quantity: number; price: number; }' is not assignable to type 'never'.
+
+[7m82[0m               { name: 'Navy Boiled Wool Hat', quantity: 1, price: 49.99 }
+[7m  [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/update-fulfillment-table.ts[0m:[93m87[0m:[93m15[0m - [91merror[0m[90m TS2322: [0mType '{ name: string; quantity: number; price: number; }' is not assignable to type 'never'.
+
+[7m87[0m               { name: 'Dark Coffee Fleece Hoodie', quantity: 1, price: 89.99 },
+[7m  [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/update-fulfillment-table.ts[0m:[93m88[0m:[93m15[0m - [91merror[0m[90m TS2322: [0mType '{ name: string; quantity: number; price: number; }' is not assignable to type 'never'.
+
+[7m88[0m               { name: 'Dark Coffee Sweatpants', quantity: 1, price: 69.98 }
+[7m  [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/update-fulfillment-table.ts[0m:[93m93[0m:[93m15[0m - [91merror[0m[90m TS2322: [0mType '{ name: string; quantity: number; price: number; }' is not assignable to type 'never'.
+
+[7m93[0m               { name: 'Ash Heather Heavyweight Tee', quantity: 2, price: 29.99 }
+[7m  [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/update-fulfillment-table.ts[0m:[93m98[0m:[93m15[0m - [91merror[0m[90m TS2322: [0mType '{ name: string; quantity: number; price: number; }' is not assignable to type 'never'.
+
+[7m98[0m               { name: 'White Midweight Hoodie', quantity: 1, price: 79.99 },
+[7m  [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/update-fulfillment-table.ts[0m:[93m99[0m:[93m15[0m - [91merror[0m[90m TS2322: [0mType '{ name: string; quantity: number; price: number; }' is not assignable to type 'never'.
+
+[7m99[0m               { name: 'Ash Heather Sweatpants', quantity: 2, price: 69.98 }
+[7m  [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/update-fulfillment-table.ts[0m:[93m104[0m:[93m15[0m - [91merror[0m[90m TS2322: [0mType '{ name: string; quantity: number; price: number; }' is not assignable to type 'never'.
+
+[7m104[0m               { name: 'Sample Product', quantity: 1, price: 49.99 }
+[7m   [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[[90m9:27:57 PM[0m] Found 11 errors. Watching for file changes.
+
+[2J[3J[H[[90m9:27:59 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/app.module.ts[0m:[93m8[0m:[93m35[0m - [91merror[0m[90m TS2307: [0mCannot find module './fulfillment/fulfillment.module' or its corresponding type declarations.
+
+[7m8[0m import { FulfillmentModule } from './fulfillment/fulfillment.module';
+[7m [0m [91m                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[[90m9:27:59 PM[0m] Found 1 error. Watching for file changes.
+
+[2J[3J[H[[90m9:27:59 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m9:27:59 PM[0m] Found 0 errors. Watching for file changes.
+
+[Nest] 74009  - 09/19/2025, 9:28:00 PM     LOG [NestFactory] Starting Nest application...
+[Nest] 74009  - 09/19/2025, 9:28:00 PM     LOG [InstanceLoader] SupabaseModule dependencies initialized +17ms
+[Nest] 74009  - 09/19/2025, 9:28:00 PM     LOG [InstanceLoader] ConfigHostModule dependencies initialized +0ms
+[Nest] 74009  - 09/19/2025, 9:28:00 PM     LOG [InstanceLoader] AppModule dependencies initialized +0ms
+[Nest] 74009  - 09/19/2025, 9:28:00 PM     LOG [InstanceLoader] ConfigModule dependencies initialized +0ms
+[Nest] 74009  - 09/19/2025, 9:28:00 PM     LOG [InstanceLoader] MaterialsModule dependencies initialized +0ms
+[Nest] 74009  - 09/19/2025, 9:28:00 PM     LOG [InstanceLoader] OrdersModule dependencies initialized +0ms
+[Nest] 74009  - 09/19/2025, 9:28:00 PM     LOG [InstanceLoader] ProductsModule dependencies initialized +0ms
+[Nest] 74009  - 09/19/2025, 9:28:00 PM     LOG [RoutesResolver] AppController {/}: +2ms
+[Nest] 74009  - 09/19/2025, 9:28:00 PM     LOG [RouterExplorer] Mapped {/, GET} route +1ms
+[Nest] 74009  - 09/19/2025, 9:28:00 PM     LOG [RoutesResolver] MaterialsController {/materials}: +0ms
+[Nest] 74009  - 09/19/2025, 9:28:00 PM     LOG [RouterExplorer] Mapped {/materials, GET} route +0ms
+[Nest] 74009  - 09/19/2025, 9:28:00 PM     LOG [RouterExplorer] Mapped {/materials/tags, GET} route +1ms
+[Nest] 74009  - 09/19/2025, 9:28:00 PM     LOG [RouterExplorer] Mapped {/materials/:id, GET} route +0ms
+[Nest] 74009  - 09/19/2025, 9:28:00 PM     LOG [RouterExplorer] Mapped {/materials, POST} route +0ms
+[Nest] 74009  - 09/19/2025, 9:28:00 PM     LOG [RouterExplorer] Mapped {/materials/:id/quantity, PATCH} route +0ms
+[Nest] 74009  - 09/19/2025, 9:28:00 PM     LOG [RoutesResolver] OrdersController {/orders}: +0ms
+[Nest] 74009  - 09/19/2025, 9:28:00 PM     LOG [RouterExplorer] Mapped {/orders, GET} route +0ms
+[Nest] 74009  - 09/19/2025, 9:28:00 PM     LOG [RouterExplorer] Mapped {/orders/:id, GET} route +0ms
+[Nest] 74009  - 09/19/2025, 9:28:00 PM     LOG [RouterExplorer] Mapped {/orders, POST} route +1ms
+[Nest] 74009  - 09/19/2025, 9:28:00 PM     LOG [RouterExplorer] Mapped {/orders/:id/status, PATCH} route +0ms
+[Nest] 74009  - 09/19/2025, 9:28:00 PM     LOG [RouterExplorer] Mapped {/orders/:id, PATCH} route +0ms
+[Nest] 74009  - 09/19/2025, 9:28:00 PM     LOG [RouterExplorer] Mapped {/orders/:id, DELETE} route +0ms
+[Nest] 74009  - 09/19/2025, 9:28:00 PM     LOG [RoutesResolver] ProductsController {/products}: +0ms
+[Nest] 74009  - 09/19/2025, 9:28:00 PM     LOG [RouterExplorer] Mapped {/products, GET} route +0ms
+[Nest] 74009  - 09/19/2025, 9:28:00 PM     LOG [RouterExplorer] Mapped {/products/categories, GET} route +0ms
+[Nest] 74009  - 09/19/2025, 9:28:00 PM     LOG [RouterExplorer] Mapped {/products/:id, GET} route +0ms
+[Nest] 74009  - 09/19/2025, 9:28:00 PM     LOG [RouterExplorer] Mapped {/products, POST} route +0ms
+[Nest] 74009  - 09/19/2025, 9:28:00 PM     LOG [RouterExplorer] Mapped {/products/:id/stock, PATCH} route +1ms
+[Nest] 74009  - 09/19/2025, 9:28:00 PM     LOG [RouterExplorer] Mapped {/products/:id, PATCH} route +0ms
+[Nest] 74009  - 09/19/2025, 9:28:00 PM     LOG [RouterExplorer] Mapped {/products/:id, DELETE} route +0ms
+[Nest] 74009  - 09/19/2025, 9:28:00 PM     LOG [NestApplication] Nest application successfully started +1ms

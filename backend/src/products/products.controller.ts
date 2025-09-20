@@ -1,5 +1,5 @@
-import { Controller, Get, Post, Body, Param, Patch } from '@nestjs/common';
-import { SupabaseService } from '../supabase/supabase.service';
+import { Controller, Get, Post, Body, Param, Patch, Delete } from '@nestjs/common';
+import { SupabaseService, Product } from '../supabase/supabase.service';
 
 @Controller('products')
 export class ProductsController {
@@ -10,9 +10,9 @@ export class ProductsController {
     return this.supabaseService.getProducts();
   }
 
-  @Get('tags')
-  async getAllTags() {
-    return this.supabaseService.getAllTags();
+  @Get('categories')
+  async getAllCategories() {
+    return this.supabaseService.getAllCategories();
   }
 
   @Get(':id')
@@ -23,24 +23,37 @@ export class ProductsController {
   @Post()
   async create(@Body() createProductDto: {
     name: string;
-    color: string;
-    size: string;
-    quantity: number;
-    packSize: number;
-    tags: string[];
-    imageUrl?: string;
+    description: string;
+    stock: number;
+    image?: string;
+    categories: string[];
+    sizes: string[];
+    colors: string[];
   }) {
     return this.supabaseService.createProduct(createProductDto);
   }
 
-  @Patch(':id/quantity')
-  async updateQuantity(
+  @Patch(':id/stock')
+  async updateStock(
     @Param('id') id: string,
-    @Body() updateQuantityDto: { quantity: number },
+    @Body() updateStockDto: { stock: number },
   ) {
-    return this.supabaseService.updateProductQuantity(
+    return this.supabaseService.updateProductStock(
       Number(id),
-      updateQuantityDto.quantity,
+      updateStockDto.stock,
     );
+  }
+
+  @Patch(':id')
+  async update(
+    @Param('id') id: string,
+    @Body() updateProductDto: Partial<Product>,
+  ) {
+    return this.supabaseService.updateProduct(Number(id), updateProductDto);
+  }
+
+  @Delete(':id')
+  async remove(@Param('id') id: string) {
+    return this.supabaseService.deleteProduct(Number(id));
   }
 }

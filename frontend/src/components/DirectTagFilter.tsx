@@ -57,9 +57,6 @@ export function DirectTagFilter({ selectedTags, onTagsChange, isOpen, onClose }:
     }
   };
 
-  const clearAllTags = () => {
-    onTagsChange([]);
-  };
 
   // Simple animation configuration
   const dropdownAnimation = {
@@ -83,14 +80,6 @@ export function DirectTagFilter({ selectedTags, onTagsChange, isOpen, onClose }:
           >
             <div className="tag-filter-header">
               <span className="tag-filter-title">Filter by Category</span>
-              {selectedTags.length > 0 && (
-                <button 
-                  className="clear-tags-button"
-                  onClick={clearAllTags}
-                >
-                  Clear All
-                </button>
-              )}
             </div>
             
             <div className="tag-list">
