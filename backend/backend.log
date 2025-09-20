@@ -1633,3 +1633,105 @@
 [Nest] 74009  - 09/19/2025, 9:28:00 PM     LOG [RouterExplorer] Mapped {/products/:id, PATCH} route +0ms
 [Nest] 74009  - 09/19/2025, 9:28:00 PM     LOG [RouterExplorer] Mapped {/products/:id, DELETE} route +0ms
 [Nest] 74009  - 09/19/2025, 9:28:00 PM     LOG [NestApplication] Nest application successfully started +1ms
+[Nest] 74009  - 09/19/2025, 10:28:16 PM   ERROR [ExceptionsHandler] Object(4) {
+  code: [32m'23505'[39m,
+  details: [32m'Key (id)=(1) already exists.'[39m,
+  hint: [1mnull[22m,
+  message: [32m'duplicate key value violates unique constraint "Product_pkey"'[39m
+}
+[Nest] 74009  - 09/19/2025, 10:28:18 PM   ERROR [ExceptionsHandler] Object(4) {
+  code: [32m'23505'[39m,
+  details: [32m'Key (id)=(2) already exists.'[39m,
+  hint: [1mnull[22m,
+  message: [32m'duplicate key value violates unique constraint "Product_pkey"'[39m
+}
+[Nest] 74009  - 09/19/2025, 10:28:22 PM   ERROR [ExceptionsHandler] Object(4) {
+  code: [32m'23505'[39m,
+  details: [32m'Key (id)=(3) already exists.'[39m,
+  hint: [1mnull[22m,
+  message: [32m'duplicate key value violates unique constraint "Product_pkey"'[39m
+}
+[Nest] 74009  - 09/19/2025, 10:32:51 PM   ERROR [ExceptionsHandler] Object(4) {
+  code: [32m'23505'[39m,
+  details: [32m'Key (id)=(4) already exists.'[39m,
+  hint: [1mnull[22m,
+  message: [32m'duplicate key value violates unique constraint "Product_pkey"'[39m
+}
+[Nest] 74009  - 09/19/2025, 10:32:55 PM   ERROR [ExceptionsHandler] Object(4) {
+  code: [32m'23505'[39m,
+  details: [32m'Key (id)=(5) already exists.'[39m,
+  hint: [1mnull[22m,
+  message: [32m'duplicate key value violates unique constraint "Product_pkey"'[39m
+}
+[2J[3J[H[[90m10:39:20 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m10:39:20 PM[0m] Found 0 errors. Watching for file changes.
+
+[Nest] 34392  - 09/19/2025, 10:39:21 PM     LOG [NestFactory] Starting Nest application...
+[Nest] 34392  - 09/19/2025, 10:39:21 PM     LOG [InstanceLoader] SupabaseModule dependencies initialized +12ms
+[Nest] 34392  - 09/19/2025, 10:39:21 PM     LOG [InstanceLoader] ConfigHostModule dependencies initialized +0ms
+[Nest] 34392  - 09/19/2025, 10:39:21 PM     LOG [InstanceLoader] AppModule dependencies initialized +0ms
+[Nest] 34392  - 09/19/2025, 10:39:21 PM     LOG [InstanceLoader] ConfigModule dependencies initialized +0ms
+[Nest] 34392  - 09/19/2025, 10:39:21 PM     LOG [InstanceLoader] MaterialsModule dependencies initialized +0ms
+[Nest] 34392  - 09/19/2025, 10:39:21 PM     LOG [InstanceLoader] OrdersModule dependencies initialized +0ms
+[Nest] 34392  - 09/19/2025, 10:39:21 PM     LOG [InstanceLoader] ProductsModule dependencies initialized +0ms
+[Nest] 34392  - 09/19/2025, 10:39:21 PM     LOG [RoutesResolver] AppController {/}: +2ms
+[Nest] 34392  - 09/19/2025, 10:39:21 PM     LOG [RouterExplorer] Mapped {/, GET} route +1ms
+[Nest] 34392  - 09/19/2025, 10:39:21 PM     LOG [RoutesResolver] MaterialsController {/materials}: +0ms
+[Nest] 34392  - 09/19/2025, 10:39:21 PM     LOG [RouterExplorer] Mapped {/materials, GET} route +0ms
+[Nest] 34392  - 09/19/2025, 10:39:21 PM     LOG [RouterExplorer] Mapped {/materials/tags, GET} route +0ms
+[Nest] 34392  - 09/19/2025, 10:39:21 PM     LOG [RouterExplorer] Mapped {/materials/:id, GET} route +0ms
+[Nest] 34392  - 09/19/2025, 10:39:21 PM     LOG [RouterExplorer] Mapped {/materials, POST} route +0ms
+[Nest] 34392  - 09/19/2025, 10:39:21 PM     LOG [RouterExplorer] Mapped {/materials/:id/quantity, PATCH} route +0ms
+[Nest] 34392  - 09/19/2025, 10:39:21 PM     LOG [RoutesResolver] OrdersController {/orders}: +1ms
+[Nest] 34392  - 09/19/2025, 10:39:21 PM     LOG [RouterExplorer] Mapped {/orders, GET} route +0ms
+[Nest] 34392  - 09/19/2025, 10:39:21 PM     LOG [RouterExplorer] Mapped {/orders/:id, GET} route +0ms
+[Nest] 34392  - 09/19/2025, 10:39:21 PM     LOG [RouterExplorer] Mapped {/orders, POST} route +0ms
+[Nest] 34392  - 09/19/2025, 10:39:21 PM     LOG [RouterExplorer] Mapped {/orders/:id/status, PATCH} route +0ms
+[Nest] 34392  - 09/19/2025, 10:39:21 PM     LOG [RouterExplorer] Mapped {/orders/:id, PATCH} route +0ms
+[Nest] 34392  - 09/19/2025, 10:39:21 PM     LOG [RouterExplorer] Mapped {/orders/:id, DELETE} route +0ms
+[Nest] 34392  - 09/19/2025, 10:39:21 PM     LOG [RoutesResolver] ProductsController {/products}: +0ms
+[Nest] 34392  - 09/19/2025, 10:39:21 PM     LOG [RouterExplorer] Mapped {/products, GET} route +0ms
+[Nest] 34392  - 09/19/2025, 10:39:21 PM     LOG [RouterExplorer] Mapped {/products/categories, GET} route +0ms
+[Nest] 34392  - 09/19/2025, 10:39:21 PM     LOG [RouterExplorer] Mapped {/products/:id, GET} route +1ms
+[Nest] 34392  - 09/19/2025, 10:39:21 PM     LOG [RouterExplorer] Mapped {/products, POST} route +0ms
+[Nest] 34392  - 09/19/2025, 10:39:21 PM     LOG [RouterExplorer] Mapped {/products/:id/stock, PATCH} route +0ms
+[Nest] 34392  - 09/19/2025, 10:39:21 PM     LOG [RouterExplorer] Mapped {/products/:id, PATCH} route +0ms
+[Nest] 34392  - 09/19/2025, 10:39:21 PM     LOG [RouterExplorer] Mapped {/products/:id, DELETE} route +0ms
+[Nest] 34392  - 09/19/2025, 10:39:21 PM     LOG [NestApplication] Nest application successfully started +1ms
+[Nest] 34392  - 09/19/2025, 10:41:48 PM   ERROR [ExceptionsHandler] Object(4) {
+  code: [32m'23505'[39m,
+  details: [32m'Key (id)=(6) already exists.'[39m,
+  hint: [1mnull[22m,
+  message: [32m'duplicate key value violates unique constraint "Product_pkey"'[39m
+}
+[Nest] 34392  - 09/19/2025, 10:42:14 PM   ERROR [ExceptionsHandler] Object(4) {
+  code: [32m'23505'[39m,
+  details: [32m'Key (id)=(7) already exists.'[39m,
+  hint: [1mnull[22m,
+  message: [32m'duplicate key value violates unique constraint "Product_pkey"'[39m
+}
+[Nest] 34392  - 09/19/2025, 10:43:14 PM   ERROR [ExceptionsHandler] Object(4) {
+  code: [32m'23505'[39m,
+  details: [32m'Key (id)=(8) already exists.'[39m,
+  hint: [1mnull[22m,
+  message: [32m'duplicate key value violates unique constraint "Product_pkey"'[39m
+}
+[Nest] 34392  - 09/19/2025, 10:48:30 PM   ERROR [ExceptionsHandler] Object(4) {
+  code: [32m'23505'[39m,
+  details: [32m'Key (id)=(12) already exists.'[39m,
+  hint: [1mnull[22m,
+  message: [32m'duplicate key value violates unique constraint "Product_pkey"'[39m
+}
+[Nest] 34392  - 09/19/2025, 10:48:34 PM   ERROR [ExceptionsHandler] Object(4) {
+  code: [32m'23505'[39m,
+  details: [32m'Key (id)=(13) already exists.'[39m,
+  hint: [1mnull[22m,
+  message: [32m'duplicate key value violates unique constraint "Product_pkey"'[39m
+}
+[Nest] 34392  - 09/19/2025, 10:49:02 PM   ERROR [ExceptionsHandler] Object(4) {
+  code: [32m'23505'[39m,
+  details: [32m'Key (id)=(14) already exists.'[39m,
+  hint: [1mnull[22m,
+  message: [32m'duplicate key value violates unique constraint "Product_pkey"'[39m
+}

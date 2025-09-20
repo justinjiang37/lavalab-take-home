@@ -31,10 +31,11 @@ export function Sidebar({ isSidebarExpanded, setIsSidebarExpanded }: SidebarProp
       onHoverStart={() => setIsSidebarExpanded(true)}
       onHoverEnd={() => setIsSidebarExpanded(false)}
     >
-      <div className="sidebar-logo mb-8 flex items-center px-3">
+      {/* Logo Section */}
+      <div className="sidebar-logo mb-8 flex items-center justify-center md:justify-start px-3">
         <div className="logo-icon flex items-center justify-center w-9 h-9 flex-shrink-0"><TallyIcon /></div>
         <motion.div 
-          className="ml-3 font-normal text-gray-500 text-lg whitespace-nowrap overflow-hidden tracking-wide"
+          className="ml-3 font-medium text-gray-700 text-xl whitespace-nowrap overflow-hidden tracking-wide"
           initial={{ opacity: 0, width: 0 }}
           animate={{ opacity: isSidebarExpanded ? 1 : 0, width: isSidebarExpanded ? "auto" : 0 }}
           transition={{ duration: 0.3, ease: "easeInOut" }}
@@ -42,85 +43,104 @@ export function Sidebar({ isSidebarExpanded, setIsSidebarExpanded }: SidebarProp
           Tally
         </motion.div>
       </div>
+
+      {/* Navigation Links */}
       <nav className="sidebar-nav flex flex-col gap-2 w-full px-2 flex-grow">
-        <Link to="/" className={`nav-item ${pathname === '/' ? 'bg-gray-200' : ''} rounded-lg hover:bg-gray-200 transition-colors flex items-center px-2 py-2`}>
-          <span className="nav-icon-img flex-shrink-0">
-            {pathname === '/' ? <ComponentsActiveSvg /> : <ComponentsInactiveSvg />}
-          </span>
-          <motion.span 
-            className="ml-3 text-sm font-medium text-gray-700 whitespace-nowrap overflow-hidden"
-            initial={{ opacity: 0, width: 0 }}
-            animate={{ opacity: isSidebarExpanded ? 1 : 0, width: isSidebarExpanded ? "auto" : 0 }}
-            transition={{ duration: 0.3, ease: "easeInOut" }}
-          >
-            Materials
-          </motion.span>
+        {/* Materials Link */}
+        <Link to="/" className={`nav-item ${pathname === '/' ? 'bg-gray-200' : ''} rounded-lg hover:bg-gray-200 transition-colors flex items-center h-10`}>
+          <div className="w-full flex items-center justify-center md:justify-start px-2">
+            <div className="flex items-center justify-center w-6 h-6">
+              {pathname === '/' ? <ComponentsActiveSvg /> : <ComponentsInactiveSvg />}
+            </div>
+            <motion.span 
+              className="ml-2 text-sm font-medium text-gray-700 whitespace-nowrap overflow-hidden"
+              initial={{ opacity: 0, width: 0 }}
+              animate={{ opacity: isSidebarExpanded ? 1 : 0, width: isSidebarExpanded ? "auto" : 0 }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
+            >
+              Materials
+            </motion.span>
+          </div>
         </Link>
-        <Link to="/products" className={`nav-item ${pathname === '/products' ? 'bg-gray-200' : ''} rounded-lg hover:bg-gray-200 transition-colors flex items-center px-2 py-2`}>
-          <span className="nav-icon-img flex-shrink-0">
-            {pathname === '/products' ? <ProductsActiveSvg /> : <ProductsInactiveSvg />}
-          </span>
-          <motion.span 
-            className="ml-3 text-sm font-medium text-gray-700 whitespace-nowrap overflow-hidden"
-            initial={{ opacity: 0, width: 0 }}
-            animate={{ opacity: isSidebarExpanded ? 1 : 0, width: isSidebarExpanded ? "auto" : 0 }}
-            transition={{ duration: 0.3, ease: "easeInOut" }}
-          >
-            Products
-          </motion.span>
+
+        {/* Products Link */}
+        <Link to="/products" className={`nav-item ${pathname === '/products' ? 'bg-gray-200' : ''} rounded-lg hover:bg-gray-200 transition-colors flex items-center h-10`}>
+          <div className="w-full flex items-center justify-center md:justify-start px-2">
+            <div className="flex items-center justify-center w-6 h-6">
+              {pathname === '/products' ? <ProductsActiveSvg /> : <ProductsInactiveSvg />}
+            </div>
+            <motion.span 
+              className="ml-2 text-sm font-medium text-gray-700 whitespace-nowrap overflow-hidden"
+              initial={{ opacity: 0, width: 0 }}
+              animate={{ opacity: isSidebarExpanded ? 1 : 0, width: isSidebarExpanded ? "auto" : 0 }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
+            >
+              Products
+            </motion.span>
+          </div>
         </Link>
-        <Link to="/fulfillment" className={`nav-item ${pathname === '/fulfillment' ? 'bg-gray-200' : ''} rounded-lg hover:bg-gray-200 transition-colors flex items-center px-2 py-2`}>
-          <span className="nav-icon-img flex-shrink-0">
-            {pathname === '/fulfillment' ? <OrdersActiveSvg /> : <OrdersInactiveSvg />}
-          </span>
-          <motion.span 
-            className="ml-3 text-sm font-medium text-gray-700 whitespace-nowrap overflow-hidden"
-            initial={{ opacity: 0, width: 0 }}
-            animate={{ opacity: isSidebarExpanded ? 1 : 0, width: isSidebarExpanded ? "auto" : 0 }}
-            transition={{ duration: 0.3, ease: "easeInOut" }}
-          >
-            Fulfillment
-          </motion.span>
+
+        {/* Fulfillment Link */}
+        <Link to="/fulfillment" className={`nav-item ${pathname === '/fulfillment' ? 'bg-gray-200' : ''} rounded-lg hover:bg-gray-200 transition-colors flex items-center h-10`}>
+          <div className="w-full flex items-center justify-center md:justify-start px-2">
+            <div className="flex items-center justify-center w-6 h-6">
+              {pathname === '/fulfillment' ? <OrdersActiveSvg /> : <OrdersInactiveSvg />}
+            </div>
+            <motion.span 
+              className="ml-2 text-sm font-medium text-gray-700 whitespace-nowrap overflow-hidden"
+              initial={{ opacity: 0, width: 0 }}
+              animate={{ opacity: isSidebarExpanded ? 1 : 0, width: isSidebarExpanded ? "auto" : 0 }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
+            >
+              Fulfillment
+            </motion.span>
+          </div>
         </Link>
-        <Link to="/integrations" className={`nav-item ${pathname === '/integrations' ? 'bg-gray-200' : ''} rounded-lg hover:bg-gray-200 transition-colors flex items-center px-2 py-2`}>
-          <span className="nav-icon-img flex-shrink-0">
-            {pathname === '/integrations' ? <IntegrationsActiveSvg /> : <IntegrationsInactiveSvg />}
-          </span>
-          <motion.span 
-            className="ml-3 text-sm font-medium text-gray-700 whitespace-nowrap overflow-hidden"
-            initial={{ opacity: 0, width: 0 }}
-            animate={{ opacity: isSidebarExpanded ? 1 : 0, width: isSidebarExpanded ? "auto" : 0 }}
-            transition={{ duration: 0.3, ease: "easeInOut" }}
-          >
-            Integrations
-          </motion.span>
+
+        {/* Integrations Link */}
+        <Link to="/integrations" className={`nav-item ${pathname === '/integrations' ? 'bg-gray-200' : ''} rounded-lg hover:bg-gray-200 transition-colors flex items-center h-10`}>
+          <div className="w-full flex items-center justify-center md:justify-start px-2">
+            <div className="flex items-center justify-center w-6 h-6">
+              {pathname === '/integrations' ? <IntegrationsActiveSvg /> : <IntegrationsInactiveSvg />}
+            </div>
+            <motion.span 
+              className="ml-2 text-sm font-medium text-gray-700 whitespace-nowrap overflow-hidden"
+              initial={{ opacity: 0, width: 0 }}
+              animate={{ opacity: isSidebarExpanded ? 1 : 0, width: isSidebarExpanded ? "auto" : 0 }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
+            >
+              Integrations
+            </motion.span>
+          </div>
         </Link>
       </nav>
       
       {/* User Profile Section */}
       <div className="sidebar-footer mt-auto px-2 pt-4 border-t border-gray-200 flex flex-col gap-2">
         {/* Logout Button */}
-        <button className="nav-item rounded-lg hover:bg-gray-200 transition-colors flex items-center px-2 py-2">
-          <span className="nav-icon-img flex-shrink-0">
-            <LogoutIcon />
-          </span>
-          <motion.span 
-            className="ml-3 text-sm font-medium text-gray-700 whitespace-nowrap overflow-hidden"
-            initial={{ opacity: 0, width: 0 }}
-            animate={{ opacity: isSidebarExpanded ? 1 : 0, width: isSidebarExpanded ? "auto" : 0 }}
-            transition={{ duration: 0.3, ease: "easeInOut" }}
-          >
-            Logout
-          </motion.span>
+        <button className="nav-item rounded-lg hover:bg-gray-200 transition-colors flex items-center h-10">
+          <div className="w-full flex items-center justify-center md:justify-start px-2">
+            <div className="flex items-center justify-center w-6 h-6">
+              <LogoutIcon />
+            </div>
+            <motion.span 
+              className="ml-2 text-sm font-medium text-gray-700 whitespace-nowrap overflow-hidden"
+              initial={{ opacity: 0, width: 0 }}
+              animate={{ opacity: isSidebarExpanded ? 1 : 0, width: isSidebarExpanded ? "auto" : 0 }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
+            >
+              Logout
+            </motion.span>
+          </div>
         </button>
         
         {/* Profile Photo */}
-        <div className="profile-photo flex items-center px-2 py-2 mb-2">
+        <div className="profile-photo flex items-center justify-center md:justify-start px-2 py-2 mb-2">
           <div className="w-9 h-9 rounded-full overflow-hidden flex-shrink-0 border border-gray-300">
             <img src={profileImage} alt="Profile" className="w-full h-full object-cover" />
           </div>
           <motion.div 
-            className="ml-3 text-sm font-medium text-gray-700 whitespace-nowrap overflow-hidden"
+            className="ml-2 text-sm font-medium text-gray-700 whitespace-nowrap overflow-hidden"
             initial={{ opacity: 0, width: 0 }}
             animate={{ opacity: isSidebarExpanded ? 1 : 0, width: isSidebarExpanded ? "auto" : 0 }}
             transition={{ duration: 0.3, ease: "easeInOut" }}

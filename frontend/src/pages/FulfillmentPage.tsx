@@ -648,21 +648,12 @@ export function FulfillmentPage() {
                           ${order.totalPrice.toFixed(2)}
                         </td>
                         <td className="px-6 py-4">
-                          <span className={`inline-flex px-2 py-1 text-xs font-semibold rounded-full ${
-                            order.paymentStatus === 'Paid' ? 'bg-green-100 text-green-800' :
-                            order.paymentStatus === 'Pending' ? 'bg-yellow-100 text-yellow-800' :
-                            'bg-red-100 text-red-800'
-                          }`}>
+                          <span className={`status-badge status-${order.paymentStatus.toLowerCase()}`}>
                             {order.paymentStatus}
                           </span>
                         </td>
                         <td className="px-6 py-4">
-                          <span className={`inline-flex px-2 py-1 text-xs font-semibold rounded-full ${
-                            order.fulfillmentStatus === 'Delivered' ? 'bg-green-100 text-green-800' :
-                            order.fulfillmentStatus === 'Shipped' ? 'bg-blue-100 text-blue-800' :
-                            order.fulfillmentStatus === 'Processing' ? 'bg-yellow-100 text-yellow-800' :
-                            'bg-red-100 text-red-800'
-                          }`}>
+                          <span className={`status-badge status-${order.fulfillmentStatus.toLowerCase()}`}>
                             {order.fulfillmentStatus}
                           </span>
                         </td>
@@ -838,17 +829,7 @@ export function FulfillmentPage() {
               </>
             ) : (
               <div className="bg-white p-12 rounded-lg border border-gray-200 shadow-sm text-center">
-                <p className="text-gray-500 mb-4">Select a product to view its performance metrics</p>
-                <select
-                  value={selectedProduct || ''}
-                  onChange={(e) => setSelectedProduct(e.target.value ? Number(e.target.value) : null)}
-                  className="px-4 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 min-w-[250px] mx-auto"
-                >
-                  <option value="">Select a product</option>
-                  {productPerformanceData.map(product => (
-                    <option key={product.id} value={product.id}>{product.name}</option>
-                  ))}
-                </select>
+                <p className="text-gray-500">Select a product to view its performance metrics</p>
               </div>
             )}
           </div>

@@ -107,7 +107,7 @@ export class SupabaseService {
       .from('Material')
       .insert([{
         ...material,
-        minQuantity: null // Set to null to indicate we're not using it anymore
+        // packSize is now used instead of minQuantity
       }])
       .select()
       .single();

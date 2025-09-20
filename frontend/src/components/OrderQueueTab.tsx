@@ -304,7 +304,7 @@ export function OrderQueueTab() {
                         </span>
                       </div>
                       <button 
-                        className="absolute right-[-40px] top-1/2 -translate-y-1/2 w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 text-gray-500 hover:text-white hover:bg-red-500 transition-colors text-lg font-bold shadow-sm"
+                        className="absolute right-[-60px] top-1/2 -translate-y-1/2 w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 text-gray-500 hover:text-white hover:bg-red-500 transition-colors text-lg font-bold shadow-sm"
                         onClick={() => handleCancelOrder(order.id)}
                         title="Remove order"
                       >

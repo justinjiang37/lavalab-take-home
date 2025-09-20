@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { ReactComponent as FilterIcon } from '../icons/Filter.svg';
 import { ReactComponent as SortIcon } from '../icons/Sort.svg';
 import { DirectTagFilter } from './DirectTagFilter';
-import { AddProductModal } from './AddProductModal';
+import { AddMaterialModal } from './AddMaterialModal';
 import { MaterialsList } from './MaterialsList';
 
 interface InventoryTabProps {
@@ -95,7 +95,7 @@ export function InventoryTab({ selectedTags, onTagsChange }: InventoryTabProps) 
       </div>
 
       {/* Add Material Modal */}
-      <AddProductModal
+      <AddMaterialModal
         isOpen={isAddModalOpen}
         onClose={() => setIsAddModalOpen(false)}
         onMaterialAdded={() => {

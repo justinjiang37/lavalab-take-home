@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { fetchProducts, fetchAllCategories, Product as ApiProduct } from '../api/products';
 import { ReactComponent as FilterIcon } from '../icons/Filter.svg';
 import { ReactComponent as SortIcon } from '../icons/Sort.svg';
-import { AddProductModal } from '../components/AddProductModal';
+import { AddProductModalReal } from '../components/AddProductModalReal';
 
 // Use the Product interface from the API
 type Product = ApiProduct;
@@ -321,11 +321,6 @@ export function ProductsPage() {
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <div className="flex-grow flex flex-col py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto w-full">
-          {/* Page header */}
-          <div className="mb-6 text-center">
-            <h1 className="text-3xl font-semibold text-gray-900">Products</h1>
-            <p className="mt-2 text-sm text-gray-600">Manage your product catalog</p>
-          </div>
           
           {/* Search and Actions Bar */}
           <div className="flex justify-between items-center mb-8 gap-4">
@@ -481,10 +476,10 @@ export function ProductsPage() {
       />
       
       {/* Add Product Modal */}
-      <AddProductModal
+      <AddProductModalReal
         isOpen={isAddProductModalOpen}
         onClose={() => setIsAddProductModalOpen(false)}
-        onMaterialAdded={() => {
+        onProductAdded={() => {
           // Refresh the products list
           setRefreshTrigger(prev => prev + 1);
           setIsAddProductModalOpen(false);

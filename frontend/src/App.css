@@ -13,9 +13,11 @@ body {
 
 /* Navigation icon sizing */
 .nav-icon-img {
-  width: 20px;
-  height: 20px;
-  display: block;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Order Queue Styles */
@@ -150,6 +152,19 @@ body {
   background-color: #fee2e2; /* Red */
   color: #b91c1c;
   border: 1px solid #fecaca;
+}
+
+/* Payment Status Classes */
+.status-paid {
+  background-color: #d1fae5; /* Light Green */
+  color: #047857;
+  border: 1px solid #a7f3d0;
+}
+
+.status-pending {
+  background-color: #fef3c7; /* Yellow */
+  color: #92400e;
+  border: 1px solid #fde68a;
 }
 
 /* Materials list styles */
